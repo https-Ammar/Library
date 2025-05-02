@@ -176,3 +176,21 @@ button.pay_now.ptn {
   background-position: center center;
   background-size: cover;
 }
+
+@media screen and (max-width: 992px) {
+  .Library_card {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Library_card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .Library_card {
+    grid-template-columns: 1fr;
+  }
+}
