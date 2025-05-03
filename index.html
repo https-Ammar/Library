@@ -34,6 +34,31 @@
 <body>
 
 
+    <div class="loding" id="loding">
+
+        <div class="gift_card">
+
+            <div id="exit">x</div>
+
+            <div class="gift_img" style="background-image: url(./assets/assets/images/gift.jpg);">
+
+            </div>
+
+            <h2>لكل كتاب حكاية... ونحن نرويها لك.</h2>
+
+            <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
     <header class="header flex">
 
         <div class="flex bar">
@@ -1017,6 +1042,22 @@
         });
     </script>
 
+
+
+    <script>
+
+        let loding = document.getElementById('loding');
+        let exit = document.getElementById('exit');
+
+        window.onload = function () {
+            loding.style.display = 'flex'
+        }
+
+        exit.addEventListener('click', function () {
+            loding.style.display = 'none'
+        })
+
+    </script>
 
 </body>
 

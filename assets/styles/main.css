@@ -126,6 +126,41 @@ img.logo {
   height: 62px;
 }
 
+.loding {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2827274a;
+  z-index: 99999999999;
+}
+
+.gift_card {
+  width: 35%;
+  height: 80vh;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.gift_img {
+  height: 60vh;
+  margin: 10px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+#loding {
+  display: none;
+}
+
+div#loding {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
 /*=============================
 =       Shop       =
 =============================*/
