@@ -892,6 +892,8 @@ p.Vector {
     position: absolute;
     top: 25px;
     left: 25px;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
   }
 
   .Library_card {
