@@ -274,6 +274,81 @@ nav.nav_bar {
   color: var(--primary-color);
 }
 
+.select-menu {
+  position: relative;
+}
+
+.select-menu .select-btn {
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.select-menu .options {
+  position: absolute;
+
+  overflow-y: auto;
+  max-height: 295px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 99999999;
+}
+
+.select-menu.active .options {
+  display: block;
+}
+
+.select-menu .options .option {
+  display: flex;
+  height: 55px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+  background: #fff;
+}
+
+.select-menu .options .option:hover {
+  background: #f2f2f2;
+}
+
+.select-menu .options .option i {
+  font-size: 25px;
+  margin-right: 12px;
+}
+
+.select-menu .options .option .option-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.select-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.select-menu.active .select-btn i {
+  transform: rotate(-180deg);
+}
+
+#nav-left-list {
+  justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px !important;
+}
+
+.slider-container .item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 /*=============================
 =          Library           =
 =============================*/
@@ -907,6 +982,16 @@ p.Vector {
   }
   ul#nav-left-list {
     display: none;
+  }
+  .content {
+    position: absolute;
+    top: 40%;
+    /* transform: translate(-50%, -50%); */
+    color: #fff;
+    z-index: 1000;
+    /* width: 90%; */
+    /* max-width: 600px; */
+    margin: 35px;
   }
 }
 
