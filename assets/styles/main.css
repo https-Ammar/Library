@@ -862,4 +862,8 @@ ul.list_flex {
   .Publishing_House {
     display: none;
   }
+  .Library_card,
+  .Favorite_Books {
+    gap: 10px;
+  }
 }
