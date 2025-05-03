@@ -855,4 +855,11 @@ ul.list_flex {
   .footer-top {
     height: 10vh;
   }
+  section.quotes {
+    display: none;
+  }
+
+  .Publishing_House {
+    display: none;
+  }
 }
