@@ -845,7 +845,8 @@ ul.list_flex {
   .Library_card {
     grid-template-columns: 1fr 1fr;
   }
-  .postar {
+  .postar,
+  .Author_book {
     height: 25vh;
   }
   .Ads_Sec {
