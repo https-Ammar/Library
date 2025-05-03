@@ -847,7 +847,7 @@ ul.list_flex {
   }
   .postar,
   .Author_book {
-    height: 25vh;
+    height: 24vh;
   }
   .Ads_Sec {
     height: 15vh;
@@ -865,5 +865,14 @@ ul.list_flex {
   .Library_card,
   .Favorite_Books {
     gap: 10px;
+  }
+
+  .card_chil {
+    border: 1.5px solid var(--card-border-color);
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    background: white;
+    transition: transform 0.3s ease;
   }
 }
