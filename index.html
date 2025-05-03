@@ -126,866 +126,955 @@
         </div>
 
 
+
+
         <nav class="nav_bar">
 
+
+            <div class="toggle menu-toggle">
+                <ul class="list_flex ">
+                    <li>
+                        <div class="menu-toggle" onclick="toggleMenu()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="logo" src="./assets/assets/images/logo.png" alt="logo">
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+
+
             <div class="nav_left">
-                <ul>
+                <ul id="nav-left-list">
                     <li><a href="#">
                             <img class="logo" src="./assets/assets/images/logo.png" alt="logo">
                         </a></li>
                     <li><a href="#">الرئيسية</a></li>
-                    <li><a href="#">المكتبة</a></li>
-                    <li><a href="#">الدكان</a></li>
-                    <li><a href="#">الكترونيات</a></li>
-                    <li><a href="#">المدونة</a></li>
-                    <li> <a href="#">من نحن
-                        </a></li>
-                    <li> <a href="#">اتصل بنا
-                        </a></li>
+                    <select id="libraryMenu">
+                        <option disabled selected>المكتبة</option>
+                        <option>كتب دراسية</option>
+                        <option>روايات</option>
+                    </select>
 
+                    <select id="shopMenu">
+                        <option disabled selected>الدكان</option>
+                        <option>مأكولات</option>
+                        <option>مشروبات</option>
+                    </select>
+
+                    <select id="electronicsMenu">
+                        <option disabled selected>الكترونيات</option>
+                        <option>موبايلات</option>
+                        <option>كمبيوترات</option>
+                    </select>
+
+                    <select id="blogMenu">
+                        <option disabled selected>المدونة</option>
+                        <option>مقالات تقنية</option>
+                        <option>أخبار</option>
+                    </select>
+
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
                 </ul>
             </div>
+
             <div class="nav_right">
-                <ul>
+                <ul id="nav-right-list">
+                    <li>
+                        <div class="icon-container" id="cart-icon">
 
-                    <li>11</li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="ai ai-Heart">
-                            <path
-                                d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
-                        </svg></li>
-                    <li><button class="login"><a href="#">تسجيل الدخول</a> </button></li>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.4375 9.625V5.5C14.4375 4.58832 14.0754 3.71398 13.4307 3.06932C12.7861 2.42466 11.9117 2.0625 11 2.0625C10.0884 2.0625 9.21402 2.42466 8.56937 3.06932C7.92471 3.71398 7.56255 4.58832 7.56255 5.5V9.625M17.9722 7.79808L19.13 18.7981C19.1941 19.4077 18.7175 19.9375 18.1042 19.9375H3.89588C3.75124 19.9377 3.60818 19.9074 3.476 19.8486C3.34382 19.7899 3.22548 19.704 3.12865 19.5966C3.03183 19.4891 2.95869 19.3625 2.914 19.2249C2.8693 19.0874 2.85404 18.9419 2.86921 18.7981L4.02788 7.79808C4.05461 7.54468 4.1742 7.31014 4.36361 7.13969C4.55302 6.96924 4.79882 6.87495 5.05363 6.875H16.9465C17.4745 6.875 17.9172 7.27375 17.9722 7.79808ZM7.9063 9.625C7.9063 9.71617 7.87008 9.8036 7.80562 9.86807C7.74115 9.93253 7.65372 9.96875 7.56255 9.96875C7.47138 9.96875 7.38394 9.93253 7.31948 9.86807C7.25501 9.8036 7.2188 9.71617 7.2188 9.625C7.2188 9.53383 7.25501 9.4464 7.31948 9.38193C7.38394 9.31747 7.47138 9.28125 7.56255 9.28125C7.65372 9.28125 7.74115 9.31747 7.80562 9.38193C7.87008 9.4464 7.9063 9.53383 7.9063 9.625V9.625ZM14.7813 9.625C14.7813 9.71617 14.7451 9.8036 14.6806 9.86807C14.6161 9.93253 14.5287 9.96875 14.4375 9.96875C14.3464 9.96875 14.2589 9.93253 14.1945 9.86807C14.13 9.8036 14.0938 9.71617 14.0938 9.625C14.0938 9.53383 14.13 9.4464 14.1945 9.38193C14.2589 9.31747 14.3464 9.28125 14.4375 9.28125C14.5287 9.28125 14.6161 9.31747 14.6806 9.38193C14.7451 9.4464 14.7813 9.53383 14.7813 9.625V9.625Z"
+                                    stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <div class="badge" id="cart-count">3</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon-container" id="fav-icon">
+
+                            <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.75 9.99999C0.6875 7.24999 1.375 3.12499 4.8125 1.74999C8.25 0.37499 10.3125 3.12499 11 4.49999C11.6875 3.12499 14.4375 0.37499 17.875 1.74999C21.3125 3.12499 21.3125 7.24999 19.25 9.99999C17.1875 12.75 11 18.25 11 18.25C11 18.25 4.8125 12.75 2.75 9.99999Z"
+                                    stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <div class="badge" id="fav-count">5</div>
+                        </div>
+                    </li>
+                    <li><button class="login"><a href="#">تسجيل الدخول</a></button></li>
                     <li>11</li>
                 </ul>
             </div>
-
-
         </nav>
 
-    </header>
-
-    <main class="container">
 
 
-
-        <section class="slider_sec">
-
-            <div class="slider-container">
-                <div class="owl-carousel owl-theme">
-                    <div class="item" style="background-image: url('../assets/images/bg.jpg');"></div>
-                    <div class="item" style="background-image: url('../assets/images/bg.jpg');"></div>
-                    <div class="item" style="background-image: url('../assets/images/bg.jpg');"></div>
-                </div>
-                <div class="overlay"></div>
-
-                <div class="slider-content">
-                    <h1>رحلتك مع الكتاب تبدأ من هنا</h1>
-                    <p>هنا حيث يلتقي شغف القراءة بذوق الاختيار. اكتشف آلاف العناوين في كل المجالات!</p>
-                    <div class="search-box">
-
-                        <input type="text" placeholder="ابحث...">
-                        <button>🔍</button>
-                    </div>
-                </div>
-            </div>
-
-        </section>
+        <main class="container">
 
 
 
-        <section class="categories-section">
+            <section class="slider_sec">
 
-            <!-- هيكل السلايدر -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <!-- عناصر التصنيفات -->
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>السلامي</h3>
-                        </div>
+                <div class="slider-container">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" style="background-image: url('../assets/images/bg.jpg');"></div>
+                        <div class="item" style="background-image: url('../assets/images/bg.jpg');"></div>
+                        <div class="item" style="background-image: url('../assets/images/bg.jpg');"></div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>أدب</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>تراث</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>أساطير</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>فنون</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>فلسفة</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>تاريخ</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>تاريخ</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>تاريخ</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>تاريخ</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>تاريخ</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>تاريخ</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>تاريخ</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>تاريخ</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card">
-                            <div class="category-icon" style="background-image: url(./assets/assets/images/man.jpg);">
-                            </div>
-                            <h3>تاريخ</h3>
+                    <div class="overlay"></div>
+
+                    <div class="slider-content">
+                        <h1>رحلتك مع الكتاب تبدأ من هنا</h1>
+                        <p>هنا حيث يلتقي شغف القراءة بذوق الاختيار. اكتشف آلاف العناوين في كل المجالات!</p>
+                        <div class="search-box">
+
+                            <input type="text" placeholder="ابحث...">
+                            <button>🔍</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- أزرار التنقل -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+            </section>
+
+
+
+            <section class="categories-section">
+
+                <!-- هيكل السلايدر -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- عناصر التصنيفات -->
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>السلامي</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>أدب</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>تراث</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>أساطير</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>فنون</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>فلسفة</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>تاريخ</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>تاريخ</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>تاريخ</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>تاريخ</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>تاريخ</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>تاريخ</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>تاريخ</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>تاريخ</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-icon"
+                                    style="background-image: url(./assets/assets/images/man.jpg);">
+                                </div>
+                                <h3>تاريخ</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- أزرار التنقل -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+
+
+
+
+            <section class="shop_sec">
+
+                <div class="shop_card" style="background-image: url(./assets/assets/images/shop.png);">
+
+                </div>
+
+
+                <div class="shop_card" style="background-image: url(./assets/assets/images/shop.png);">
+
+                </div>
+
+                <div class="shop_card" style="background-image: url(./assets/assets/images/shop.png);">
+
+                </div>
+
+
+            </section>
+
+
+
+
+
+
+            <section class="Library">
+                <ul>
+                    <li>وصل حديثا في المكتبة</li>
+                    <li>
+                        <button class="Library_ptn ptn">المكتبة</button>
+                    </li>
+                </ul>
+
+
+
+
+                <div class="Library_card">
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster1.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+
+                    </div>
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster2.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster3.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster4.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+
+
+
+                </div>
+            </section>
+
+
+
+            <section class="Library">
+                <ul>
+                    <li>وصل حديثا في المكتبة</li>
+                    <li>
+                        <button class="Library_ptn ptn">المكتبة</button>
+                    </li>
+                </ul>
+
+
+
+
+                <div class="Library_card">
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster1.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster2.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster3.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster4.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+
+
+
+                </div>
+            </section>
+
+
+            <section class="advertisements">
+
+                <div class="Ads_Sec">
+
+                </div>
+
+            </section>
+
+
+            <section class="Library">
+                <ul>
+                    <li>وصل حديثا في المكتبة</li>
+                    <li>
+                        <button class="Library_ptn ptn">المكتبة</button>
+                    </li>
+                </ul>
+
+
+
+
+                <div class="Library_card">
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster1.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster2.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster3.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster4.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+
+
+
+                </div>
+            </section>
+
+
+
+            <section class="Library">
+                <ul>
+                    <li>وصل حديثا في المكتبة</li>
+                    <li>
+                        <button class="Library_ptn ptn">المكتبة</button>
+                    </li>
+                </ul>
+
+
+
+
+                <div class="Library_card">
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster1.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster2.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster3.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+
+                    <div class="card_chil">
+                        <div class="postar" style="background-image: url(./assets/assets/images/poster4.png);">
+
+                        </div>
+
+                        <div class="titel flex">
+                            <p>أبي رسام خرائط</p>
+                            <p>11</p>
+                        </div>
+
+                        <div class="titel flex text">
+                            <p> شريدان لو فانو</p>
+                            <p class="price">4,5 د.ك.</p>
+                        </div>
+
+
+                        <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
+
+                    </div>
+
+
+
+
+                </div>
+            </section>
+
+
+            <section class="advertisements">
+
+                <div class="Ads_Sec">
+
+                </div>
+
+            </section>
+
+
+            <section class="quotes">
+                <ul>
+                    <li>وصل حديثا في المكتبة</li>
+                    <li>
+                        <button class="Library_ptn ptn">المكتبة</button>
+                    </li>
+                </ul>
+
+
+                <div class="Selections_quotes">
+
+                    <div class="Selections">
+
+                        <div class="Selections_img">
+                            <img src="./assets/assets/images/Selections.jpg" alt="">
+                        </div>
+                        <div class="Selections_text">
+                            <h2>أدهم شرقاوي</h2>
+                            <p>الحياة لا تعطي دروساً مجانية لأحد،...</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="Selections">
+
+                        <div class="Selections_img">
+                            <img src="./assets/assets/images/Selections.jpg" alt="">
+                        </div>
+                        <div class="Selections_text">
+                            <h2>أدهم شرقاوي</h2>
+                            <p>الحياة لا تعطي دروساً مجانية لأحد،...</p>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="Selections">
+
+                        <div class="Selections_img">
+                            <img src="./assets/assets/images/Selections.jpg" alt="">
+                        </div>
+                        <div class="Selections_text">
+                            <h2>أدهم شرقاوي</h2>
+                            <p>الحياة لا تعطي دروساً مجانية لأحد،...</p>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+            </section>
+
+            <!--  -->
+            <!--  -->
+            <section class="Publishing House">
+                <ul>
+                    <li> دار النشر </li>
+
+                </ul>
+                <div class="Publishing_House">
+
+                    <div class="Publishing_card">
+
+                        <img src="./assets/assets/images/Publishing.png" alt="">
+
+                    </div>
+
+                    <div class="Publishing_card">
+                        <img src="./assets/assets/images/Publishing.png" alt="">
+
+                    </div>
+
+                    <div class="Publishing_card">
+                        <img src="./assets/assets/images/Publishing.png" alt="">
+
+                    </div>
+
+                    <div class="Publishing_card">
+                        <img src="./assets/assets/images/Publishing.png" alt="">
+
+                    </div>
+
+
+                    <div class="Publishing_card">
+                        <img src="./assets/assets/images/Publishing.png" alt="">
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!--  -->
+            <!--  -->
+
+            <section class="Favorite Books">
+                <ul>
+                    <li>وصل حديثا في المكتبة</li>
+                    <li>
+                        <button class="Library_ptn ptn">المكتبة</button>
+                    </li>
+                </ul>
+
+                <div class="Favorite_Books">
+                    <div class="Favorite">
+                        <div class="Author_book" style="background-image: url(./assets/assets/images/Author2.jpg);">
+                        </div>
+                        <div class="Author_text">
+                            <p> فرانز كافكا </p>
+                            <p class="Author_data">هو روائي وكاتب قصص قصيرة وصحفي وفيلسوف روسي. وهو واحدٌ من أشهر
+                                الكُتاب
+                                والمؤلفين حول العالم.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="Favorite">
+                        <div class="Author_book" style="background-image: url(./assets/assets/images/Author2.jpg);">
+                        </div>
+                        <div class="Author_text">
+                            <p> فرانز كافكا </p>
+                            <p class="Author_data">هو روائي وكاتب قصص قصيرة وصحفي وفيلسوف روسي. وهو واحدٌ من أشهر
+                                الكُتاب
+                                والمؤلفين حول العالم.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="Favorite">
+                        <div class="Author_book" style="background-image: url(./assets/assets/images/Author3.jpg);">
+                        </div>
+                        <div class="Author_text">
+                            <p> فرانز كافكا </p>
+                            <p class="Author_data">هو روائي وكاتب قصص قصيرة وصحفي وفيلسوف روسي. وهو واحدٌ من أشهر
+                                الكُتاب
+                                والمؤلفين حول العالم.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="Favorite">
+                        <div class="Author_book" style="background-image: url(./assets/assets/images/Author2.jpg);">
+                        </div>
+                        <div class="Author_text">
+                            <p> فرانز كافكا </p>
+                            <p class="Author_data">هو روائي وكاتب قصص قصيرة وصحفي وفيلسوف روسي. وهو واحدٌ من أشهر
+                                الكُتاب
+                                والمؤلفين حول العالم.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="Favorite">
+                        <div class="Author_book" style="background-image: url(./assets/assets/images/Author2.jpg);">
+                        </div>
+                        <div class="Author_text">
+                            <p> فرانز كافكا </p>
+                            <p class="Author_data">هو روائي وكاتب قصص قصيرة وصحفي وفيلسوف روسي. وهو واحدٌ من أشهر
+                                الكُتاب
+                                والمؤلفين حول العالم.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+        </main>
+
+
+
+        <footer>
+            <div class="footer-top">
+
             </div>
-        </section>
 
-
-
-
-        <section class="shop_sec">
-
-            <div class="shop_card" style="background-image: url(./assets/assets/images/shop.png);">
-
-            </div>
-
-
-            <div class="shop_card" style="background-image: url(./assets/assets/images/shop.png);">
-
-            </div>
-
-            <div class="shop_card" style="background-image: url(./assets/assets/images/shop.png);">
-
-            </div>
-
-
-        </section>
-
-
-
-
-
-
-        <section class="Library">
-            <ul>
-                <li>وصل حديثا في المكتبة</li>
-                <li>
-                    <button class="Library_ptn ptn">المكتبة</button>
-                </li>
-            </ul>
-
-
-
-
-            <div class="Library_card">
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster1.png);">
-
+            <div class="footer">
+                <div class="column footer-logo">
+                    <img src="./assets/assets/images/logo.png" alt="لوجو مكتبة الجزيرة">
+                    <p>مكتبة الكترونية ومنصة ثقافية مقرها الامارات.</p>
+                    <div class="footer-social">
+                        <i class="fab fa-snapchat"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook"></i>
                     </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-
                 </div>
 
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster2.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
+                <div class="column">
+                    <h3>الأقسام</h3>
+                    <a href="#">الرئيسية</a>
+                    <a href="#">المكتبة</a>
+                    <a href="#">المدونة</a>
+                    <a href="#">من نحن</a>
+                    <a href="#">تواصل معنا</a>
                 </div>
 
 
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster3.png);">
+                <div class="column">
+                    <h3>روابط أخرى</h3>
+                    <a href="#">سياسة الإرجاع والاستبدال</a>
+                    <a href="#">الأسئلة الأكثر شيوعًا</a>
+                    <a href="#">سياسة الخصوصية</a>
+                </div>
 
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
+                <div class="column contact">
+                    <h3>تواصل معنا</h3>
+                    <p><i class="fas fa-phone"></i>50300046</p>
+                    <p><i class="fas fa-clock"></i>10:00 ص - 12:00 م</p>
+                    <p><i class="fas fa-envelope"></i>kuwaitbookstorenew@gmail.com</p>
                 </div>
 
 
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster4.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-
-
-
-            </div>
-        </section>
-
-
-
-        <section class="Library">
-            <ul>
-                <li>وصل حديثا في المكتبة</li>
-                <li>
-                    <button class="Library_ptn ptn">المكتبة</button>
-                </li>
-            </ul>
-
-
-
-
-            <div class="Library_card">
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster1.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster2.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster3.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster4.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-
-
-
-            </div>
-        </section>
-
-
-        <section class="advertisements">
-
-            <div class="Ads_Sec">
-
-            </div>
-
-        </section>
-
-
-        <section class="Library">
-            <ul>
-                <li>وصل حديثا في المكتبة</li>
-                <li>
-                    <button class="Library_ptn ptn">المكتبة</button>
-                </li>
-            </ul>
-
-
-
-
-            <div class="Library_card">
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster1.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster2.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster3.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster4.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-
-
-
-            </div>
-        </section>
-
-
-
-        <section class="Library">
-            <ul>
-                <li>وصل حديثا في المكتبة</li>
-                <li>
-                    <button class="Library_ptn ptn">المكتبة</button>
-                </li>
-            </ul>
-
-
-
-
-            <div class="Library_card">
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster1.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster2.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster3.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-
-                <div class="card_chil">
-                    <div class="postar" style="background-image: url(./assets/assets/images/poster4.png);">
-
-                    </div>
-
-                    <div class="titel flex">
-                        <p>أبي رسام خرائط</p>
-                        <p>11</p>
-                    </div>
-
-                    <div class="titel flex text">
-                        <p> شريدان لو فانو</p>
-                        <p class="price">4,5 د.ك.</p>
-                    </div>
-
-
-                    <button class="pay_now ptn"> <a href="#">شراء الان</a></button>
-
-                </div>
-
-
-
-
-            </div>
-        </section>
-
-
-        <section class="advertisements">
-
-            <div class="Ads_Sec">
-
-            </div>
-
-        </section>
-
-
-        <section class="quotes">
-            <ul>
-                <li>وصل حديثا في المكتبة</li>
-                <li>
-                    <button class="Library_ptn ptn">المكتبة</button>
-                </li>
-            </ul>
-
-
-            <div class="Selections_quotes">
-
-                <div class="Selections">
-
-                    <div class="Selections_img">
-                        <img src="./assets/assets/images/Selections.jpg" alt="">
-                    </div>
-                    <div class="Selections_text">
-                        <h2>أدهم شرقاوي</h2>
-                        <p>الحياة لا تعطي دروساً مجانية لأحد،...</p>
-                    </div>
-
-                </div>
-
-
-                <div class="Selections">
-
-                    <div class="Selections_img">
-                        <img src="./assets/assets/images/Selections.jpg" alt="">
-                    </div>
-                    <div class="Selections_text">
-                        <h2>أدهم شرقاوي</h2>
-                        <p>الحياة لا تعطي دروساً مجانية لأحد،...</p>
-                    </div>
-
-                </div>
-
-
-
-                <div class="Selections">
-
-                    <div class="Selections_img">
-                        <img src="./assets/assets/images/Selections.jpg" alt="">
-                    </div>
-                    <div class="Selections_text">
-                        <h2>أدهم شرقاوي</h2>
-                        <p>الحياة لا تعطي دروساً مجانية لأحد،...</p>
-                    </div>
-
-                </div>
-
-
-
-
-
-            </div>
-
-        </section>
-
-        <!--  -->
-        <!--  -->
-        <section class="Publishing House">
-            <ul>
-                <li> دار النشر </li>
-
-            </ul>
-            <div class="Publishing_House">
-
-                <div class="Publishing_card">
-
-                    <img src="./assets/assets/images/Publishing.png" alt="">
-
-                </div>
-
-                <div class="Publishing_card">
-                    <img src="./assets/assets/images/Publishing.png" alt="">
-
-                </div>
-
-                <div class="Publishing_card">
-                    <img src="./assets/assets/images/Publishing.png" alt="">
-
-                </div>
-
-                <div class="Publishing_card">
-                    <img src="./assets/assets/images/Publishing.png" alt="">
-
-                </div>
-
-
-                <div class="Publishing_card">
-                    <img src="./assets/assets/images/Publishing.png" alt="">
-
-                </div>
-
-            </div>
-        </section>
-
-        <!--  -->
-        <!--  -->
-
-        <section class="Favorite Books">
-            <ul>
-                <li>وصل حديثا في المكتبة</li>
-                <li>
-                    <button class="Library_ptn ptn">المكتبة</button>
-                </li>
-            </ul>
-            <div class="Favorite_Books">
-                <div class="Favorite">
-                    <div class="Author_book" style="background-image: url(./assets/assets/images/Author1.jpg);"></div>
-                    <div class="Author_text">
-                        <p> فرانز كافكا </p>
-                        <p>هو روائي وكاتب قصص قصيرة وصحفي وفيلسوف روسي. وهو واحدٌ من أشهر الكُتاب والمؤلفين حول العالم.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="Favorite">
-                    <div class="Author_book" style="background-image: url(./assets/assets/images/Author2.jpg);"></div>
-                    <div class="Author_text">
-                        <p> فرانز كافكا </p>
-                        <p class="Author_data">هو روائي وكاتب قصص قصيرة وصحفي وفيلسوف روسي. وهو واحدٌ من أشهر الكُتاب
-                            والمؤلفين حول العالم.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="Favorite">
-                    <div class="Author_book" style="background-image: url(./assets/assets/images/Author3.jpg);"></div>
-                    <div class="Author_text">
-                        <p> فرانز كافكا </p>
-                        <p class="Author_data">هو روائي وكاتب قصص قصيرة وصحفي وفيلسوف روسي. وهو واحدٌ من أشهر الكُتاب
-                            والمؤلفين حول العالم.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="Favorite">
-                    <div class="Author_book" style="background-image: url(./assets/assets/images/Author2.jpg);"></div>
-                    <div class="Author_text">
-                        <p> فرانز كافكا </p>
-                        <p class="Author_data">هو روائي وكاتب قصص قصيرة وصحفي وفيلسوف روسي. وهو واحدٌ من أشهر الكُتاب
-                            والمؤلفين حول العالم.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="Favorite">
-                    <div class="Author_book" style="background-image: url(./assets/assets/images/Author4.png);"></div>
-                    <div class="Author_text">
-                        <p> فرانز كافكا </p>
-                        <p>هو روائي وكاتب قصص قصيرة وصحفي وفيلسوف روسي. وهو واحدٌ من أشهر الكُتاب والمؤلفين حول العالم.
-                        </p>
-                    </div>
-
-                </div>
-
-
-            </div>
-        </section>
-
-    </main>
-
-
-
-    <footer>
-        <div class="footer-top">
-
-        </div>
-
-        <div class="footer">
-            <div class="column footer-logo">
-                <img src="./assets/assets/images/logo.png" alt="لوجو مكتبة الجزيرة">
-                <p>مكتبة الكترونية ومنصة ثقافية مقرها الامارات.</p>
-                <div class="footer-social">
-                    <i class="fab fa-snapchat"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook"></i>
+                <div class="column books-img">
+                    <img src="./assets/assets/images/book.png" alt="كتب">
                 </div>
             </div>
 
-            <div class="column">
-                <h3>الأقسام</h3>
-                <a href="#">الرئيسية</a>
-                <a href="#">المكتبة</a>
-                <a href="#">المدونة</a>
-                <a href="#">من نحن</a>
-                <a href="#">تواصل معنا</a>
-            </div>
-
-
-            <div class="column">
-                <h3>روابط أخرى</h3>
-                <a href="#">سياسة الإرجاع والاستبدال</a>
-                <a href="#">الأسئلة الأكثر شيوعًا</a>
-                <a href="#">سياسة الخصوصية</a>
-            </div>
-
-            <div class="column contact">
-                <h3>تواصل معنا</h3>
-                <p><i class="fas fa-phone"></i>50300046</p>
-                <p><i class="fas fa-clock"></i>10:00 ص - 12:00 م</p>
-                <p><i class="fas fa-envelope"></i>kuwaitbookstorenew@gmail.com</p>
-            </div>
-
-
-            <div class="column books-img">
-                <img src="./assets/assets/images/book.png" alt="كتب">
-            </div>
-        </div>
-
-    </footer>
+        </footer>
 
 
 
@@ -1000,64 +1089,72 @@
 
 
 
-
-
-
-    <script src="./assets/scripts/app.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 4000,
-                dots: true
-            });
-        });
-    </script>
-
-    <script>
-        const swiper = new Swiper('.mySwiper', {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                0: {
-                    slidesPerView: 3,
-                },
-                576: {
-                    slidesPerView: 4,
-                },
-                992: {
-                    slidesPerView: 6,
-                },
-                1200: {
-                    slidesPerView: 8,
-                }
+        <script>
+            function toggleMenu() {
+                document.getElementById("nav-left-list").classList.toggle("active");
+                document.getElementById("nav-right-list").classList.toggle("active");
             }
-        });
-    </script>
+        </script>
 
 
 
-    <script>
+        <script src="./assets/scripts/app.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".owl-carousel").owlCarousel({
+                    items: 1,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 4000,
+                    dots: true
+                });
+            });
+        </script>
 
-        let loding = document.getElementById('loding');
-        let exit = document.getElementById('exit');
+        <script>
+            const swiper = new Swiper('.mySwiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 3,
+                    },
+                    576: {
+                        slidesPerView: 4,
+                    },
+                    992: {
+                        slidesPerView: 6,
+                    },
+                    1200: {
+                        slidesPerView: 8,
+                    }
+                }
+            });
+        </script>
 
-        window.onload = function () {
-            loding.style.display = 'flex'
-        }
 
-        exit.addEventListener('click', function () {
-            loding.style.display = 'none'
-        })
 
-    </script>
+        <script>
+
+            let loding = document.getElementById('loding');
+            let exit = document.getElementById('exit');
+
+            window.onload = function () {
+                loding.style.display = 'flex'
+            }
+
+            exit.addEventListener('click', function () {
+                loding.style.display = 'none'
+            })
+
+        </script>
+
+
 
 </body>
 

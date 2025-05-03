@@ -221,7 +221,7 @@ button.login:hover a {
 /*=============================
 =          Header            =
 =============================*/
-header.header.flex {
+.flex.bar {
   background: linear-gradient(
     267.61deg,
     var(--header-gradient-start) 38.06%,
@@ -573,6 +573,148 @@ p.Author_data {
   gap: 20px;
 }
 
+.nav_left ul select {
+  border: navajowhite;
+}
+.icon-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-container svg {
+  font-size: 22px;
+  width: 22;
+  height: 22px;
+}
+
+.badge {
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  background: #851c65;
+  color: white;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.nav_left ul,
+.nav_right ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav_left ul li,
+.nav_right ul li,
+.nav_left ul select {
+  margin: 0 10px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.icon-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+
+.login a {
+  text-decoration: none;
+  color: white;
+}
+
+.login {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* Hamburger menu icon */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: black;
+  margin: 4px 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav_left ul,
+  .nav_right ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    display: none;
+    z-index: 1000;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .nav_left ul.active,
+  .nav_right ul.active {
+    display: flex;
+  }
+
+  .nav_bar {
+    flex-wrap: wrap;
+  }
+
+  .nav_right {
+    width: 100%;
+  }
+}
+
 /*=============================
 =           Footer           =
 =============================*/
@@ -671,4 +813,45 @@ p.Author_data {
 .swiper-wrapper {
   align-items: center;
   justify-content: center !important;
+}
+ul.list_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.toggle.menu-toggle {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .Selections_quotes {
+    flex-direction: column;
+  }
+
+  .Publishing_House {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section.shop_sec {
+    grid-template-columns: 1fr;
+  }
+  .Library_card {
+    grid-template-columns: 1fr 1fr;
+  }
+  .postar {
+    height: 25vh;
+  }
+  .Ads_Sec {
+    height: 15vh;
+  }
+  .footer-top {
+    height: 10vh;
+  }
 }
