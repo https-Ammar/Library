@@ -129,6 +129,7 @@ section.slider_sec {
   position: relative;
   margin-left: 15px;
   cursor: pointer;
+  margin: 0;
 }
 
 .navbar-brand img {
@@ -209,6 +210,7 @@ div#loding {
   border-radius: 5px;
   overflow: hidden;
   height: 373px;
+  position: relative;
 }
 
 .content h1 {
@@ -464,24 +466,6 @@ section.quotes ul {
   gap: 25px;
 }
 
-@media screen and (max-width: 992px) {
-  .Library_card {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .Library_card {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .Library_card {
-    grid-template-columns: 1fr;
-  }
-}
-
 .card_chil {
   border: 1.5px solid var(--card-border-color);
   border-radius: 14px;
@@ -629,6 +613,7 @@ button.pay_now.ptn a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 10px;
 }
 
 /* التجاوب مع الشاشات الصغيرة */
@@ -643,7 +628,8 @@ button.pay_now.ptn a {
 =============================*/
 
 .Selections_quotes {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
   gap: 25px;
@@ -655,9 +641,9 @@ button.pay_now.ptn a {
   border-width: 1.5px;
   border: 1.5px solid #f4f4f4;
   text-align: center;
-  width: 399px;
+
   box-shadow: 0px 4px 4px 0px #f4f4f440;
-  padding: 25px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -675,7 +661,6 @@ button.pay_now.ptn a {
 }
 
 .Selections_img img {
-  width: 361px;
   height: 270px;
   box-shadow: 0px 4px 4px 0px #f4f4f440;
 
@@ -1017,12 +1002,6 @@ p.Vector {
     grid-template-columns: 1fr 1fr;
   }
 
-  section.shop_sec {
-    flex-direction: column;
-  }
-  .shop_card {
-    width: 100%;
-  }
   .Library_card {
     grid-template-columns: 1fr 1fr;
   }
@@ -1083,22 +1062,13 @@ p.Vector {
   ul#nav-left-list {
     display: none;
   }
+
   .content {
-    position: absolute;
-    top: 40%;
-    /* transform: translate(-50%, -50%); */
-    color: #fff;
-    z-index: 1000;
-    /* width: 90%; */
-    /* max-width: 600px; */
-    margin: 35px;
-  }
-  .content {
-    position: absolute;
     left: 0;
-    top: 35%;
+    top: 10%;
     color: #fff;
     z-index: 1000;
+    padding: 20px;
   }
   .column.books-img {
     display: none;
@@ -1229,5 +1199,52 @@ li.icon {
   }
   .d-flex.align-items-center.order-lg-last .login {
     display: none;
+  }
+  ul.dropdown-menu.show {
+    background: no-repeat;
+    border: navajowhite;
+  }
+  .categories-section {
+    max-width: 100%;
+  }
+  .category-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.dropdown-item {
+  width: fit-content;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  display: none !important;
+}
+
+@media screen and (max-width: 992px) {
+  .Library_card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section.shop_sec {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Library_card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .shop_card {
+    width: 138px;
+    height: 90px;
+
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .Library_card {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
