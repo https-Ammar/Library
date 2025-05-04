@@ -783,7 +783,7 @@ p.Author_data {
   color: white;
   text-align: center;
   padding: 40px 20px;
-  background-image: url("../assets/images/sec.png");
+  background-image: url("../images/sec.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1223,7 +1223,7 @@ section.terms.and.condition {
 
   height: 365px;
   border-radius: 20px;
-  background: url(../assets/images/cover.jpg);
+  background: url(../images/cover.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
