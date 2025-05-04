@@ -160,6 +160,88 @@ div#loding {
   position: fixed;
   width: 100%;
   top: 0;
+  padding: 25px;
+}
+
+.carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+
+  left: 30%;
+  top: 35%;
+
+  color: #fff;
+  z-index: 1000;
+}
+
+.slider_c {
+  border-radius: 5px;
+  overflow: hidden;
+  height: 373px;
+}
+
+.content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 8px 12px;
+}
+
+.search-box svg {
+  margin-left: 8px;
+}
+
+.search-box input {
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  flex: 1;
+  outline: none;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+}
+
+.carousel-item {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 /*=============================
@@ -352,7 +434,7 @@ nav.nav_bar {
 /*=============================
 =          Library           =
 =============================*/
-.container {
+.container_ {
   padding: 25px;
 }
 
@@ -993,6 +1075,13 @@ p.Vector {
     /* max-width: 600px; */
     margin: 35px;
   }
+  .content {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    color: #fff;
+    z-index: 1000;
+  }
 }
 
 /*  */
@@ -1026,4 +1115,8 @@ div#exit {
 
 owl-stage-outer {
   background: red;
+}
+
+a {
+  text-decoration: none !important;
 }
