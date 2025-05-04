@@ -307,7 +307,6 @@
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
   text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;
