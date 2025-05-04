@@ -26,6 +26,43 @@
 body {
   direction: rtl;
 }
+/* .flex.bar */
+
+.flex.bar {
+  background: linear-gradient(
+    267.61deg,
+    var(--header-gradient-start) 38.06%,
+    var(--header-gradient-end) 96.12%
+  );
+}
+
+.flex.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  height: 65px;
+  padding: 0 20px;
+}
+
+.flex.bar ul,
+.nav_left ul,
+.nav_right ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.flex.bar ul li svg,
+.nav_right ul li svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+/*  */
+
+/* 00000000 */
 
 .slider-container {
   position: relative;
@@ -279,10 +316,6 @@ section.shop_sec {
   width: 331px;
   height: 158px;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 /*=============================
 =       General Button       =
@@ -322,127 +355,16 @@ button.login:hover a {
 /*=============================
 =          Header            =
 =============================*/
-.flex.bar {
-  background: linear-gradient(
-    267.61deg,
-    var(--header-gradient-start) 38.06%,
-    var(--header-gradient-end) 96.12%
-  );
-}
-
-.flex.bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  height: 65px;
-  padding: 0 20px;
-}
-
-.flex.bar ul,
-.nav_left ul,
-.nav_right ul {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  list-style: none;
-}
-
-.flex.bar ul li svg,
-.nav_right ul li svg {
-  width: 24px;
-  height: 24px;
-  color: white;
-}
 
 a.active_link {
   border-bottom: 2px solid #6b1e58 !important;
   color: #6b1e58 !important;
 }
 
-nav.nav_bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: white;
-  padding: 20px;
-  border: 1px solid #c0c0c0;
-}
-
-.nav_left ul li a {
-  color: black;
-  transition: color 0.2s;
-}
-
 .nav_left ul li a:hover {
   color: var(--primary-color);
 }
 
-.select-menu {
-  position: relative;
-}
-
-a.nav-link.dropdown-toggle,
-a.nav-link {
-  font-size: 18px;
-  font-weight: 400;
-  border-radius: 8px;
-  align-items: center;
-  cursor: pointer;
-}
-
-nav.navbar.navbar-expand-lg.navbar-light.bg-light.shadow-sm.px-3 {
-  padding: 20px;
-  background: white;
-  padding: 20px;
-  border: 1px solid #c0c0c0;
-  box-shadow: none !important;
-}
-
-.select-menu .options {
-  position: absolute;
-
-  overflow-y: auto;
-  max-height: 295px;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: none;
-  z-index: 99999999;
-}
-
-.select-menu.active .options {
-  display: block;
-}
-
-.select-menu .options .option .option-text {
-  font-size: 18px;
-  color: #333;
-}
-
-.select-btn i {
-  font-size: 25px;
-  transition: 0.3s;
-}
-
-.select-menu.active .select-btn i {
-  transform: rotate(-180deg);
-}
-
-#nav-left-list {
-  justify-content: space-between;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px !important;
-}
-
-.slider-container .item {
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
 /*=============================
 =          Library           =
 =============================*/
@@ -606,17 +528,6 @@ button.pay_now.ptn a {
   margin: 10px;
 }
 
-/* التجاوب مع الشاشات الصغيرة */
-@media (max-width: 768px) {
-  .swiper-slide {
-    width: 150px !important;
-  }
-}
-
-/*=============================
-=      --------      =
-=============================*/
-
 .Selections_quotes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -662,6 +573,13 @@ button.pay_now.ptn a {
   background-position: top center;
   background-repeat: no-repeat;
 }
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 150px !important;
+  }
+}
+
 /*=============================
 =      Publishing House      =
 =============================*/
