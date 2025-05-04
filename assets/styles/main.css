@@ -1216,3 +1216,99 @@ main.container_ {
   justify-content: space-between;
   gap: 20px;
 }
+
+/* pages */
+section.terms.and.condition {
+  margin: auto;
+
+  height: 365px;
+  border-radius: 20px;
+  background: url(../assets/images/cover.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.text_condition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  background: #2827277a;
+  color: white;
+}
+
+.text_condition h2 {
+  /* font-family: Almarai; */
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: right;
+  margin: 10px 0;
+}
+
+.path_link a,
+.path_link p {
+  /* font-family: Almarai; */
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: white;
+}
+
+.path_link a.active {
+  color: #efc900;
+}
+
+.path_link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.block_titel {
+  margin: 10vh 0;
+}
+
+.block_titel h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: right;
+  border-right: 5px solid #851c65;
+  padding-right: 10px;
+}
+
+.block_titel p {
+  /* font-family: Almarai; */
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: black;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 992px) {
+  section.terms.and.condition {
+    height: 25vh;
+  }
+
+  .block_titel p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .block_titel {
+    margin: 5vh 0;
+  }
+}
