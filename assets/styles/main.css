@@ -1311,4 +1311,7 @@ section.terms.and.condition {
   .block_titel {
     margin: 5vh 0;
   }
+  p.price {
+    font-size: 12px;
+  }
 }
