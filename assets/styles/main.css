@@ -120,6 +120,21 @@ section.slider_sec {
 /*=============================
 =          Logo              =
 =============================*/
+
+.navbar-nav .dropdown-menu {
+  text-align: right;
+}
+
+.icon-container {
+  position: relative;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+/*  */
 img.logo {
   width: 88px;
   height: 62px;
@@ -365,12 +380,21 @@ nav.nav_bar {
   position: relative;
 }
 
-.select-menu .select-btn {
+a.nav-link.dropdown-toggle,
+a.nav-link {
   font-size: 18px;
   font-weight: 400;
   border-radius: 8px;
   align-items: center;
   cursor: pointer;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.shadow-sm.px-3 {
+  padding: 20px;
+  background: white;
+  padding: 20px;
+  border: 1px solid #c0c0c0;
+  box-shadow: none !important;
 }
 
 .select-menu .options {
@@ -1147,6 +1171,10 @@ p.Vector {
   .Selections_quotes {
     gap: 10px;
   }
+  ul.nav-right-list {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /*  */
@@ -1184,4 +1212,22 @@ owl-stage-outer {
 
 a {
   text-decoration: none !important;
+}
+
+li.icon {
+  display: flex;
+  align-items: center;
+}
+/*  */
+.pc {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .pc {
+    display: flex;
+  }
+  .d-flex.align-items-center.order-lg-last .login {
+    display: none;
+  }
 }
