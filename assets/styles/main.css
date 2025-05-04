@@ -531,7 +531,7 @@ button.pay_now.ptn a {
 .Ads_Sec {
   height: 256px;
   margin: 25px 0;
-  background: no-repeat center center / contain;
+  background: no-repeat center center / cover;
 }
 
 /*=============================
@@ -877,7 +877,7 @@ p.Author_data {
 
 .footer {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 4fr 7fr 1fr;
   gap: 20px;
   background-color: #f9f9f9;
   padding: 40px 20px;
@@ -885,6 +885,10 @@ p.Author_data {
   line-height: 2;
 }
 
+.grid_footer {
+  display: flex;
+  justify-content: space-between;
+}
 .footer .column {
   margin: 10px;
 }
@@ -1002,8 +1006,13 @@ p.Vector {
   .Author_book {
     height: 24vh;
   }
+
+  .Author_book {
+    height: 219px;
+  }
+
   .Ads_Sec {
-    height: 15vh;
+    height: 192px;
   }
   .footer-top {
     height: 10vh;
@@ -1066,6 +1075,77 @@ p.Vector {
     top: 35%;
     color: #fff;
     z-index: 1000;
+  }
+  .column.books-img {
+    display: none;
+  }
+  .column.books-img {
+    display: none;
+  }
+
+  .column {
+    text-align: right;
+  }
+  .column.books-img {
+    display: none;
+  }
+
+  .column {
+    justify-content: start;
+    text-align: right;
+  }
+
+  .grid_footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column.footer-logo {
+    display: flex;
+  }
+
+  .column.footer-logo .flex {
+    display: grid;
+    /* align-items: center; */
+    justify-content: center;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .footer-social {
+    display: flex;
+  }
+
+  .Selections_quotes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Selections_img img {
+    width: 361px;
+    height: 270px;
+    box-shadow: 0px 4px 4px 0px #f4f4f440;
+    border-radius: 14px;
+    width: 157px;
+    height: 143px;
+    top: 2926px;
+    left: 41px;
+    border-radius: 14px;
+  }
+  .Selections {
+    height: auto;
+    border-radius: 14px;
+    border-width: 1.5px;
+    border: 1.5px solid #f4f4f4;
+    text-align: center;
+    width: auto;
+    box-shadow: 0px 4px 4px 0px #f4f4f440;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Selections_quotes {
+    gap: 10px;
   }
 }
 
