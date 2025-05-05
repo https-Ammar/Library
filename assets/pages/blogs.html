@@ -31,6 +31,7 @@
             position: fixed;
             top: 0;
             width: 100%;
+            z-index: 9999999;
         }
     </style>
     <style>
@@ -88,6 +89,12 @@
             color: #444444;
         }
 
+        .page-link.active {
+            background: #851C65;
+            color: white !important;
+            background: #851C65;
+        }
+
         button.btn.btn-read.w-100 {
             background: #851C65;
             margin-top: 3vh;
@@ -106,12 +113,6 @@
 
             color: #757575;
 
-        }
-
-        .row.g-4,
-        nav.mt-5.d-flex.justify-content-center {
-            z-index: -1;
-            position: relative;
         }
     </style>
 
@@ -472,14 +473,29 @@
             </div>
 
             <!-- Pagination -->
+
+
             <nav class="mt-5 d-flex justify-content-center">
                 <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#" data-page="4">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#" data-page="3">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
+                    <li class="page-item"><a class="page-link active" href="#" data-page="1">1</a></li>
                 </ul>
             </nav>
+
+            <script>
+                document.querySelectorAll('.page-link').forEach(link => {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        document.querySelectorAll('.page-link').forEach(l => l.classList.remove('active'));
+                        this.classList.add('active');
+                        const page = this.getAttribute('data-page');
+                        console.log("تم اختيار الصفحة رقم: " + page);
+                    });
+                });
+            </script>
+
         </div>
 
 
