@@ -865,6 +865,23 @@ p.Author_data {
   height: 269px;
 }
 
+p {
+}
+
+.flex.foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 65px;
+  padding: 0 20px;
+  background: linear-gradient(
+    267.61deg,
+    var(--header-gradient-start) 38.06%,
+    var(--header-gradient-end) 96.12%
+  );
+}
+
 @media (max-width: 768px) {
   .footer {
     display: block;
