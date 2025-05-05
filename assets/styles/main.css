@@ -378,7 +378,8 @@ a.active_link {
 section.Library ul,
 section.Favorite.Books ul,
 section.Publishing.House ul,
-section.quotes ul {
+section.quotes ul,
+.py-5 ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
