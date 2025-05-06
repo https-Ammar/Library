@@ -305,21 +305,6 @@ p {
 =       Shop       =
 =============================*/
 
-section.shop_sec {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.shop_card {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 331px;
-  height: 158px;
-  border-radius: 5px;
-}
 /*=============================
 =       General Button       =
 =============================*/
@@ -369,7 +354,7 @@ a.active_link {
 }
 
 /*=============================
-=          Library           =
+=          Library       ammar    =
 =============================*/
 .container_ {
   padding: 25px;
@@ -384,12 +369,6 @@ section.quotes ul,
   align-items: center;
   justify-content: space-between;
   margin: 25px 0;
-}
-
-.Library_card {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
 }
 
 .card_chil {
@@ -491,11 +470,6 @@ button.pay_now.ptn a {
   height: auto;
 }
 
-.category-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 1.2rem;
@@ -505,8 +479,7 @@ button.pay_now.ptn a {
 .category-icon {
   width: 82px;
   height: 82px;
-  top: 794px;
-  /* left: 977px; */
+
   border-width: 1px;
   background: teal;
   border-radius: 50%;
@@ -514,6 +487,10 @@ button.pay_now.ptn a {
   align-items: center;
   justify-content: center;
   border: 1px solid #851c65;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background-size: cover;
+  background-position: center center;
 }
 
 .category-card h3 {
@@ -532,57 +509,45 @@ button.pay_now.ptn a {
   margin: 10px;
 }
 
-.Selections_quotes {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-}
+/*  */
 
-.Selections {
-  height: 407px;
-  border-radius: 14px;
-  border-width: 1.5px;
-  border: 1.5px solid #f4f4f4;
-  text-align: center;
-
-  box-shadow: 0px 4px 4px 0px #f4f4f440;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.Selections_text h2 {
-  color: #851c65;
-  /* font-family: Almarai; */
+h5.card-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
-  /* text-align: right; */
-  margin: 10px 0;
+  color: #851c65;
 }
 
-.Selections_img img {
-  height: 270px;
-  box-shadow: 0px 4px 4px 0px #f4f4f440;
+p.card-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
 
+.card.h-100.text-center.p-3 {
+  border: 1.5px solid #f4f4f4;
+  border-radius: 14px;
+  border-width: 1.5px;
+  box-shadow: 0px 4px 4px 0px #f4f4f440;
+}
+.card.h-100.text-center.p-3 img {
   border-radius: 14px;
 }
 
-.category-icon {
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-/* التجاوب مع الشاشات الصغيرة */
-@media (max-width: 768px) {
-  .swiper-slide {
-    width: 150px !important;
+@media screen and (max-width: 992px) {
+  h5.card-title {
+    font-size: small;
+  }
+
+  p.card-text {
+    font-size: 14px;
+  }
+  .card-body {
+    margin: 10px 0 !important;
   }
 }
+/*  */
 
 /*=============================
 =      Publishing House      =
@@ -612,7 +577,7 @@ button.pay_now.ptn a {
   height: 129px;
 }
 /*=============================
-=       Author Section       =
+=       Author Section       ammar =
 =============================*/
 .Author_book {
   height: 293px;
@@ -640,15 +605,7 @@ p.Author_data {
 /*=============================
 =      Favorite Books        =
 =============================*/
-.Favorite_Books {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
 
-.nav_left ul select {
-  border: navajowhite;
-}
 .icon-container {
   position: relative;
   width: 50px;
@@ -1332,4 +1289,17 @@ section.terms.and.condition {
   p.price {
     font-size: 12px;
   }
+}
+
+.offcanvas {
+  right: auto !important;
+  left: 0 !important;
+}
+#mainNavbar {
+  right: 0 !important;
+  left: auto !important;
+  transform: translateX(100%);
+}
+#mainNavbar.show {
+  transform: translateX(0);
 }

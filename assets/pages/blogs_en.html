@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Library</title>
+    <title>Blogs</title>
 
     <!-- Normalize and Main CSS -->
     <link rel="stylesheet" href="../styles/normalize.css">
@@ -25,13 +25,103 @@
     <link href="../styles/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles/LTR.css">
 
+    <style>
+        .nav_bar_ {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999999;
+        }
+    </style>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .btn-read {
+            background-color: #6f42c1;
+            color: #fff;
+        }
+
+        .btn-read:hover {
+            background-color: #5936a7;
+        }
+
+        .pagination .page-link {
+            color: #851C65;
+        }
+
+        .pagination .active .page-link {
+            background-color: #851C65;
+            border-color: #851C65;
+            color: white;
+        }
+
+        .card-img-top {
+
+            height: 362px;
+            top: 644px;
+            left: 629px;
+            border-radius: 5px;
+            border-width: 1px;
+            background: url(../images/blog.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        h5.card-title {
+            /* font-family: Almarai; */
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: 0%;
+            text-align: right;
+            color: #851C65;
+        }
+
+        p.card-text {
+            color: #444444;
+        }
+
+        .page-link.active {
+            background: #851C65;
+            color: white !important;
+            background: #851C65;
+        }
+
+        button.btn.btn-read.w-100 {
+            background: #851C65;
+            margin-top: 3vh;
+        }
+
+        button.btn.btn-read.w-100 a {
+            color: white;
+        }
+
+        span.card-date {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 0%;
+
+
+            color: #757575;
+
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="../styles/LTR.css">
 
 </head>
 
 <body>
-
 
 
     <div class="nav_bar_">
@@ -195,80 +285,184 @@
 
     <main class="container_">
 
+
         <section class="terms and condition">
 
             <div class="text_condition">
                 <h2>
-                    Terms and Conditions
+                    Articles
                 </h2>
                 <div class="path_link">
-                    <a href="/index.html" class="active">Home</a>
+                    <a href="#" class="active">Home</a>
                     <span>/</span>
-                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Articles</a>
                 </div>
             </div>
 
         </section>
 
-        <section class="Data_terms">
 
-            <div class="block_titel">
-                <h2>
-                    Privacy and Confidentiality
-                </h2>
-                <p>Al Jazeera Library ensures the confidentiality and privacy of its users and visitors. The library
-                    management makes every effort to provide high-quality service to all users. The privacy policy and
-                    confidentiality terms below are considered part of the site's terms and conditions. Users should
-                    regularly review the privacy policy for any updates. Al Jazeera is not obligated to announce any
-                    changes made to these terms. By using the site, you acknowledge and agree to the terms and any
-                    ongoing modifications.</p>
-            </div>
 
-            <div class="block_titel">
-                <h2>
-                    How Al Jazeera Collects Personal Information
-                </h2>
-                <p>
-                    Al Jazeera does not collect personal information from visiting users unless they voluntarily choose
-                    to create an account. Creating an account implies acceptance of the privacy policy and terms of use.
-                </p>
-            </div>
 
-            <div class="block_titel">
-                <h2>
-                    Collected Personal Information
-                </h2>
-                <p>The following information is collected for the purpose of shipping and delivering products:
-                    registered name, shipping address, email, phone number.</p>
-            </div>
 
-            <div class="block_titel">
-                <h2>
-                    Contact Us
-                </h2>
-                <p>If you have any comments or inquiries regarding the privacy policy, please contact us through the
-                    Takween website.</p>
-            </div>
-
-            <div class="block_titel">
-                <h2>
-                    Orders and Payment
-                </h2>
-                <p>All orders are subject to book availability. Payment is processed through the site's approved
-                    electronic methods.</p>
-            </div>
-
-            <div class="block_titel">
-                <h2>
-                    Shipping and Delivery Policy
-                </h2>
-                <p>Orders are delivered within the timeframe specified at checkout. Shipping times may vary depending on
-                    the geographic location.</p>
-            </div>
 
         </section>
 
+
+
+
+
+        <div class=" py-5">
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card h-100">
+
+                        <div class="card-img-top"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Creative Writing Exercise: "The Character Through the Mirror"</h5>
+                            <span class="card-date">Published on March 22, 2025</span>
+                            <p class="card-text">
+                                If you're struggling with writing because your characters feel unclear, distant, or
+                                simply underdeveloped,
+                                this exercise is designed to help you bridge the gap between you and your characters.
+                                It will support you in continuing your work and freeing yourself from writer's block.
+                                The goal of this exercise is to help you build a fully rounded character by exploring
+                                their appearance,
+                                inner thoughts, and how they interact with the world.
+                            </p>
+
+                            <button class="btn btn-read w-100">
+                                <a href="#">Read More</a>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card h-100">
+
+                        <div class="card-img-top"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Creative Writing Exercise: "The Character Through the Mirror"</h5>
+                            <span class="card-date">Published on March 22, 2025</span>
+                            <p class="card-text">
+                                If you're struggling with writing because your characters feel unclear, distant, or
+                                simply underdeveloped,
+                                this exercise is designed to help you bridge the gap between you and your characters.
+                                It will support you in continuing your work and freeing yourself from writer's block.
+                                The goal of this exercise is to help you build a fully rounded character by exploring
+                                their appearance,
+                                inner thoughts, and how they interact with the world.
+                            </p>
+
+                            <button class="btn btn-read w-100">
+                                <a href="#">Read More</a>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card h-100">
+
+                        <div class="card-img-top"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Creative Writing Exercise: "The Character Through the Mirror"</h5>
+                            <span class="card-date">Published on March 22, 2025</span>
+                            <p class="card-text">
+                                If you're struggling with writing because your characters feel unclear, distant, or
+                                simply underdeveloped,
+                                this exercise is designed to help you bridge the gap between you and your characters.
+                                It will support you in continuing your work and freeing yourself from writer's block.
+                                The goal of this exercise is to help you build a fully rounded character by exploring
+                                their appearance,
+                                inner thoughts, and how they interact with the world.
+                            </p>
+
+                            <button class="btn btn-read w-100">
+                                <a href="#">Read More</a>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card h-100">
+
+                        <div class="card-img-top"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Creative Writing Exercise: "The Character Through the Mirror"</h5>
+                            <span class="card-date">Published on March 22, 2025</span>
+                            <p class="card-text">
+                                If you're struggling with writing because your characters feel unclear, distant, or
+                                simply underdeveloped,
+                                this exercise is designed to help you bridge the gap between you and your characters.
+                                It will support you in continuing your work and freeing yourself from writer's block.
+                                The goal of this exercise is to help you build a fully rounded character by exploring
+                                their appearance,
+                                inner thoughts, and how they interact with the world.
+                            </p>
+
+                            <button class="btn btn-read w-100">
+                                <a href="#">Read More</a>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Pagination -->
+
+
+            <nav class="mt-5 d-flex justify-content-center">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#" data-page="4">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#" data-page="3">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
+                    <li class="page-item"><a class="page-link active" href="#" data-page="1">1</a></li>
+                </ul>
+            </nav>
+
+            <script>
+                document.querySelectorAll('.page-link').forEach(link => {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        document.querySelectorAll('.page-link').forEach(l => l.classList.remove('active'));
+                        this.classList.add('active');
+                        const page = this.getAttribute('data-page');
+                        console.log("تم اختيار الصفحة رقم: " + page);
+                    });
+                });
+            </script>
+
+        </div>
+
+
     </main>
+
+
 
 
     <footer>
@@ -316,6 +510,7 @@
                 <img src="../images/book.png" alt="Books">
             </div>
         </div>
+
         <div class="flex foot">
             <p style="text-align: center; font-family: 'Cairo', sans-serif;">
                 &copy; 2025 All rights reserved to (<strong>Al Jazeera Library</strong>)
@@ -325,9 +520,16 @@
     </footer>
 
 
+
     <script src="../components/Footer.js"></script>
+
     <script src="../components/Header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
 
 </body>
 
