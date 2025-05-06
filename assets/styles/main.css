@@ -1502,7 +1502,8 @@ h4.mb-4.fw-bold {
   margin-top: 5vh;
 }
 
-.d-flex .d-flex {
+.d-flex .d-flex,
+.d-flex.gap {
   gap: 14px;
   margin: 10px 0;
   display: flex;
@@ -1540,13 +1541,18 @@ h4.mb-4.fw-bold {
     margin: 20px 0;
   }
 
-  .d-flex .d-flex {
+  .d-flex .d-flex,
+  .d-flex.gap {
     display: block;
     justify-content: flex-start;
   }
   h4.mb-4.fw-bold {
     margin: 0 !important;
     font-size: larger;
+  }
+
+  .row.box_shadow {
+    padding: 25px 10px;
   }
 }
 /* contact us */
