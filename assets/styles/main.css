@@ -569,6 +569,14 @@ p.card-text {
   letter-spacing: 0%;
 }
 
+.card-img-top.cover {
+  height: 270px;
+
+  border-radius: 14px;
+  background-position: center center;
+  background-size: cover;
+}
+
 .card.h-100.text-center.p-3 {
   border: 1.5px solid #f4f4f4;
   border-radius: 14px;
@@ -1508,7 +1516,6 @@ h4.mb-4.fw-bold {
   margin: 10px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .col-md-5.mb-4.contact-info .d-flex.align-items-center {
   margin: 10px 0;
@@ -1613,7 +1620,7 @@ h5.card-title {
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 0%;
-  text-align: right;
+  text-align: center !important;
   color: #851c65;
 }
 
@@ -1622,9 +1629,9 @@ p.card-text {
 }
 
 .page-link.active {
-  background: #851c65;
+  background: #851c65 !important;
   color: white !important;
-  background: #851c65;
+  background: #851c65 !important;
 }
 
 button.btn.btn-read.w-100 {
@@ -1755,5 +1762,12 @@ span.card-date {
     line-height: 30px;
     letter-spacing: 0%;
     /* text-align: right; */
+  }
+  .card-img-top.cover {
+    height: 143px;
+  }
+
+  .card-body {
+    padding: 5px;
   }
 }

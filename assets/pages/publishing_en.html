@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Blogs</title>
+    <title>Publishing</title>
 
     <!-- Normalize and Main CSS -->
     <link rel="stylesheet" href="../styles/normalize.css">
@@ -98,7 +98,6 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <a class="navbar-brand" href="#">
                     <img src="../images/logo.png" alt="Logo">
                 </a>
@@ -136,7 +135,7 @@
                     </div>
                 </div>
 
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="mainNavbar">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="mainNavbar">
                     <div class="offcanvas-header">
                         <a class="navbar-brand" href="#">
                             <img src="../images/logo.png" alt="Logo">
@@ -356,6 +355,14 @@
             });
         });
     </script>
+
+    <style>
+        /* تأكيد أن offcanvas-end يظهر من اليمين في RTL */
+        .offcanvas-end {
+            left: auto !important;
+            right: 0 !important;
+        }
+    </style>
 
 </body>
 

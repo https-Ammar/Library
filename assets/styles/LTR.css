@@ -45,6 +45,11 @@ ul.pagination {
   direction: rtl;
 }
 
+.col-md-7 form input,
+textarea {
+  text-align: left;
+}
+
 @media (min-width: 768px) {
   .author-col {
     flex: 0 0 33.3333%;
@@ -56,3 +61,5 @@ ul.pagination {
     flex: 0 0 20%;
   }
 }
+
+

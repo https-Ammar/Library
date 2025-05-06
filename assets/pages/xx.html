@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة الكترونية</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <style>
+        .nav_bar_ {
+            background-color: #f8f9fa;
+        }
+
+        .bar {
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .bar p {
+            margin: 0;
+        }
+
+        .bar ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .bar ul li a svg {
+            fill: #000;
+        }
+
+        .icon-container {
+            position: relative;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        .badge {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            background-color: red;
+            color: #fff;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login a {
+            color: #fff;
+            background-color: #007bff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav_bar_">
+        <header class="header d-flex flex-row-reverse justify-content-between align-items-center">
+            <div class="d-flex align-items-center bar">
+                <p>مكتبة الكترونية ومنصة ثقافية مقرها الامارات.</p>
+                <ul class="d-flex">
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067z" />
+                            </svg></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container-fluid">
+
+                <!-- الزر لفتح القائمة الجانبية من اليمين -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="d-flex align-items-center order-lg-last">
+                    <div class="icon-container" id="cart-icon">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4375 9.625V5.5..." stroke="#222" stroke-width="1.5" />
+                        </svg>
+                        <div class="badge" id="cart-count">3</div>
+                    </div>
+
+                    <div class="icon-container" id="fav-icon">
+                        <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.75 10C0.6875 7.25 1.375 3.125..." stroke="#222" stroke-width="1.5" />
+                        </svg>
+                        <div class="badge" id="fav-count">5</div>
+                    </div>
+
+                    <button class="login"><a href="#">تسجيل الدخول</a></button>
+
+                    <div class="dropdown">
+                        <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            En
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ar</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- القائمة الجانبية تفتح من اليمين (offcanvas-end) -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="mainNavbar">
+                    <div class="offcanvas-header">
+                        <button class="login"><a href="#">تسجيل الدخول</a></button>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">المكتبة</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">كتب ورقية</a></li>
+                                    <li><a class="dropdown-item" href="#">كتب إلكترونية</a></li>
+                                    <li><a class="dropdown-item" href="#">مجلدات</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">الدكان</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">ملابس</a></li>
+                                    <li><a class="dropdown-item" href="#">إكسسوارات</a></li>
+                                    <li><a class="dropdown-item" href="#">أدوات منزلية</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">الكترونيات</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">هواتف</a></li>
+                                    <li><a class="dropdown-item" href="#">كمبيوترات</a></li>
+                                    <li><a class="dropdown-item" href="#">أجهزة ذكية</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">المدونة</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">أحدث المقالات</a></li>
+                                    <li><a class="dropdown-item" href="#">الأكثر قراءة</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
