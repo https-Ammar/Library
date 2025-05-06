@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>نموذج التواصل</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .contact-section {
+            padding: 50px;
+        }
+
+        .contact-info i {
+            color: #6f1d55;
+            margin-left: 5px;
+        }
+
+        .btn-send {
+            background-color: #6f1d55;
+            color: white;
+            width: 100%;
+        }
+
+        .btn-send:hover {
+            background-color: #5a1544;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container contact-section">
+        <div class="row">
+            <!-- معلومات التواصل -->
+            <div class="col-md-5 mb-4 contact-info">
+                <h4 class="mb-4 fw-bold">للاستفسارات والدعم، يُرجى التواصل معنا</h4>
+                <p><i class="bi bi-telephone-fill"></i> <strong>الهاتف:</strong> 0096598810440 - 0096598810449</p>
+                <p><i class="bi bi-envelope-fill"></i> <strong>البريد الالكتروني:</strong> aljazera@gmail.com</p>
+                <p><i class="bi bi-geo-alt-fill"></i> <strong>العنوان:</strong><br>
+                    منصة الجزيرة للكتابة الإبداعية، الشويخ الصناعية ٢، شارع ١٤،<br>
+                    مجمع لايف سنتر (يوركا الشويخ)، الميزانين، مقابل إدارة الهجرة.
+                </p>
+            </div>
+
+            <!-- نموذج التواصل -->
+            <div class="col-md-7">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">اسم المستخدم</label>
+                        <input type="text" class="form-control" id="name" placeholder="اسم المستخدم">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">البريد الالكتروني</label>
+                        <input type="email" class="form-control" id="email" placeholder="البريد الالكتروني">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">الرسالة</label>
+                        <textarea class="form-control" id="message" rows="6"
+                            placeholder="اكتب رسالتك هنا..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-send">ارسال</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+
+</html>
