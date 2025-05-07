@@ -57,6 +57,27 @@ body {
   z-index: 99999;
 }
 
+a.dropdown-item.en_ar {
+  float: inline-start !important;
+  border: none;
+
+  width: fit-content;
+  text-align: end;
+  background: #b11981;
+  width: max-content;
+  float: inline-end;
+  border-radius: 5px;
+  color: white;
+  margin-top: -6px;
+}
+ul.dropdown-menu.show {
+  border: navajowhite !important;
+}
+
+ul.dropdown-menu.trans.show {
+  direction: rtl;
+}
+
 @media screen and (min-width: 992px) {
   ul.dropdown-menu.show {
     width: 146px;

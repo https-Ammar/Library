@@ -71,3 +71,18 @@ textarea {
   -ms-transform: none;
   -o-transform: none;
 }
+
+.a.dropdown-item.en_ar {
+  text-align: end;
+  background: #b11981;
+  width: max-content;
+  float: inline-end;
+  border-radius: 5px;
+  color: white;
+  margin-top: -6px;
+  float: inline-end !important;
+}
+
+ul.dropdown-menu.show {
+  border: navajowhite !important;
+}
