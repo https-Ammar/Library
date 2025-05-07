@@ -62,4 +62,12 @@ textarea {
   }
 }
 
-
+#mainNavbar {
+  right: auto !important;
+  left: 0 !important;
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+}
