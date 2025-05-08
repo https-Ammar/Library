@@ -78,6 +78,17 @@ ul.dropdown-menu.trans.show {
   direction: rtl;
 }
 
+.flex.bar ul li svg,
+.nav_right ul li svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+.nav_bar_ {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 @media screen and (min-width: 992px) {
   ul.dropdown-menu.show {
     width: 146px;
@@ -114,17 +125,6 @@ ul.dropdown-menu.trans.show {
   }
 }
 
-.flex.bar ul li svg,
-.nav_right ul li svg {
-  width: 24px;
-  height: 24px;
-  color: white;
-}
-.nav_bar_ {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 /*  */
 
 /* 00000000 */
@@ -1424,7 +1424,7 @@ section.terms.and.condition {
 .container.py-5 .text-masseg {
   /* font-family: Almarai; */
   font-weight: 400;
-  font-size: 28px;
+  font-size: larger;
   line-height: 25px;
   letter-spacing: 0%;
   /* text-align: right; */
@@ -1443,8 +1443,7 @@ h2.text-center.mb-3.text-primary {
 
 .col-md-7 form input,
 textarea {
-  height: 78px;
-
+  padding: 15px;
   background: none !important;
   border: none !important;
   outline: none !important;
@@ -1468,7 +1467,8 @@ textarea#message {
 
 button.btn.btn-send {
   width: 453px;
-  height: 71px;
+
+  padding: 15px;
   top: 1396px;
   left: 940px;
   border-radius: 10px;
@@ -1482,7 +1482,7 @@ button.btn.btn-send {
 button.btn.btn-send {
   /* font-family: Almarai; */
   font-weight: 700;
-  font-size: 22px;
+  font-size: larger;
   line-height: 100%;
   letter-spacing: 0%;
   /* text-align: right; */
@@ -1493,7 +1493,7 @@ p.titel_addres,
 .col-md-5.mb-4.contact-info a {
   /* font-family: Almarai; */
   font-weight: 400;
-  font-size: 22px;
+  font-size: large;
   line-height: 25px;
   letter-spacing: 0%;
   /* text-align: right; */
@@ -1502,7 +1502,7 @@ p.titel_addres,
 
 .d-flex span {
   font-weight: 400;
-  font-size: 22px;
+  font-size: large;
   line-height: 25px;
 
   color: #851c65;
@@ -1778,4 +1778,42 @@ span.card-date {
   .card-body {
     padding: 5px;
   }
+}
+
+.author-col {
+  flex: 0 0 50%;
+  /* 2 أعمدة في الفون */
+}
+
+@media (min-width: 768px) {
+  .author-col {
+    flex: 0 0 33.3333%;
+    /* 3 أعمدة في التابلت */
+  }
+}
+
+@media (min-width: 992px) {
+  .author-col {
+    flex: 0 0 20%;
+    /* 5 أعمدة في اللابتوب */
+  }
+}
+
+.page-item:last-child .page-link {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.d-flex.align-items-center .d-flex svg,
+.d-flex.gap svg {
+  width: 20px;
+  height: 20px;
 }

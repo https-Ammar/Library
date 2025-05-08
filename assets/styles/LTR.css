@@ -3,7 +3,9 @@ h5.card-title,
 .column,
 .block_titel p,
 .block_titel h2,
-.card-body.Author_text p {
+.card-body.Author_text p,
+.col-md-7 form input,
+textarea {
   text-align: left;
 }
 
@@ -13,13 +15,10 @@ h5.card-title,
   border-right: none;
 }
 
-body {
-  direction: ltr;
-  text-align: left;
-}
-
+body,
 .container-fluid {
   direction: ltr;
+  text-align: left;
 }
 
 .nav_bar_ {
@@ -41,14 +40,6 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0,
 .author-col {
   flex: 0 0 50%;
 }
-ul.pagination {
-  direction: rtl;
-}
-
-.col-md-7 form input,
-textarea {
-  text-align: left;
-}
 
 @media (min-width: 768px) {
   .author-col {
@@ -63,26 +54,25 @@ textarea {
 }
 
 #mainNavbar {
-  right: auto !important;
   left: 0 !important;
+  right: auto !important;
   transform: none;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
 }
 
-.a.dropdown-item.en_ar {
+a.dropdown-item.en_ar {
   text-align: end;
   background: #b11981;
   width: max-content;
-  float: inline-end;
+  float: inline-end !important;
   border-radius: 5px;
   color: white;
   margin-top: -6px;
-  float: inline-end !important;
 }
 
 ul.dropdown-menu.show {
   border: navajowhite !important;
+}
+
+ul.pagination {
+  direction: rtl;
 }
