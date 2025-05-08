@@ -3,194 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>سلايدر تصنيفات</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dongle&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <link href="../styles/bootstrap.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>٣ صور ثابتة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <style>
-        .swiper {
-            padding: 10px;
-            /* تقليل المسافة حول السلايدر */
-        }
-
-        .swiper-wrapper {
-            gap: 10px;
-            justify-content: center;
-
-
-        }
-
-        .swiper-wrapper {
-            gap: 10px;
-            justify-content: center;
-        }
-
-
-
-        .category-item {
+        .card-fixed {
+            background-color: #f7f1e5;
+            border-radius: 15px;
+            padding: 20px;
             text-align: center;
         }
 
-        .swiper {
-            padding: 20px 0;
+        .card-fixed img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
 
-
-
-        .category-item {
-            margin: 0;
-            padding: 0;
-            width: fit-content;
-        }
-
-        .category-item img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 2px solid #7b4c74;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .category-item span {
-            display: block;
-            margin-top: 5px;
-            color: #7b4c74;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        /* تخصيص الأسهم */
-        .swiper-button-next,
-        .swiper-button-prev {
-            color: #7b4c74;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
-            top: 40%;
-        }
-
-        .swiper-button-next::after,
-        .swiper-button-prev::after {
-            font-size: 18px;
+        .btn-black {
+            background-color: black;
+            color: white;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
             font-weight: bold;
         }
     </style>
 </head>
 
-<body>
+<body class="bg-light">
 
     <div class="container py-5">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
+        <div class="row text-center">
 
-                <!-- عناصر التصنيف -->
-                <div class="swiper-slide">
-                    <div class="category-item">
-                        <img src="img1.jpg" alt="فلسفة">
-                        <span>فلسفة</span>
-                    </div>
+            <div class="col-4">
+                <div class="card-fixed">
+                    <img src="your-image1.jpg" alt="المكتبة">
+                    <h5>المكتبة</h5>
+                    <p>الكتب، القصص و الروايات</p>
+                    <button class="btn-black">تصفح</button>
                 </div>
-
-                <div class="swiper-slide">
-                    <div class="category-item">
-                        <img src="img2.jpg" alt="فنون">
-                        <span>فنون</span>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="category-item">
-                        <img src="img3.jpg" alt="أساطير">
-                        <span>أساطير</span>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="category-item">
-                        <img src="img4.jpg" alt="تراث">
-                        <span>تراث</span>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="category-item">
-                        <img src="img5.jpg" alt="أدب">
-                        <span>أدب</span>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="category-item">
-                        <img src="img6.jpg" alt="تاريخ">
-                        <span>تاريخ</span>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="category-item">
-                        <img src="img7.jpg" alt="أطفال">
-                        <span>أطفال</span>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="category-item">
-                        <img src="img8.jpg" alt="إسلامي">
-                        <span>إسلامي</span>
-                    </div>
-                </div>
-
             </div>
 
-            <!-- الأسهم -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="col-4">
+                <div class="card-fixed">
+                    <img src="your-image2.jpg" alt="الكترونيات">
+                    <h5>الكترونيات</h5>
+                    <p>اخر العروض و الخصومات</p>
+                    <button class="btn-black">تسوق</button>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card-fixed">
+                    <img src="your-image3.jpg" alt="المتجر">
+                    <h5>المتجر</h5>
+                    <p>اكسسوارات و مستلزمات مكتبية</p>
+                    <button class="btn-black">تسوق</button>
+                </div>
+            </div>
+
         </div>
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
-            spaceBetween: 10,
-            loop: true,
-            centeredSlides: true, // <<< هذا هو السطر الجديد المهم
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            breakpoints: {
-                576: {
-                    slidesPerView: 4
-                },
-                768: {
-                    slidesPerView: 5
-                },
-                1024: {
-                    slidesPerView: 7
-                }
-            }
-        });
-
-
-    </script>
 
 </body>
 

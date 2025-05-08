@@ -616,9 +616,6 @@ p.card-text {
   p.card-text {
     font-size: 14px;
   }
-  .card-body {
-    margin: 10px 0 !important;
-  }
 }
 /*  */
 
@@ -1776,7 +1773,7 @@ span.card-date {
   }
 
   .card-body {
-    padding: 5px;
+    padding: 5px !important;
   }
 }
 
@@ -1816,4 +1813,21 @@ span.card-date {
 .d-flex.gap svg {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .block_titel p {
+    font-weight: 300;
+    font-size: large;
+    line-height: 30px;
+    letter-spacing: 0%;
+    /* text-align: right; */
+  }
+  .card-img-top.cover {
+    height: 143px;
+  }
+
+  .card-body {
+    padding: 5px !important;
+  }
 }
