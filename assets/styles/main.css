@@ -1008,11 +1008,8 @@ p.Vector {
     padding: 15px;
   }
 
-  .Selections_img img,
-  .Selections,
-  .Publishing_card {
-    width: auto;
-  }
+
+  
   .Publishing_House {
     gap: 10px;
   }
@@ -1831,3 +1828,5 @@ span.card-date {
     padding: 5px !important;
   }
 }
+
+
