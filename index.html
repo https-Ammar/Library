@@ -41,76 +41,6 @@
 
     <!-- Custom CSS -->
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .carousel-wrapper {
-            position: relative;
-            padding: 0 60px;
-            /* مساحة للأسهم خارج السلايدر */
-            max-width: 1200px;
-            margin: 0px auto;
-        }
-
-        .owl-carousel {
-            position: relative;
-        }
-
-        .owl-nav {
-            position: absolute;
-            top: 20%;
-            width: calc(100% + 120px);
-            /* تعويض البادينج */
-            left: -60px;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-            pointer-events: none;
-        }
-
-        .owl-nav button.owl-prev,
-        .owl-nav button.owl-next {
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            border: none;
-            font-size: 1.8rem;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            pointer-events: all;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .owl-nav button.owl-prev:hover,
-        .owl-nav button.owl-next:hover {
-            background: rgba(0, 0, 0, 0.9);
-        }
-
-        .item {
-
-            text-align: center;
-            color: white;
-            border-radius: 8px;
-            font-size: 24px;
-            display: flex;
-            /* align-items: center; */
-            justify-content: center;
-        }
-
-
-
-        .carousel-wrapper {
-            direction: ltr !important;
-        }
-    </style>
 
 
 </head>
@@ -352,122 +282,7 @@
                             <option value="نجيب محفوظ">
                         </datalist>
                     </div>
-                    <style>
-                        .search-container {
-                            background-color: white;
-                            border-radius:
-                                6px;
-                            padding: 0.5em 1em;
-                            display: flex;
-                            align-items: center;
-                            width:
-                                734px;
-                            max-width:
-                                734px;
-                            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-                            display: flex;
-                            align-items: center;
 
-                        }
-
-                        .search-container input {
-                            border: none;
-                            font-size: 1em;
-                            padding: 0.7em;
-                            width: 100%;
-                            outline: none;
-                            direction: rtl;
-                        }
-
-                        .search-icon {
-                            margin-right: 10px;
-                            font-size: 1.2em;
-                            color: gray;
-                        }
-
-                        .block_search {
-                            text-align: right;
-                        }
-
-                        .block_search h1 {
-                            margin: 0;
-                            padding: 0;
-                            /* font-family: Almarai; */
-                            font-weight: 400;
-                            font-size: 33px;
-                            line-height: 26px;
-                            letter-spacing: 0%;
-                            text-align: right;
-                            margin: 20px 0;
-                        }
-
-                        .block_search p {
-                            /* font-family: Almarai; */
-                            font-weight: 400;
-                            font-size: 18px;
-                            line-height: 26px;
-                            letter-spacing: 0%;
-                            text-align: right;
-                            margin: 10px 0;
-                        }
-
-                        aside.aside_slider {
-                            margin-top: 20vh;
-                            padding: 25px;
-                        }
-
-                        @media screen and (max-width:992px) {
-
-
-
-
-
-                            section.Library .row .col-lg-3.col-md-4.col-6.mb-4 {
-                                padding: 5px;
-                            }
-
-                            aside.aside_slider {
-                                margin-top: 15vh;
-                                padding: 0;
-                            }
-
-
-                            .search-container {
-                                width: 100%;
-                            }
-
-                            .block_search {
-                                text-align: center;
-                            }
-
-                            .block_search h1 {
-                                /* font-family: Almarai; */
-                                font-weight: 400;
-                                font-size: 20px !important;
-                                line-height: 26px;
-                                letter-spacing: 0%;
-                                text-align: center;
-                                margin-top: 0;
-                            }
-
-
-
-                            .block_search p {
-                                /* font-family: Almarai; */
-                                font-weight: 400;
-                                font-size: 14px;
-                                line-height: 26px;
-                                letter-spacing: 0%;
-                                text-align: center;
-
-                            }
-
-                            .overlay-content,
-                            section.position_slider {
-                                border-radius: 0 !important;
-                            }
-                        }
-                    </style>
                 </div>
 
             </div>
@@ -507,51 +322,7 @@
                 </button>
             </div>
 
-            <style>
-                .carousel-image {
-                    height:
-                        373px;
-                    background-size: cover;
-                    background-position: center;
-                    overflow: hidden;
-                }
 
-                .overlay-content {
-                    position: absolute;
-
-                    width: 100%;
-                    height: 100%;
-                    z-index: 10;
-                    padding: 1rem 2rem;
-                    background: rgba(0, 0, 0, 0.4);
-                    border-radius: 10px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                @media (max-width: 768px) {
-                    .overlay-content h1 {
-                        font-size: 1.5rem;
-                    }
-
-                    .overlay-content p {
-                        font-size: 1rem;
-                    }
-                }
-
-                section.position_slider {
-                    height: 373px;
-                    margin-bottom: 1vh;
-                    overflow: hidden;
-                }
-
-
-                section.position_slider {
-
-                    border-radius: 5px;
-                }
-            </style>
         </section>
 
     </aside>
@@ -1477,28 +1248,155 @@
 
     <!-- Inline Styles -->
 
+
     <style>
+        /* === Carousel Wrapper === */
+        .carousel-wrapper {
+            position: relative;
+            padding: 0 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            direction: ltr !important;
+        }
+
+        .owl-carousel {
+            position: relative;
+        }
+
+        .owl-nav {
+            position: absolute;
+            top: 20%;
+            left: -60px;
+            width: calc(100% + 120px);
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        .owl-nav button.owl-prev,
+        .owl-nav button.owl-next {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            font-size: 1.8rem;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: all;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .owl-nav button.owl-prev:hover,
+        .owl-nav button.owl-next:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .item {
+            text-align: center;
+            color: white;
+            border-radius: 8px;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .owl-dots {
+            display: none;
+        }
+
+        /* === Search Section === */
+        .search-container {
+            background-color: white;
+            border-radius: 6px;
+            padding: 0.5em 1em;
+            display: flex;
+            align-items: center;
+            width: 734px;
+            max-width: 734px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-container input {
+            border: none;
+            font-size: 1em;
+            padding: 0.7em;
+            width: 100%;
+            outline: none;
+            direction: rtl;
+        }
+
+        .search-icon {
+            margin-right: 10px;
+            font-size: 1.2em;
+            color: gray;
+        }
+
+        .block_search {
+            text-align: right;
+        }
+
+        .block_search h1 {
+            margin: 20px 0 0;
+            font-weight: 400;
+            font-size: 33px;
+            line-height: 26px;
+            text-align: right;
+        }
+
+        .block_search p {
+            margin: 10px 0;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: right;
+        }
+
+        aside.aside_slider {
+            margin-top: 20vh;
+            padding: 25px;
+        }
+
+        /* === Carousel Image + Overlay === */
+        .carousel-image {
+            height: 373px;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .overlay-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section.position_slider {
+            height: 373px;
+            margin-bottom: 1vh;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        /* === Categories === */
         section.categories {
             width: 80%;
             margin: auto;
         }
-    </style>
 
-    <style>
-        .paner {
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-    </style>
-    <style>
         .category-item {
             text-align: center;
-        }
-
-
-
-
-        .category-item {
             margin: 0;
             padding: 0;
             width: fit-content;
@@ -1521,8 +1419,34 @@
             font-size: 14px;
         }
 
-        .owl-dots {
-            display: none;
+        /* === Paner Section === */
+        .paner {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        section.paner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .paner_img {
+            width: 331px;
+            height: 159px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* === Publishing Card === */
+        .Publishing_card {
+            padding: 25px;
         }
 
         .Publishing_card img {
@@ -1530,25 +1454,60 @@
             border-radius: 6px;
         }
 
-        .Publishing_card {
-            padding: 25px;
+        /* === Author Columns === */
+        .author-col {
+            flex: 0 0 50%;
         }
 
-        @media screen and (max-width: 992px) {
-            .category-item img {
-                width: 70px !important;
-                height: 70px !important;
-
-            }
-
-            .Publishing_card {
-                padding: 10px;
+        @media (min-width: 768px) {
+            .author-col {
+                flex: 0 0 33.3333%;
             }
         }
-    </style>
 
-    <style>
+        @media (min-width: 992px) {
+            .author-col {
+                flex: 0 0 20%;
+            }
+        }
+
+        /* === Responsive === */
         @media screen and (max-width: 992px) {
+            section.Library .row .col-lg-3.col-md-4.col-6.mb-4 {
+                padding: 5px;
+            }
+
+            aside.aside_slider {
+                margin-top: 15vh;
+                padding: 0;
+            }
+
+            .search-container {
+                width: 100%;
+            }
+
+            .block_search {
+                text-align: center;
+            }
+
+            .block_search h1,
+            .block_search p {
+                text-align: center;
+            }
+
+            .block_search h1 {
+                font-size: 20px !important;
+            }
+
+            .block_search p {
+                font-size: 14px;
+            }
+
+            .overlay-content,
+            section.position_slider {
+                border-radius: 0 !important;
+            }
+
             section.categories {
                 width: 100%;
             }
@@ -1560,99 +1519,39 @@
             .Ads_Sec {
                 height: 192px !important;
             }
-
-
-
-        }
-
-        .paner_img {
-            width: 331px;
-            height: 159px;
-            top: 601px;
-            left: 873px;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-        }
-
-        section.paner {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            gap: 10px;
         }
 
         @media screen and (max-width: 767px) {
-
             .paner_img {
                 width: 138px;
                 height: 90px;
-
                 border-radius: 5px;
             }
 
             section.paner {
-                padding: 0px 5px;
-            }
-
-            .paner_img.three {
-                background-image: url(./assets/images/paner3.png) !important;
-                background-size: contain;
-            }
-
-            .paner_img.tow {
-                background-image: url(./assets/images/paner2.png) !important;
-                background-size: contain;
+                padding: 0 5px;
             }
 
             .paner_img.one {
                 background-image: url(./assets/images/paner1.png) !important;
-                background-size: contain;
+            }
+
+            .paner_img.tow {
+                background-image: url(./assets/images/paner2.png) !important;
+            }
+
+            .paner_img.three {
+                background-image: url(./assets/images/paner3.png) !important;
             }
 
             .carousel-image {
-                height:
-                    373px;
-                background-size: cover;
                 background-position: left;
-                overflow: hidden;
             }
 
             section.shop_sec {
                 height: 6vh;
             }
-        }
 
-        .author-col {
-            flex: 0 0 50%;
-            /* 2 أعمدة في الفون */
-        }
-
-        @media (min-width: 768px) {
-            .author-col {
-                flex: 0 0 33.3333%;
-                /* 3 أعمدة في التابلت */
-            }
-        }
-
-        @media (min-width: 992px) {
-            .author-col {
-                flex: 0 0 20%;
-                /* 5 أعمدة في اللابتوب */
-            }
-
-
-
-
-        }
-
-
-        @media screen and (max-width:767px) {
             .Publishing_card img {
                 width: 65.29px !important;
                 height: 65.29px !important;
@@ -1661,7 +1560,7 @@
             .Publishing_card {
                 width: 100px;
                 height: 84px;
-
+                padding: 10px;
             }
 
             section.advertisements .Ads_Sec.one {
@@ -1671,9 +1570,14 @@
             section.advertisements .Ads_Sec.tow {
                 background-image: url(./assets/images/tow.png) !important;
             }
+
+            .category-item img {
+                width: 70px;
+                height: 70px;
+            }
         }
 
-        @media screen and (max-width:320px) {
+        @media screen and (max-width: 320px) {
             p.price {
                 font-size: smaller !important;
             }
@@ -1699,20 +1603,23 @@
 
 
 
+
+
     <script>
         $(document).ready(function () {
-            // الكاروسيل الأول
             $('.carousel-1').owlCarousel({
                 loop: true,
                 margin: 10,
                 nav: true,
                 navText: ['‹', '›'],
                 responsive: {
-                    0: { items: 3 },
-                    600: { items: 3 },
-                    1000: { items: 8 }
+                    0: { items: 2 },        // أقل من 330px
+                    330: { items: 3 },      // من 330px فما فوق
+                    768: { items: 6 },      // التابلت
+                    1000: { items: 8 }      // الكمبيوتر
                 }
             });
+
 
             // الكاروسيل الثاني
             $('.carousel-2').owlCarousel({
