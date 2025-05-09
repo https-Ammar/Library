@@ -598,7 +598,7 @@
 
 
 
-        <section class="categories py-5">
+        <section class="categories">
 
 
             <div class="carousel-wrapper">
@@ -678,21 +678,7 @@
                             <span>إسلامي</span>
                         </div>
                     </div>
-                    <div class="item">
-                        <h4>8</h4>
-                    </div>
-                    <div class="item">
-                        <h4>9</h4>
-                    </div>
-                    <div class="item">
-                        <h4>10</h4>
-                    </div>
-                    <div class="item">
-                        <h4>11</h4>
-                    </div>
-                    <div class="item">
-                        <h4>12</h4>
-                    </div>
+
                 </div>
             </div>
 
@@ -1563,11 +1549,19 @@
             border-radius: 6px;
         }
 
+        .Publishing_card {
+            padding: 25px;
+        }
+
         @media screen and (max-width: 992px) {
             .category-item img {
                 width: 70px !important;
                 height: 70px !important;
 
+            }
+
+            .Publishing_card {
+                padding: 10px;
             }
         }
     </style>
@@ -1652,7 +1646,7 @@
                 nav: true,
                 navText: ['‹', '›'],
                 responsive: {
-                    0: { items: 4 },
+                    0: { items: 3 },
                     600: { items: 3 },
                     1000: { items: 8 }
                 }
@@ -1665,7 +1659,7 @@
                 nav: true,
                 navText: ['‹', '›'],
                 responsive: {
-                    0: { items: 3 },
+                    0: { items: 2 },
                     600: { items: 3 },
                     1000: { items: 5 }
                 }
