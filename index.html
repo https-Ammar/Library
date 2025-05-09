@@ -53,7 +53,7 @@
             padding: 0 60px;
             /* مساحة للأسهم خارج السلايدر */
             max-width: 1200px;
-            margin: 50px auto;
+            margin: 0px auto;
         }
 
         .owl-carousel {
@@ -542,7 +542,7 @@
 
                 section.position_slider {
                     height: 373px;
-                    margin-bottom: 3vh;
+                    margin-bottom: 1vh;
                     overflow: hidden;
                 }
 
@@ -556,6 +556,14 @@
 
     </aside>
 
+    <section class="paner">
+        <div class="paner_img three" style="background-image: url(./assets/images/paner_img3.png);"></div>
+        <div class="paner_img tow" style="background-image: url(./assets/images/paner_img2.png);"></div>
+        <div class="paner_img  one" style="background-image: url(./assets/images/paner_img1.png);"></div>
+    </section>
+
+
+
 
 
 
@@ -567,33 +575,6 @@
 
 
 
-
-
-        <section class="shop_sec">
-            <div class="row g-3 justify-content-center">
-
-                <div class="col-4 col-md-4 col-lg-4">
-                    <div class="paner" style="background-image: url('./assets/images/Gshop.png'); height: 200px;">
-                    </div>
-                </div>
-
-                <div class="col-4 col-md-4 col-lg-4">
-                    <div class="paner" style="background-image: url('./assets/images/Gelct.png'); height: 200px;">
-                    </div>
-                </div>
-
-
-                <div class="col-4 col-md-4 col-lg-4">
-                    <div class="paner" style="background-image: url('./assets/images/GLibrary.png'); height: 200px;">
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-        </section>
 
 
 
@@ -1168,7 +1149,7 @@
 
 
 
-            <div class="row g-4">
+            <div class="row g-4 mobil">
 
                 <!-- الكرت 1 -->
                 <div class="col-6 col-md-6 col-lg-3">
@@ -1584,7 +1565,60 @@
 
         }
 
+        .paner_img {
+            width: 331px;
+            height: 159px;
+            top: 601px;
+            left: 873px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        section.paner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 10px;
+        }
+
         @media screen and (max-width: 767px) {
+
+            .paner_img {
+                width: 138px;
+                height: 90px;
+
+                border-radius: 5px;
+            }
+
+            .paner_img.three {
+                background-image: url(./assets/images/paner3.png) !important;
+                background-size: contain;
+            }
+
+            .paner_img.tow {
+                background-image: url(./assets/images/paner2.png) !important;
+                background-size: contain;
+            }
+
+            .paner_img.one {
+                background-image: url(./assets/images/paner1.png) !important;
+                background-size: contain;
+            }
+
+            .carousel-image {
+                height:
+                    373px;
+                background-size: cover;
+                background-position: left;
+                overflow: hidden;
+            }
+
             section.shop_sec {
                 height: 6vh;
             }
@@ -1634,7 +1668,31 @@
                 background-image: url(./assets/images/tow.png) !important;
             }
         }
+
+        @media screen and (max-width:320px) {
+            p.price {
+                font-size: smaller !important;
+            }
+
+            .Ads_Sec {
+                height: 130px !important;
+            }
+
+            .card-img-top.cover {
+                height: 110px;
+            }
+
+            .col-6.col-md-6.col-lg-3 {
+                padding: 2px;
+            }
+
+            .row.g-4.mobil {
+                --bs-gutter-y: 5px;
+            }
+        }
     </style>
+
+
 
 
     <script>
