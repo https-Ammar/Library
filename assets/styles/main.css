@@ -135,12 +135,6 @@ ul.dropdown-menu.trans.show {
   overflow: hidden;
 }
 
-.owl-carousel .item {
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
-
 .overlay {
   height: 373px;
   position: absolute;
@@ -149,10 +143,6 @@ ul.dropdown-menu.trans.show {
 }
 section.slider_sec {
   border-radius: 5px;
-}
-
-.owl-carousel .owl-stage-outer {
-  height: 373px;
 }
 
 .slider-content {
@@ -209,14 +199,6 @@ section.slider_sec {
   border: none;
   font-size: 20px;
   cursor: pointer;
-}
-
-.owl-dots {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-  z-index: 2;
 }
 
 /*=============================
@@ -1008,8 +990,11 @@ p.Vector {
     padding: 15px;
   }
 
-
-  
+  .Selections_img img,
+  .Selections,
+  .Publishing_card {
+    width: auto;
+  }
   .Publishing_House {
     gap: 10px;
   }
@@ -1828,5 +1813,3 @@ span.card-date {
     padding: 5px !important;
   }
 }
-
-
