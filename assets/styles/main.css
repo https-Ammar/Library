@@ -2416,4 +2416,17 @@ button.close-btn {
   color: #888;
 }
 
+@media screen and (max-width: 420px) {
+  .mb-4.d-flex.w-75.align-items-center {
+    width: 100% !important;
+  }
+  .input-group {
+    width: 75px !important;
+  }
+  .row.border-top.py-3.align-items-center.cart-item
+    .col-3.col-md-2.mb-2.mb-md-0 {
+    width: auto !important;
+  }
+}
+
 /* cart_page */
