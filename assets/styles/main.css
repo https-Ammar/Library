@@ -2355,7 +2355,6 @@ button.pay_now.ptn.w-75.mt-3.next_pay {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  line-height: 3;
 }
 
 button.close-btn {
