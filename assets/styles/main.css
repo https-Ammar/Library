@@ -2074,18 +2074,6 @@ section.paner {
     padding: 0 5px;
   }
 
-  .paner_img.one {
-    background-image: url(./assets/images/paner1.png) !important;
-  }
-
-  .paner_img.tow {
-    background-image: url(./assets/images/paner2.png) !important;
-  }
-
-  .paner_img.three {
-    background-image: url(./assets/images/paner3.png) !important;
-  }
-
   .carousel-image {
     background-position: left;
   }
@@ -2104,13 +2092,11 @@ section.paner {
     height: 84px;
     padding: 10px;
   }
-
-  section.advertisements .Ads_Sec.one {
-    background-image: url(./assets/images/one.png) !important;
+  .Ads_Sec {
+    background-size: contain !important;
   }
-
-  section.advertisements .Ads_Sec.tow {
-    background-image: url(./assets/images/tow.png) !important;
+  .Ads_Sec {
+    height: 100px !important;
   }
 }
 
