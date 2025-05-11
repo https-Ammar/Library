@@ -384,11 +384,11 @@
 
                 <!-- العدد -->
                 <div class="col-3 col-md-2 mb-2 mb-md-0">
-                    <div class="input-group">
-                        <button class="btn btn-outline-secondary">-</button>
-                        <input type="text" class="form-control text-center" value="1" readonly>
-                        <button class="btn btn-outline-secondary">+</button>
-                    </div>
+                   <div class="input-group my-2">
+  <button class="btn btn-outline-secondary decrement">-</button>
+  <input type="text" class="form-control text-center quantity" value="1" readonly>
+  <button class="btn btn-outline-secondary increment">+</button>
+</div>
                 </div>
 
                 <!-- الإجمالي -->
@@ -434,11 +434,11 @@
 
                 <!-- العدد -->
                 <div class="col-3 col-md-2 mb-2 mb-md-0">
-                    <div class="input-group">
-                        <button class="btn btn-outline-secondary">-</button>
-                        <input type="text" class="form-control text-center" value="1" readonly>
-                        <button class="btn btn-outline-secondary">+</button>
-                    </div>
+                   <div class="input-group my-2">
+  <button class="btn btn-outline-secondary decrement">-</button>
+  <input type="text" class="form-control text-center quantity" value="1" readonly>
+  <button class="btn btn-outline-secondary increment">+</button>
+</div>
                 </div>
 
                 <!-- الإجمالي -->
@@ -485,11 +485,11 @@
 
                 <!-- العدد -->
                 <div class="col-3 col-md-2 mb-2 mb-md-0">
-                    <div class="input-group">
-                        <button class="btn btn-outline-secondary">-</button>
-                        <input type="text" class="form-control text-center" value="1" readonly>
-                        <button class="btn btn-outline-secondary">+</button>
-                    </div>
+                   <div class="input-group my-2">
+  <button class="btn btn-outline-secondary decrement">-</button>
+  <input type="text" class="form-control text-center quantity" value="1" readonly>
+  <button class="btn btn-outline-secondary increment">+</button>
+</div>
                 </div>
 
                 <!-- الإجمالي -->
@@ -688,6 +688,23 @@
         }
     </script>
 
+    <script>
+        document.querySelectorAll('.input-group').forEach(group => {
+            const input = group.querySelector('.quantity');
+            const btnPlus = group.querySelector('.increment');
+            const btnMinus = group.querySelector('.decrement');
+
+            btnPlus.addEventListener('click', () => {
+                input.value = parseInt(input.value) + 1;
+            });
+
+            btnMinus.addEventListener('click', () => {
+                if (parseInt(input.value) > 1) {
+                    input.value = parseInt(input.value) - 1;
+                }
+            });
+        });
+    </script>
 
 
 
