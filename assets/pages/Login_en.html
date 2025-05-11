@@ -23,6 +23,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link href="../styles/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/LTR.css">
 
 
 </head>
@@ -32,11 +33,9 @@
 
     <div class="nav_bar_">
         <header class="header flex">
-
             <div class="flex bar">
-                <p>مكتبة الكترونية ومنصة ثقافية مقرها الامارات.</p>
+                <p>An electronic library and cultural platform based in the UAE.</p>
                 <ul>
-
                     <li><a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
                                 fill="currentColor" stroke-width="2" class="ai ai-SnapchatFill">
@@ -51,7 +50,6 @@
                                 </defs>
                             </svg>
                         </a></li>
-
                     <li><a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
                                 fill="currentColor" stroke-width="2" class="ai ai-TwitterFill">
@@ -59,9 +57,6 @@
                                     d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578 9.3 9.3 0 0 1-2.958 1.13 4.66 4.66 0 0 0-7.938 4.25 13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568 4.692 4.692 0 0 1-2.104.08 4.661 4.661 0 0 0 4.352 3.234 9.348 9.348 0 0 1-5.786 1.995 9.5 9.5 0 0 1-1.112-.065 13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003z" />
                             </svg>
                         </a></li>
-
-
-
                     <li>
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
@@ -71,35 +66,26 @@
                             </svg>
                         </a>
                     </li>
-
-
                     <li>
-
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
                                 fill="currentColor" stroke-width="2" class="ai ai-FacebookFill">
                                 <g clip-path="url(#clip0_65_70)">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067z" />
+                                        d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067z">
+                                    </path>
                                 </g>
                                 <defs>
                                     <clipPath id="clip0_65_70">
-                                        <rect width="24" height="24" />
+                                        <rect width="24" height="24"></rect>
                                     </clipPath>
                                 </defs>
                             </svg>
                         </a>
                     </li>
-
-
-
                 </ul>
-
             </div>
-
         </header>
-
-
 
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
@@ -107,7 +93,6 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
 
                 <a class="navbar-brand" href="#">
                     <img src="../images/logo.png" alt="Logo">
@@ -134,7 +119,7 @@
                         <div class="badge" id="fav-count">5</div>
                     </div>
 
-                    <button class="login"><a href="#">تسجيل الدخول</a></button>
+                    <button class="login"><a href="#">Login</a></button>
 
                     <div class="dropdown">
                         <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
@@ -147,107 +132,82 @@
                     </div>
                 </div>
 
-
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="mainNavbar">
-
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="mainNavbar">
                     <div class="offcanvas-header">
                         <a class="navbar-brand" href="#">
                             <img src="../images/logo.png" alt="Logo">
                         </a>
-                        <button class="login"><a href="#">تسجيل الدخول</a></button>
+                        <button class="login"><a href="#">Login</a></button>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
+                        <ul class="navbar-nav auto-margin-right mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">المكتبة</a>
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Library</a>
                                 <ul class="dropdown-menu trans">
-                                    <li><a class="dropdown-item" href="#">كتب ورقية</a></li>
-                                    <li><a class="dropdown-item" href="#">كتب إلكترونية</a></li>
-                                    <li><a class="dropdown-item" href="#">مجلدات</a></li>
+                                    <li><a class="dropdown-item" href="#">Physical Books</a></li>
+                                    <li><a class="dropdown-item" href="#">E-Books</a></li>
+                                    <li><a class="dropdown-item" href="#">Magazines</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">الدكان</a>
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
                                 <ul class="dropdown-menu trans">
-                                    <li><a class="dropdown-item" href="#">ملابس</a></li>
-                                    <li><a class="dropdown-item" href="#">إكسسوارات</a></li>
-                                    <li><a class="dropdown-item" href="#">أدوات منزلية</a></li>
+                                    <li><a class="dropdown-item" href="#">Clothing</a></li>
+                                    <li><a class="dropdown-item" href="#">Accessories</a></li>
+                                    <li><a class="dropdown-item" href="#">Household Items</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">الكترونيات</a>
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Electronics</a>
                                 <ul class="dropdown-menu trans">
-                                    <li><a class="dropdown-item" href="#">هواتف</a></li>
-                                    <li><a class="dropdown-item" href="#">كمبيوترات</a></li>
-                                    <li><a class="dropdown-item" href="#">أجهزة ذكية</a></li>
+                                    <li><a class="dropdown-item" href="#">Phones</a></li>
+                                    <li><a class="dropdown-item" href="#">Computers</a></li>
+                                    <li><a class="dropdown-item" href="#">Smart Devices</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">المدونة</a>
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
                                 <ul class="dropdown-menu trans">
-                                    <li><a class="dropdown-item" href="#">أحدث المقالات</a></li>
-                                    <li><a class="dropdown-item" href="#">تقنية</a></li>
-                                    <li><a class="dropdown-item" href="#">تسويق</a></li>
+                                    <li><a class="dropdown-item" href="#">Latest Articles</a></li>
+                                    <li><a class="dropdown-item" href="#">Technology</a></li>
+                                    <li><a class="dropdown-item" href="#">Marketing</a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">اتصل بنا</a></li>
-
-
+                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-
     </div>
 
 
+
     <main class="container mt-5">
-
-
-        <section class="py-5  ">
+        <section class="py-5">
             <div class="container py-5">
-
-
-
-
                 <div class="row box_shadow">
-
                     <div class="col-md-5 mb-4 contact-info">
-
-
-
-
-                        <div class="cover_login">
-
-                        </div>
-
-
-
-
-
+                        <div class="cover_login"></div>
                     </div>
 
-                    <!-- نموذج التواصل -->
+                    <!-- Contact Form -->
                     <div class="col-md-7 text-center justify-content-center d-flex align-items-center p-3">
-
                         <div class="text-center w-75 w-md-100">
-                            <h3 class="mb-3">تسجيل الدخول</h3>
-                            <p class="text-muted">أدخل بياناتك للوصول إلى خدماتنا وكُتبك المفضلة</p>
+                            <h3 class="mb-3">Login</h3>
+                            <p class="text-muted">Enter your details to access our services and your favorite books</p>
 
                             <form class="login_form">
-
                                 <div class="mb-3 d-flex align-items-center">
-
-
+                                    <!-- Email Icon -->
                                     <svg width="27" height="21" viewBox="0 0 27 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -255,13 +215,11 @@
                                             fill="#757575" />
                                     </svg>
 
-
-                                    <input type="email" class="form-control" id="email" placeholder="البريد الالكتروني">
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
                                 </div>
 
-
                                 <div class="mb-3 d-flex align-items-center">
-
+                                    <!-- Password Icon -->
                                     <svg width="21" height="27" viewBox="0 0 21 27" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -270,115 +228,96 @@
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
 
-
-                                    <input type="password" class="form-control" id="password" placeholder=" ********">
+                                    <input type="password" class="form-control" id="password" placeholder="********">
                                 </div>
+
                                 <div class="d-flex justify-content-between mb-3">
                                     <div class="form-check_">
                                         <input type="checkbox" id="rememberMe">
-                                        <label class="form-check-label" for="rememberMe">تذكرني</label>
+                                        <label class="form-check-label" for="rememberMe">Remember me</label>
                                     </div>
-                                    <a href="#" class="text-primary">نسيت كلمة المرور؟</a>
+                                    <a href="#" class="text-primary">Forgot password?</a>
                                 </div>
 
-                                <button type="submit" class="btn btn-send">ارسال</button>
+                                <button type="submit" class="btn btn-send">Submit</button>
 
-                                <!-- إنشاء حساب -->
+                                <!-- Create account -->
                                 <div class="text-center mt-3">
-                                    <span>ليس لديك حساب؟ </span>
-                                    <a href="#" class="text-primary fw-bold">انشاء حساب</a>
+                                    <span>Don't have an account? </span>
+                                    <a href="#" class="text-primary fw-bold">Create one</a>
                                 </div>
-
-
-
-
                             </form>
                         </div>
-
                     </div>
-
-
-                    <!-- معلومات التواصل -->
-
-
+                    <!-- Contact Info -->
                 </div>
-
-
             </div>
-
         </section>
-
     </main>
 
 
 
+
+
     <footer>
-        <div class="footer-top">
-
-        </div>
-
+        <div class="footer-top"></div>
         <div class="footer">
             <div class="column footer-logo">
-
                 <div class="flex">
                     <div class="flex_icon">
-                        <img src="../images/logo.png" alt="لوجو مكتبة الجزيرة">
-                        <p>مكتبة الكترونية ومنصة ثقافية مقرها الامارات.</p>
+                        <img src="../images/logo.png" alt="Al Jazeera Library Logo">
+                        <p>An electronic library and cultural platform based in the UAE.</p>
                     </div>
-
                     <div class="footer-social">
                         <i class="fab fa-snapchat"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-facebook"></i>
                     </div>
-
                 </div>
-
-
             </div>
-
 
             <div class="grid_footer">
                 <div class="column">
-                    <h3>الأقسام</h3>
-                    <a href="#">الرئيسية</a>
-                    <a href="#">المكتبة</a>
-                    <a href="#">المدونة</a>
-                    <a href="#">من نحن</a>
-                    <a href="#">تواصل معنا</a>
+                    <h3>Sections</h3>
+                    <a href="#">Home</a>
+                    <a href="#">Library</a>
+                    <a href="#">Blog</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
                 </div>
-
-
                 <div class="column">
-                    <h3>روابط أخرى</h3>
-                    <a href="#">سياسة الإرجاع والاستبدال</a>
-                    <a href="#">الأسئلة الأكثر شيوعًا</a>
-                    <a href="#">سياسة الخصوصية</a>
+                    <h3>Other Links</h3>
+                    <a href="#">Return and Exchange Policy</a>
+                    <a href="#">Frequently Asked Questions</a>
+                    <a href="#">Privacy Policy</a>
                 </div>
-
                 <div class="column contact">
-                    <h3>تواصل معنا</h3>
+                    <h3>Contact Us</h3>
                     <p><i class="fas fa-phone"></i>50300046</p>
-                    <p><i class="fas fa-clock"></i>10:00 ص - 12:00 م</p>
+                    <p><i class="fas fa-clock"></i>10:00 AM - 12:00 PM</p>
                     <p><i class="fas fa-envelope"></i>kuwaitbookstorenew@gmail.com</p>
                 </div>
-
             </div>
 
             <div class="column books-img">
-                <img src="../images/book.png" alt="كتب">
+                <img src="../images/book.png" alt="Books">
             </div>
         </div>
 
         <div class="flex foot">
             <p style="text-align: center; font-family: 'Cairo', sans-serif;">
-                &copy; 2025 جميع الحقوق محفوظة لـ (<strong>مكتبة الجزيرة </strong>)
+                &copy; 2025 All rights reserved to (<strong>Al Jazeera Library</strong>)
             </p>
-
         </div>
+
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
 
 
 </body>

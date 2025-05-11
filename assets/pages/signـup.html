@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Blogs</title>
+    <title>Login</title>
 
     <!-- Normalize and Main CSS -->
     <link rel="stylesheet" href="../styles/normalize.css">
@@ -23,8 +23,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link href="../styles/bootstrap.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
 
 
 </head>
@@ -211,199 +209,162 @@
 
     </div>
 
-    <main class="container_">
+
+    <main class="container mt-5">
 
 
-        <section class="terms and condition">
+        <section class="py-5  ">
+            <div class="container py-5">
 
 
-            <div class="text_condition">
-                <h2>
-                    المقالات
-                </h2>
-                <div class="path_link">
-                    <a href="#" class="active">الرئيسية</a>
-                    <span>/</span>
-                    <a href="#"> المقالات</a>
+
+
+                <div class="row box_shadow">
+
+                    <div class="col-md-5 mb-4 contact-info">
+                        <div class="cover_login cover_login_sign_up"></div>
+
+
+
+
+                    </div>
+
+                    <!-- نموذج التواصل -->
+                    <div class="col-md-7 text-center justify-content-center d-flex align-items-center p-3">
+
+                        <div class="text-center w-75 w-md-100">
+                            <h3 class="mb-3"> تسجيل الدخول</h3>
+                            <p class="text-muted">أدخل بياناتك للوصول إلى خدماتنا وكُتبك المفضلة</p>
+
+                            <form class="login_form">
+
+                                <div class="mb-3 d-flex align-items-center">
+
+
+
+                                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.5 13.75C19.5376 13.75 22 11.2876 22 8.25C22 5.21243 19.5376 2.75 16.5 2.75C13.4624 2.75 11 5.21243 11 8.25C11 11.2876 13.4624 13.75 16.5 13.75Z"
+                                            stroke="#757575" stroke-width="1.6875" />
+                                        <path
+                                            d="M27.5 24.0625C27.5 27.4794 27.5 30.25 16.5 30.25C5.5 30.25 5.5 27.4794 5.5 24.0625C5.5 20.6456 10.4252 17.875 16.5 17.875C22.5747 17.875 27.5 20.6456 27.5 24.0625Z"
+                                            stroke="#757575" stroke-width="1.6875" />
+                                    </svg>
+
+
+
+                                    <input type="text" class="form-control" id="full_name"
+                                        placeholder="اسم المستخدم يالكامل">
+                                </div>
+
+
+                                <div class="mb-3 d-flex align-items-center">
+
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.40451 2.63893C8.97647 1.07602 11.565 1.35372 12.8812 3.11297L14.5113 5.28814C15.5833 6.71931 15.4878 8.71881 14.2155 9.98335L13.9081 10.2908C13.8732 10.4198 13.8696 10.5553 13.8977 10.686C13.9791 11.213 14.4196 12.329 16.2641 14.1632C18.1086 15.9973 19.2323 16.4365 19.7671 16.5192C19.9018 16.5463 20.0409 16.5423 20.1739 16.5076L20.7009 15.9831C21.8324 14.8594 23.5684 14.6488 24.9686 15.4096L27.4357 16.753C29.5501 17.9 30.0836 20.7726 28.3528 22.4944L26.5173 24.3183C25.9386 24.8931 25.1611 25.3723 24.213 25.4614C21.8751 25.6797 16.4281 25.4007 10.7021 19.7083C5.35851 14.3944 4.33293 9.75989 4.20247 7.47622C4.13788 6.32147 4.68297 5.34497 5.37788 4.65522L7.40451 2.63893ZM11.3312 4.27418C10.6763 3.39972 9.45697 3.32997 8.7698 4.01327L6.74188 6.02826C6.31563 6.45193 6.11155 6.91952 6.13738 7.36643C6.24072 9.18122 7.06738 13.3623 12.0687 18.3353C17.3155 23.551 22.1605 23.7073 24.0334 23.5316C24.4158 23.4968 24.7955 23.2978 25.1507 22.9452L26.9849 21.1201C27.7315 20.3787 27.5674 19.0276 26.5108 18.4541L24.0438 17.1121C23.3618 16.7426 22.5635 16.8641 22.0675 17.3575L21.4798 17.9426L20.7952 17.2554C21.4798 17.9426 21.4785 17.9439 21.4772 17.9439L21.4759 17.9465L21.4721 17.9503L21.463 17.9581L21.4436 17.9762C21.3891 18.0268 21.3304 18.0726 21.268 18.1131C21.1646 18.1816 21.0277 18.2578 20.8559 18.3211C20.5072 18.4515 20.0448 18.5213 19.4738 18.4334C18.354 18.2616 16.8698 17.4983 14.8975 15.5375C12.9264 13.5768 12.1566 12.1017 11.9835 10.9831C11.8943 10.4122 11.9654 9.94977 12.0971 9.60102C12.1696 9.40477 12.2735 9.22156 12.4046 9.05852L12.4459 9.01331L12.464 8.99393L12.4717 8.98618L12.4756 8.98231L12.4782 8.97972L12.8502 8.61031C13.403 8.05876 13.4805 7.14556 12.96 6.44935L11.3312 4.27418Z"
+                                            fill="#757575" />
+                                    </svg>
+
+
+
+                                    <input type="tel" class="form-control" id="tel" placeholder="رقم الهاتف">
+                                </div>
+
+
+                                <div class="mb-3 d-flex align-items-center">
+
+
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M25.2281 6.21675L14.5749 15.039C14.2722 15.2898 13.8914 15.4271 13.4983 15.4271C13.1052 15.4271 12.7244 15.2898 12.4217 15.039L1.77356 6.21675C1.71643 6.38873 1.68737 6.56878 1.6875 6.75V20.25C1.6875 20.6976 1.86529 21.1268 2.18176 21.4432C2.49822 21.7597 2.92745 21.9375 3.375 21.9375H23.625C24.0726 21.9375 24.5018 21.7597 24.8182 21.4432C25.1347 21.1268 25.3125 20.6976 25.3125 20.25V6.75C25.3132 6.56887 25.2847 6.38882 25.2281 6.21675ZM3.375 3.375H23.625C24.5201 3.375 25.3785 3.73058 26.0115 4.36351C26.6444 4.99645 27 5.85489 27 6.75V20.25C27 21.1451 26.6444 22.0035 26.0115 22.6365C25.3785 23.2694 24.5201 23.625 23.625 23.625H3.375C2.47989 23.625 1.62145 23.2694 0.988515 22.6365C0.355579 22.0035 0 21.1451 0 20.25V6.75C0 5.85489 0.355579 4.99645 0.988515 4.36351C1.62145 3.73058 2.47989 3.375 3.375 3.375ZM3.02062 5.0625L12.4301 12.8301C12.7315 13.079 13.1099 13.2156 13.5008 13.2165C13.8916 13.2174 14.2707 13.0826 14.5732 12.8351L24.0772 5.0625H3.02062Z"
+                                            fill="#757575" />
+                                    </svg>
+
+
+
+                                    <input type="email" class="form-control" id="email" placeholder="البريد الالكتروني">
+                                </div>
+
+
+
+                                <div class="mb-3 d-flex align-items-center">
+
+
+                                    <svg width="21" height="27" viewBox="0 0 21 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 10.75V6.625C5 3.58625 7.46125 1.125 10.5 1.125C13.5388 1.125 16 3.58625 16 6.625V10.75M10.5 17.625C10.8647 17.625 11.2144 17.4801 11.4723 17.2223C11.7301 16.9644 11.875 16.6147 11.875 16.25C11.875 15.8853 11.7301 15.5356 11.4723 15.2777C11.2144 15.0199 10.8647 14.875 10.5 14.875C10.1353 14.875 9.78559 15.0199 9.52773 15.2777C9.26987 15.5356 9.125 15.8853 9.125 16.25C9.125 16.6147 9.26987 16.9644 9.52773 17.2223C9.78559 17.4801 10.1353 17.625 10.5 17.625ZM10.5 17.625V21.75M3.075 10.75H17.925C19.135 10.75 20.125 11.74 20.125 12.95V22.575C20.125 24.39 18.64 25.875 16.825 25.875H4.175C2.36 25.875 0.875 24.39 0.875 22.575V12.95C0.875 11.74 1.865 10.75 3.075 10.75Z"
+                                            stroke="#757575" stroke-width="1.6875" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+
+
+                                    <input type="password" class="form-control" id="password" placeholder="كلمة المرور">
+                                </div>
+
+
+                                <div class="mb-3 d-flex align-items-center">
+
+
+                                    <svg width="21" height="27" viewBox="0 0 21 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 10.75V6.625C5 3.58625 7.46125 1.125 10.5 1.125C13.5388 1.125 16 3.58625 16 6.625V10.75M10.5 17.625C10.8647 17.625 11.2144 17.4801 11.4723 17.2223C11.7301 16.9644 11.875 16.6147 11.875 16.25C11.875 15.8853 11.7301 15.5356 11.4723 15.2777C11.2144 15.0199 10.8647 14.875 10.5 14.875C10.1353 14.875 9.78559 15.0199 9.52773 15.2777C9.26987 15.5356 9.125 15.8853 9.125 16.25C9.125 16.6147 9.26987 16.9644 9.52773 17.2223C9.78559 17.4801 10.1353 17.625 10.5 17.625ZM10.5 17.625V21.75M3.075 10.75H17.925C19.135 10.75 20.125 11.74 20.125 12.95V22.575C20.125 24.39 18.64 25.875 16.825 25.875H4.175C2.36 25.875 0.875 24.39 0.875 22.575V12.95C0.875 11.74 1.865 10.75 3.075 10.75Z"
+                                            stroke="#757575" stroke-width="1.6875" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+
+
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder=" تأكيد  كلمة المرور">
+                                </div>
+
+
+                                <div class="d-flex justify-content-between mb-3">
+                                    <div class="form-check_">
+                                        <input type="checkbox" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">الموافقة على الشروط و
+                                            اللاحكام</label>
+                                    </div>
+
+                                </div>
+
+                                <button type="submit" class="btn btn-send">ارسال</button>
+
+                                <!-- إنشاء حساب -->
+
+                                <div class="text-center mt-3">
+                                    <span> لديك حساب بالفعل ؟ </span>
+                                    <a href="#" class="text-primary fw-bold">تسجيل الدخول</a>
+                                </div>
+
+
+
+
+                            </form>
+                        </div>
+
+                    </div>
+
+
+                    <!-- معلومات التواصل -->
+
+
                 </div>
+
+
             </div>
 
         </section>
-
-
-
-
-
-
-        </section>
-
-
-
-
-
-        <div class=" py-5">
-            <div class="row g-4">
-
-                <!-- Card 1 -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card h-100">
-
-                        <div class="card-img-top" style="background-image: url(../images/blog.jpg);"></div>
-
-
-
-                        <div class="card-body">
-                            <h5 class="card-title"> تمرين في الكتابة الإبداعية: «الشخصية عبر المرآة» </h5>
-                            <span class="card-date">تم النشر 22 مارس 2025</span>
-                            <p class="card-text">
-                                إذا كنت تجد صعوبة في الكتابة، بسبب عدم وضوح شخصياتك في رأسك، أو وجود مسافة بينك وبينها،
-                                أو ببساطة لأنك لم تحفر في أعماقها كما ينبغي، هذا التمرين مصمم لمساعدتك على تقريب
-                                المسافات بينك وبين شخصياتك بما يساعدك على مواصلة العمل، ويحررك من الحبسة.
-                                يهدف هذا التمرين إلى مساعدتك على بناء شخصية متكاملة من خلال استكشاف منظرها الخارجي،
-                                أفكارها الداخلية، وكيفية تفاعلها مع العالم.
-                            </p>
-
-
-                            <button class="btn btn-read w-100">
-                                <a href="#">قراءة المزيد</a>
-                            </button>
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Card 1 -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card h-100">
-
-                        <div class="card-img-top" style="background-image: url(../images/blog.jpg);"></div>
-
-                        <div class="card-body">
-                            <h5 class="card-title"> تمرين في الكتابة الإبداعية: «الشخصية عبر المرآة» </h5>
-                            <span class="card-date">تم النشر 22 مارس 2025</span>
-                            <p class="card-text">
-                                إذا كنت تجد صعوبة في الكتابة، بسبب عدم وضوح شخصياتك في رأسك، أو وجود مسافة بينك وبينها،
-                                أو ببساطة لأنك لم تحفر في أعماقها كما ينبغي، هذا التمرين مصمم لمساعدتك على تقريب
-                                المسافات بينك وبين شخصياتك بما يساعدك على مواصلة العمل، ويحررك من الحبسة.
-                                يهدف هذا التمرين إلى مساعدتك على بناء شخصية متكاملة من خلال استكشاف منظرها الخارجي،
-                                أفكارها الداخلية، وكيفية تفاعلها مع العالم.
-                            </p>
-
-
-                            <button class="btn btn-read w-100">
-                                <a href="#">قراءة المزيد</a>
-                            </button>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 1 -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card h-100">
-
-                        <div class="card-img-top" style="background-image: url(../images/blog.jpg);"></div>
-
-                        <div class="card-body">
-                            <h5 class="card-title"> تمرين في الكتابة الإبداعية: «الشخصية عبر المرآة» </h5>
-                            <span class="card-date">تم النشر 22 مارس 2025</span>
-                            <p class="card-text">
-                                إذا كنت تجد صعوبة في الكتابة، بسبب عدم وضوح شخصياتك في رأسك، أو وجود مسافة بينك وبينها،
-                                أو ببساطة لأنك لم تحفر في أعماقها كما ينبغي، هذا التمرين مصمم لمساعدتك على تقريب
-                                المسافات بينك وبين شخصياتك بما يساعدك على مواصلة العمل، ويحررك من الحبسة.
-                                يهدف هذا التمرين إلى مساعدتك على بناء شخصية متكاملة من خلال استكشاف منظرها الخارجي،
-                                أفكارها الداخلية، وكيفية تفاعلها مع العالم.
-                            </p>
-
-
-                            <button class="btn btn-read w-100">
-                                <a href="#">قراءة المزيد</a>
-                            </button>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 1 -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card h-100">
-
-                        <div class="card-img-top" style="background-image: url(../images/blog.jpg);"></div>
-
-                        <div class="card-body">
-                            <h5 class="card-title"> تمرين في الكتابة الإبداعية: «الشخصية عبر المرآة» </h5>
-                            <span class="card-date">تم النشر 22 مارس 2025</span>
-                            <p class="card-text">
-                                إذا كنت تجد صعوبة في الكتابة، بسبب عدم وضوح شخصياتك في رأسك، أو وجود مسافة بينك وبينها،
-                                أو ببساطة لأنك لم تحفر في أعماقها كما ينبغي، هذا التمرين مصمم لمساعدتك على تقريب
-                                المسافات بينك وبين شخصياتك بما يساعدك على مواصلة العمل، ويحررك من الحبسة.
-                                يهدف هذا التمرين إلى مساعدتك على بناء شخصية متكاملة من خلال استكشاف منظرها الخارجي،
-                                أفكارها الداخلية، وكيفية تفاعلها مع العالم.
-                            </p>
-
-
-                            <button class="btn btn-read w-100">
-                                <a href="#">قراءة المزيد</a>
-                            </button>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 1 -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card h-100">
-
-                        <div class="card-img-top" style="background-image: url(../images/blog.jpg);"></div>
-
-                        <div class="card-body">
-                            <h5 class="card-title"> تمرين في الكتابة الإبداعية: «الشخصية عبر المرآة» </h5>
-                            <span class="card-date">تم النشر 22 مارس 2025</span>
-                            <p class="card-text">
-                                إذا كنت تجد صعوبة في الكتابة، بسبب عدم وضوح شخصياتك في رأسك، أو وجود مسافة بينك وبينها،
-                                أو ببساطة لأنك لم تحفر في أعماقها كما ينبغي، هذا التمرين مصمم لمساعدتك على تقريب
-                                المسافات بينك وبين شخصياتك بما يساعدك على مواصلة العمل، ويحررك من الحبسة.
-                                يهدف هذا التمرين إلى مساعدتك على بناء شخصية متكاملة من خلال استكشاف منظرها الخارجي،
-                                أفكارها الداخلية، وكيفية تفاعلها مع العالم.
-                            </p>
-
-
-                            <button class="btn btn-read w-100">
-                                <a href="#">قراءة المزيد</a>
-                            </button>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- كرر البلوك ده للصف الثاني -->
-
-            </div>
-
-            <!-- Pagination -->
-
-
-            <nav class="mt-5 d-flex justify-content-center">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#" data-page="4">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#" data-page="3">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
-                    <li class="page-item"><a class="page-link active" href="#" data-page="1">1</a></li>
-                </ul>
-            </nav>
-
-
-
-        </div>
-
 
     </main>
+
 
 
     <footer>
@@ -472,25 +433,13 @@
 
         </div>
     </footer>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.querySelectorAll('.page-link').forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelectorAll('.page-link').forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
-                const page = this.getAttribute('data-page');
-                console.log("تم اختيار الصفحة رقم: " + page);
-            });
-        });
-    </script>
 
 
 
 
+
+    
 
 </body>
 

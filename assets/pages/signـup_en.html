@@ -23,6 +23,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link href="../styles/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/LTR.css">
 
 
 </head>
@@ -30,13 +31,12 @@
 <body>
 
 
+
     <div class="nav_bar_">
         <header class="header flex">
-
             <div class="flex bar">
-                <p>مكتبة الكترونية ومنصة ثقافية مقرها الامارات.</p>
+                <p>An electronic library and cultural platform based in the UAE.</p>
                 <ul>
-
                     <li><a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
                                 fill="currentColor" stroke-width="2" class="ai ai-SnapchatFill">
@@ -51,7 +51,6 @@
                                 </defs>
                             </svg>
                         </a></li>
-
                     <li><a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
                                 fill="currentColor" stroke-width="2" class="ai ai-TwitterFill">
@@ -59,9 +58,6 @@
                                     d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578 9.3 9.3 0 0 1-2.958 1.13 4.66 4.66 0 0 0-7.938 4.25 13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568 4.692 4.692 0 0 1-2.104.08 4.661 4.661 0 0 0 4.352 3.234 9.348 9.348 0 0 1-5.786 1.995 9.5 9.5 0 0 1-1.112-.065 13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003z" />
                             </svg>
                         </a></li>
-
-
-
                     <li>
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
@@ -71,35 +67,26 @@
                             </svg>
                         </a>
                     </li>
-
-
                     <li>
-
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
                                 fill="currentColor" stroke-width="2" class="ai ai-FacebookFill">
                                 <g clip-path="url(#clip0_65_70)">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067z" />
+                                        d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067z">
+                                    </path>
                                 </g>
                                 <defs>
                                     <clipPath id="clip0_65_70">
-                                        <rect width="24" height="24" />
+                                        <rect width="24" height="24"></rect>
                                     </clipPath>
                                 </defs>
                             </svg>
                         </a>
                     </li>
-
-
-
                 </ul>
-
             </div>
-
         </header>
-
-
 
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
@@ -107,7 +94,6 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
 
                 <a class="navbar-brand" href="#">
                     <img src="../images/logo.png" alt="Logo">
@@ -134,7 +120,7 @@
                         <div class="badge" id="fav-count">5</div>
                     </div>
 
-                    <button class="login"><a href="#">تسجيل الدخول</a></button>
+                    <button class="login"><a href="#">Login</a></button>
 
                     <div class="dropdown">
                         <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
@@ -147,121 +133,118 @@
                     </div>
                 </div>
 
-
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="mainNavbar">
-
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="mainNavbar">
                     <div class="offcanvas-header">
                         <a class="navbar-brand" href="#">
                             <img src="../images/logo.png" alt="Logo">
                         </a>
-                        <button class="login"><a href="#">تسجيل الدخول</a></button>
+                        <button class="login"><a href="#">Login</a></button>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
+                        <ul class="navbar-nav auto-margin-right mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">المكتبة</a>
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Library</a>
                                 <ul class="dropdown-menu trans">
-                                    <li><a class="dropdown-item" href="#">كتب ورقية</a></li>
-                                    <li><a class="dropdown-item" href="#">كتب إلكترونية</a></li>
-                                    <li><a class="dropdown-item" href="#">مجلدات</a></li>
+                                    <li><a class="dropdown-item" href="#">Physical Books</a></li>
+                                    <li><a class="dropdown-item" href="#">E-Books</a></li>
+                                    <li><a class="dropdown-item" href="#">Magazines</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">الدكان</a>
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
                                 <ul class="dropdown-menu trans">
-                                    <li><a class="dropdown-item" href="#">ملابس</a></li>
-                                    <li><a class="dropdown-item" href="#">إكسسوارات</a></li>
-                                    <li><a class="dropdown-item" href="#">أدوات منزلية</a></li>
+                                    <li><a class="dropdown-item" href="#">Clothing</a></li>
+                                    <li><a class="dropdown-item" href="#">Accessories</a></li>
+                                    <li><a class="dropdown-item" href="#">Household Items</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">الكترونيات</a>
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Electronics</a>
                                 <ul class="dropdown-menu trans">
-                                    <li><a class="dropdown-item" href="#">هواتف</a></li>
-                                    <li><a class="dropdown-item" href="#">كمبيوترات</a></li>
-                                    <li><a class="dropdown-item" href="#">أجهزة ذكية</a></li>
+                                    <li><a class="dropdown-item" href="#">Phones</a></li>
+                                    <li><a class="dropdown-item" href="#">Computers</a></li>
+                                    <li><a class="dropdown-item" href="#">Smart Devices</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">المدونة</a>
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
                                 <ul class="dropdown-menu trans">
-                                    <li><a class="dropdown-item" href="#">أحدث المقالات</a></li>
-                                    <li><a class="dropdown-item" href="#">تقنية</a></li>
-                                    <li><a class="dropdown-item" href="#">تسويق</a></li>
+                                    <li><a class="dropdown-item" href="#">Latest Articles</a></li>
+                                    <li><a class="dropdown-item" href="#">Technology</a></li>
+                                    <li><a class="dropdown-item" href="#">Marketing</a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">اتصل بنا</a></li>
-
-
+                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-
     </div>
 
 
+
     <main class="container mt-5">
-
-
-        <section class="py-5  ">
+        <section class="py-5">
             <div class="container py-5">
-
-
-
-
                 <div class="row box_shadow">
-
                     <div class="col-md-5 mb-4 contact-info">
-
-
-
-
-                        <div class="cover_login">
-
-                        </div>
-
-
-
-
-
+                        <div class="cover_login cover_login_sign_up"></div>
                     </div>
 
-                    <!-- نموذج التواصل -->
+                    <!-- Contact Form -->
                     <div class="col-md-7 text-center justify-content-center d-flex align-items-center p-3">
-
                         <div class="text-center w-75 w-md-100">
-                            <h3 class="mb-3">تسجيل الدخول</h3>
-                            <p class="text-muted">أدخل بياناتك للوصول إلى خدماتنا وكُتبك المفضلة</p>
+                            <h3 class="mb-3">Login</h3>
+                            <p class="text-muted">Enter your details to access our services and your favorite books</p>
 
                             <form class="login_form">
-
                                 <div class="mb-3 d-flex align-items-center">
-
-
-                                    <svg width="27" height="21" viewBox="0 0 27 21" fill="none"
+                                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M25.2281 3.21675L14.5749 12.039C14.2722 12.2898 13.8914 12.4271 13.4983 12.4271C13.1052 12.4271 12.7244 12.2898 12.4217 12.039L1.77356 3.21675C1.71643 3.38873 1.68737 3.56878 1.6875 3.75V17.25C1.6875 17.6976 1.86529 18.1268 2.18176 18.4432C2.49822 18.7597 2.92745 18.9375 3.375 18.9375H23.625C24.0726 18.9375 24.5018 18.7597 24.8182 18.4432C25.1347 18.1268 25.3125 17.6976 25.3125 17.25V3.75C25.3132 3.56887 25.2847 3.38882 25.2281 3.21675ZM3.375 0.375H23.625C24.5201 0.375 25.3785 0.730579 26.0115 1.36351C26.6444 1.99645 27 2.85489 27 3.75V17.25C27 18.1451 26.6444 19.0035 26.0115 19.6365C25.3785 20.2694 24.5201 20.625 23.625 20.625H3.375C2.47989 20.625 1.62145 20.2694 0.988515 19.6365C0.355579 19.0035 0 18.1451 0 17.25V3.75C0 2.85489 0.355579 1.99645 0.988515 1.36351C1.62145 0.730579 2.47989 0.375 3.375 0.375ZM3.02062 2.0625L12.4301 9.83006C12.7315 10.079 13.1099 10.2156 13.5008 10.2165C13.8916 10.2174 14.2707 10.0826 14.5732 9.83512L24.0772 2.0625H3.02062Z"
-                                            fill="#757575" />
+                                        <path
+                                            d="M16.5 13.75C19.5376 13.75 22 11.2876 22 8.25C22 5.21243 19.5376 2.75 16.5 2.75C13.4624 2.75 11 5.21243 11 8.25C11 11.2876 13.4624 13.75 16.5 13.75Z"
+                                            stroke="#757575" stroke-width="1.6875" />
+                                        <path
+                                            d="M27.5 24.0625C27.5 27.4794 27.5 30.25 16.5 30.25C5.5 30.25 5.5 27.4794 5.5 24.0625C5.5 20.6456 10.4252 17.875 16.5 17.875C22.5747 17.875 27.5 20.6456 27.5 24.0625Z"
+                                            stroke="#757575" stroke-width="1.6875" />
                                     </svg>
 
-
-                                    <input type="email" class="form-control" id="email" placeholder="البريد الالكتروني">
+                                    <input type="text" class="form-control" id="full_name" placeholder="Full Name">
                                 </div>
 
+                                <div class="mb-3 d-flex align-items-center">
+                                    <!-- Phone Icon SVG -->
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.40451 2.63893C8.97647 1.07602 11.565 1.35372 12.8812 3.11297L14.5113 5.28814C15.5833 6.71931 15.4878 8.71881 14.2155 9.98335L13.9081 10.2908C13.8732 10.4198 13.8696 10.5553 13.8977 10.686C13.9791 11.213 14.4196 12.329 16.2641 14.1632C18.1086 15.9973 19.2323 16.4365 19.7671 16.5192C19.9018 16.5463 20.0409 16.5423 20.1739 16.5076L20.7009 15.9831C21.8324 14.8594 23.5684 14.6488 24.9686 15.4096L27.4357 16.753C29.5501 17.9 30.0836 20.7726 28.3528 22.4944L26.5173 24.3183C25.9386 24.8931 25.1611 25.3723 24.213 25.4614C21.8751 25.6797 16.4281 25.4007 10.7021 19.7083C5.35851 14.3944 4.33293 9.75989 4.20247 7.47622C4.13788 6.32147 4.68297 5.34497 5.37788 4.65522L7.40451 2.63893ZM11.3312 4.27418C10.6763 3.39972 9.45697 3.32997 8.7698 4.01327L6.74188 6.02826C6.31563 6.45193 6.11155 6.91952 6.13738 7.36643C6.24072 9.18122 7.06738 13.3623 12.0687 18.3353C17.3155 23.551 22.1605 23.7073 24.0334 23.5316C24.4158 23.4968 24.7955 23.2978 25.1507 22.9452L26.9849 21.1201C27.7315 20.3787 27.5674 19.0276 26.5108 18.4541L24.0438 17.1121C23.3618 16.7426 22.5635 16.8641 22.0675 17.3575L21.4798 17.9426L20.7952 17.2554C21.4798 17.9426 21.4785 17.9439 21.4772 17.9439L21.4759 17.9465L21.4721 17.9503L21.463 17.9581L21.4436 17.9762C21.3891 18.0268 21.3304 18.0726 21.268 18.1131C21.1646 18.1816 21.0277 18.2578 20.8559 18.3211C20.5072 18.4515 20.0448 18.5213 19.4738 18.4334C18.354 18.2616 16.8698 17.4983 14.8975 15.5375C12.9264 13.5768 12.1566 12.1017 11.9835 10.9831C11.8943 10.4122 11.9654 9.94977 12.0971 9.60102C12.1696 9.40477 12.2735 9.22156 12.4046 9.05852L12.4459 9.01331L12.464 8.99393L12.4717 8.98618L12.4756 8.98231L12.4782 8.97972L12.8502 8.61031C13.403 8.05876 13.4805 7.14556 12.96 6.44935L11.3312 4.27418Z"
+                                            fill="#757575" />
+                                    </svg>
+                                    <input type="tel" class="form-control" id="tel" placeholder="Phone Number">
+                                </div>
 
                                 <div class="mb-3 d-flex align-items-center">
+                                    <!-- Email Icon SVG -->
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M25.2281 6.21675L14.5749 15.039C14.2722 15.2898 13.8914 15.4271 13.4983 15.4271C13.1052 15.4271 12.7244 15.2898 12.4217 15.039L1.77356 6.21675C1.71643 6.38873 1.68737 6.56878 1.6875 6.75V20.25C1.6875 20.6976 1.86529 21.1268 2.18176 21.4432C2.49822 21.7597 2.92745 21.9375 3.375 21.9375H23.625C24.0726 21.9375 24.5018 21.7597 24.8182 21.4432C25.1347 21.1268 25.3125 20.6976 25.3125 20.25V6.75C25.3132 6.56887 25.2847 6.38882 25.2281 6.21675ZM3.375 3.375H23.625C24.5201 3.375 25.3785 3.73058 26.0115 4.36351C26.6444 4.99645 27 5.85489 27 6.75V20.25C27 21.1451 26.6444 22.0035 26.0115 22.6365C25.3785 23.2694 24.5201 23.625 23.625 23.625H3.375C2.47989 23.625 1.62145 23.2694 0.988515 22.6365C0.355579 22.0035 0 21.1451 0 20.25V6.75C0 5.85489 0.355579 4.99645 0.988515 4.36351C1.62145 3.73058 2.47989 3.375 3.375 3.375ZM3.02062 5.0625L12.4301 12.8301C12.7315 13.079 13.1099 13.2156 13.5008 13.2165C13.8916 13.2174 14.2707 13.0826 14.5732 12.8351L24.0772 5.0625H3.02062Z"
+                                            fill="#757575" />
+                                    </svg>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
 
+                                <div class="mb-3 d-flex align-items-center">
+                                    <!-- Password Icon SVG -->
                                     <svg width="21" height="27" viewBox="0 0 21 27" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -269,116 +252,106 @@
                                             stroke="#757575" stroke-width="1.6875" stroke-miterlimit="10"
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-
-
-                                    <input type="password" class="form-control" id="password" placeholder=" ********">
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
                                 </div>
+
+                                <div class="mb-3 d-flex align-items-center">
+                                    <!-- Confirm Password Icon SVG -->
+                                    <svg width="21" height="27" viewBox="0 0 21 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 10.75V6.625C5 3.58625 7.46125 1.125 10.5 1.125C13.5388 1.125 16 3.58625 16 6.625V10.75M10.5 17.625C10.8647 17.625 11.2144 17.4801 11.4723 17.2223C11.7301 16.9644 11.875 16.6147 11.875 16.25C11.875 15.8853 11.7301 15.5356 11.4723 15.2777C11.2144 15.0199 10.8647 14.875 10.5 14.875C10.1353 14.875 9.78559 15.0199 9.52773 15.2777C9.26987 15.5356 9.125 15.8853 9.125 16.25C9.125 16.6147 9.26987 16.9644 9.52773 17.2223C9.78559 17.4801 10.1353 17.625 10.5 17.625ZM10.5 17.625V21.75M3.075 10.75H17.925C19.135 10.75 20.125 11.74 20.125 12.95V22.575C20.125 24.39 18.64 25.875 16.825 25.875H4.175C2.36 25.875 0.875 24.39 0.875 22.575V12.95C0.875 11.74 1.865 10.75 3.075 10.75Z"
+                                            stroke="#757575" stroke-width="1.6875" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <input type="password" class="form-control" id="confirm_password"
+                                        placeholder="Confirm Password">
+                                </div>
+
                                 <div class="d-flex justify-content-between mb-3">
                                     <div class="form-check_">
                                         <input type="checkbox" id="rememberMe">
-                                        <label class="form-check-label" for="rememberMe">تذكرني</label>
+                                        <label class="form-check-label" for="rememberMe">Agree to Terms and
+                                            Conditions</label>
                                     </div>
-                                    <a href="#" class="text-primary">نسيت كلمة المرور؟</a>
                                 </div>
 
-                                <button type="submit" class="btn btn-send">ارسال</button>
+                                <button type="submit" class="btn btn-send">Submit</button>
 
-                                <!-- إنشاء حساب -->
+                                <!-- Already have an account -->
                                 <div class="text-center mt-3">
-                                    <span>ليس لديك حساب؟ </span>
-                                    <a href="#" class="text-primary fw-bold">انشاء حساب</a>
+                                    <span>Already have an account?</span>
+                                    <a href="#" class="text-primary fw-bold">Log In</a>
                                 </div>
-
-
-
-
                             </form>
                         </div>
-
                     </div>
-
-
-                    <!-- معلومات التواصل -->
-
-
                 </div>
-
-
             </div>
-
         </section>
-
     </main>
 
 
 
     <footer>
-        <div class="footer-top">
-
-        </div>
-
+        <div class="footer-top"></div>
         <div class="footer">
             <div class="column footer-logo">
-
                 <div class="flex">
                     <div class="flex_icon">
-                        <img src="../images/logo.png" alt="لوجو مكتبة الجزيرة">
-                        <p>مكتبة الكترونية ومنصة ثقافية مقرها الامارات.</p>
+                        <img src="../images/logo.png" alt="Al Jazeera Library Logo">
+                        <p>An electronic library and cultural platform based in the UAE.</p>
                     </div>
-
                     <div class="footer-social">
                         <i class="fab fa-snapchat"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-facebook"></i>
                     </div>
-
                 </div>
-
-
             </div>
-
 
             <div class="grid_footer">
                 <div class="column">
-                    <h3>الأقسام</h3>
-                    <a href="#">الرئيسية</a>
-                    <a href="#">المكتبة</a>
-                    <a href="#">المدونة</a>
-                    <a href="#">من نحن</a>
-                    <a href="#">تواصل معنا</a>
+                    <h3>Sections</h3>
+                    <a href="#">Home</a>
+                    <a href="#">Library</a>
+                    <a href="#">Blog</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
                 </div>
-
-
                 <div class="column">
-                    <h3>روابط أخرى</h3>
-                    <a href="#">سياسة الإرجاع والاستبدال</a>
-                    <a href="#">الأسئلة الأكثر شيوعًا</a>
-                    <a href="#">سياسة الخصوصية</a>
+                    <h3>Other Links</h3>
+                    <a href="#">Return and Exchange Policy</a>
+                    <a href="#">Frequently Asked Questions</a>
+                    <a href="#">Privacy Policy</a>
                 </div>
-
                 <div class="column contact">
-                    <h3>تواصل معنا</h3>
+                    <h3>Contact Us</h3>
                     <p><i class="fas fa-phone"></i>50300046</p>
-                    <p><i class="fas fa-clock"></i>10:00 ص - 12:00 م</p>
+                    <p><i class="fas fa-clock"></i>10:00 AM - 12:00 PM</p>
                     <p><i class="fas fa-envelope"></i>kuwaitbookstorenew@gmail.com</p>
                 </div>
-
             </div>
 
             <div class="column books-img">
-                <img src="../images/book.png" alt="كتب">
+                <img src="../images/book.png" alt="Books">
             </div>
         </div>
 
         <div class="flex foot">
             <p style="text-align: center; font-family: 'Cairo', sans-serif;">
-                &copy; 2025 جميع الحقوق محفوظة لـ (<strong>مكتبة الجزيرة </strong>)
+                &copy; 2025 All rights reserved to (<strong>Al Jazeera Library</strong>)
             </p>
-
         </div>
+
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
 
 
 </body>

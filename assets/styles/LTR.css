@@ -76,3 +76,21 @@ ul.dropdown-menu.show {
 ul.pagination {
   direction: rtl;
 }
+
+.block_search h1 {
+  text-align: left;
+}
+
+.block_search {
+  direction: ltr;
+  text-align: left !important;
+}
+
+.block_search p {
+  text-align: left;
+}
+
+.cover_login {
+  border-radius: 20px 0 0 20px;
+
+}
