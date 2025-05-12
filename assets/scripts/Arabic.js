@@ -57,41 +57,48 @@ let header_ar = `
                     </a>
                     <div class="d-flex align-items-center order-lg-last">
                         <div class="icon-container" id="cart-icon">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        
+                            <a href="../pages/Cart.html">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.4375 9.625V5.5C14.4375 4.58832 14.0754 3.71398 13.4307 3.06932C12.7861 2.42466 11.9117 2.0625 11 2.0625C10.0884 2.0625 9.21402 2.42466 8.56937 3.06932C7.92471 3.71398 7.56255 4.58832 7.56255 5.5V9.625M17.9722 7.79808L19.13 18.7981C19.1941 19.4077 18.7175 19.9375 18.1042 19.9375H3.89588C3.75124 19.9377 3.60818 19.9074 3.476 19.8486C3.34382 19.7899 3.22548 19.704 3.12865 19.5966C3.03183 19.4891 2.95869 19.3625 2.914 19.2249C2.8693 19.0874 2.85404 18.9419 2.86921 18.7981L4.02788 7.79808C4.05461 7.54468 4.1742 7.31014 4.36361 7.13969C4.55302 6.96924 4.79882 6.87495 5.05363 6.875H16.9465C17.4745 6.875 17.9172 7.27375 17.9722 7.79808ZM7.9063 9.625C7.9063 9.71617 7.87008 9.8036 7.80562 9.86807C7.74115 9.93253 7.65372 9.96875 7.56255 9.96875C7.47138 9.96875 7.38394 9.93253 7.31948 9.86807C7.25501 9.8036 7.2188 9.71617 7.2188 9.625C7.2188 9.53383 7.25501 9.4464 7.31948 9.38193C7.38394 9.31747 7.47138 9.28125 7.56255 9.28125C7.65372 9.28125 7.74115 9.31747 7.80562 9.38193C7.87008 9.4464 7.9063 9.53383 7.9063 9.625V9.625ZM14.7813 9.625C14.7813 9.71617 14.7451 9.8036 14.6806 9.86807C14.6161 9.93253 14.5287 9.96875 14.4375 9.96875C14.3464 9.96875 14.2589 9.93253 14.1945 9.86807C14.13 9.8036 14.0938 9.71617 14.0938 9.625C14.0938 9.53383 14.13 9.4464 14.1945 9.38193C14.2589 9.31747 14.3464 9.28125 14.4375 9.28125C14.5287 9.28125 14.6161 9.31747 14.6806 9.38193C14.7451 9.4464 14.7813 9.53383 14.7813 9.625V9.625Z" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 </path>
-                            </svg>
+                            </svg></a>
+
                             <div class="badge" id="cart-count">3</div>
                         </div>
                         <div class="icon-container" id="fav-icon">
-                            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+
+                               <a href="../pages/Favorite.html">
+                                  <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2.75 9.99999C0.6875 7.24999 1.375 3.12499 4.8125 1.74999C8.25 0.37499 10.3125 3.12499 11 4.49999C11.6875 3.12499 14.4375 0.37499 17.875 1.74999C21.3125 3.12499 21.3125 7.24999 19.25 9.99999C17.1875 12.75 11 18.25 11 18.25C11 18.25 4.8125 12.75 2.75 9.99999Z" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 </path>
-                            </svg>
+                            </svg></a>
+                         
                             <div class="badge" id="fav-count">5</div>
                         </div>
-                        <button class="login"><a href="#">تسجيل الدخول</a></button>
+                        <button class="login"><a href="../pages/Login.html">تسجيل الدخول</a></button>
                         <div class="dropdown">
                             <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
                                 Ar
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/en">En</a></li>
+                                <li><a class="dropdown-item" href="/index_en.html">En</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="mainNavbar">
                         <div class="offcanvas-header">
-                            <a class="navbar-brand" href="#">
+                            <a class="navbar-brand" href="/index.html">
                                 <img src="../images/logo.png" alt="Logo">
                             </a>
-                            <button class="login"><a href="#">تسجيل الدخول</a></button>
+                            <button class="login"><a href="../pages/Login.html">تسجيل الدخول</a></button>
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="/index.html">الرئيسية</a></li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">المكتبة</a>
                                     <ul class="dropdown-menu">
@@ -116,9 +123,9 @@ let header_ar = `
                                         <li><a class="dropdown-item" href="#">أجهزة ذكية</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="/BlogWeb">المدونة </a></li>
-                                <li class="nav-item"><a class="nav-link" href="/AboutWeb">من نحن</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/ContactWeb">اتصل بنا</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/Blogs.html">المدونة </a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/About.html">من نحن</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../pages/Contact.html">اتصل بنا</a></li>
                             </ul>
                         </div>
                     </div>
@@ -151,18 +158,18 @@ let footer_ar = `
                 <div class="grid_footer">
                     <div class="column">
                         <h3>الأقسام</h3>
-                        <a href="#">الرئيسية</a>
-                        <a href="/AboutWeb">من نحن</a>
-                        <a href="/PublishingWeb">دار النشر</a>
-                        <a href="/AutherWeb">الكتاب</a>
-                        <a href="#">المدونة</a>
-                        <a href="/ContactWeb">تواصل معنا</a>
+                        <a href="/index_en.html">الرئيسية</a>
+                        <a href="../pages/About.html">من نحن</a>
+                        <a href="../pages/Publishing.html">دار النشر</a>
+                        <a href="../pages/Authors.html">الكتاب</a>
+                        <a href="../pages/Blogs.html">المدونة</a>
+                        <a href="../pages/Contact.html">تواصل معنا</a>
                     </div>
                     <div class="column">
                         <h3>روابط أخرى</h3>
-                        <a href="/ConditionWeb">الشروط و الأحكام</a>
-                        <a href="/PrivacyWeb">سياسة الخصوصية</a>
-                        <a href="/ReturnWeb">سياسة الإسترجاع والاستبدال</a>
+                        <a href="../pages/Condition.html">الشروط و الأحكام</a>
+                        <a href="../pages/Condition.html">سياسة الخصوصية</a>
+                        <a href="../pages/Condition.html">سياسة الإسترجاع والاستبدال</a>
                     </div>
                     <div class="column contact">
                         <h3>تواصل معنا</h3>
