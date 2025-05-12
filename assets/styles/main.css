@@ -552,6 +552,9 @@ button.pay_now.ptn a {
   margin: 10px;
 }
 
+a button.btn.btn-read.w-100 {
+  color: white;
+}
 /*  */
 
 h5.card-title {
