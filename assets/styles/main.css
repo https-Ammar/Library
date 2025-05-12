@@ -586,6 +586,10 @@ p.card-text {
   border-radius: 14px;
 }
 
+.card-body h5.card-title {
+  text-align: right !important;
+}
+
 @media screen and (max-width: 992px) {
   h5.card-title {
     font-size: small;

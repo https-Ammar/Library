@@ -47,6 +47,11 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0,
   }
 }
 
+@media (max-width: 768px) {
+  .row.box_shadow.p-3 {
+    gap: 25px;
+  }
+}
 @media (min-width: 992px) {
   .author-col {
     flex: 0 0 20%;
@@ -102,5 +107,8 @@ form.chackout_form select {
 }
 
 .d-flex.align-items-center.add {
+  direction: rtl;
+}
+.mb-4.d-flex.w-75.align-items-center {
   direction: rtl;
 }
