@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Cart</title>
+
+    <!-- Normalize and Main CSS -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dongle&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="../styles/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+
+
+        .book-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .price {
+            color: #8b0062;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .btn-custom {
+            background-color: #8b0062;
+            color: white;
+        }
+
+        .btn-custom:hover {
+            background-color: #6a004e;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="bookInquiryModal" tabindex="-1" aria-labelledby="bookInquiryLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3 rounded-4">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookInquiryLabel">استعلام عن الكتاب</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">البريد الالكتروني</label>
+                            <input type="email" class="form-control mt-3 p-3" id="email"
+                                placeholder="البريد الالكتروني">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn-purple">ارسال</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container py-5">
+        <div class="row g-4 align-items-start">
+
+            <div class="col-lg-3 col-md-4 col-sm-12 text-center book-image">
+
+                <div class="book-image me-2" style="background-image: url(../images/poster1.png);"></div>
+
+
+
+            </div>
+
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <div class="book-card">
+                    <h4 class="text-dark">اليوجا مع القطط <span class="text-muted fs-6">(متوفر)</span></h4>
+                    <p class="text-muted mb-1">ماريا فان بروجن</p>
+                    توجد أيام نتمنى فيها قراءة كتاب مميز، كتاب لا يخبرنا فقط عن الاتجاهات التي ينبغي أن نسلكها، بل
+                    <br>
+                    يجعلنا أيضًا راضين أكثر عن مظهر أجسامنا، وفي الوقت ذاته يرسم ضحكة على وجوهنا. كتاب اليوجا مع القطط
+                    <br>
+                    هو ذلك النوع من الكتب. يساعدك هذا الكتاب بالحصول على مصدر إلهام للتمارين اليومية من خلال رسائل سريعة
+                    <br>
+                    وقصيرة في نهاية كل تمرين. يحتوي هذا الكتاب على 32 تمرينًا، يظهر كل تمرين وضعية من وضعيات اليوجا مع
+                    <br>
+                    مساركة غير مألوفة لقططك لمساعدتك على أداء التمارين بأفضل طريقة ممكنة. 
+                    </p>
+
+                    <div class="d-flex justify-content-between align-items-center mt-4 flex-wrap">
+
+
+
+
+
+                        <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                            <button class="custom-filled-btn btn">
+                                <i class="bi bi-bag-plus custom-icon"></i>
+                                أضف الى السلة
+                            </button>
+
+                            <button class="custom-outline-btn btn" data-bs-toggle="modal"
+                                data-bs-target="#bookInquiryModal">
+                                استعلام عن الكتاب
+                            </button>
+
+
+                        </div>
+
+
+
+                        <div class="price">4.5 د.ك</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap Icons (اختياري لأيقونات جميلة) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .custom-outline-btn {
+            border: 3px solid #7A2563;
+            color: #7A2563;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        .custom-filled-btn {
+            background-color: #7A2563;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 10px 30px;
+            border: none;
+        }
+
+        .custom-icon {
+            margin-right: 8px;
+        }
+    </style>
+    <style>
+        .modal-header {
+            border-bottom: none;
+            justify-content: center;
+        }
+
+        .modal-title {
+            color: #7A2563;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        button.btn-close {
+            border: 1px solid;
+            border-radius: 50%;
+        }
+
+        .btn-close {
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+        }
+
+        .btn-purple {
+            background-color: #7A2563;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            padding: 15px 0;
+            width: 50%;
+        }
+    </style>
+    <style>
+        .book-image.me-2 {
+            /* width: 382px; */
+            height: 380px;
+            /* top: 221px; */
+            /* left: 1139px; */
+            border-radius: 9px;
+            background: red;
+            box-shadow: 0px 2px 2px 0px #00000033;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+        }
+
+        .book-card p {
+
+            font-size: unset;
+            line-height: 1.7;
+            letter-spacing: 0%;
+            text-align: right;
+        }
+
+        .book-card h4 {
+            color: #851C65 !important;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

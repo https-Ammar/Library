@@ -92,5 +92,15 @@ ul.pagination {
 
 .cover_login {
   border-radius: 20px 0 0 20px;
+}
+.row.responsive_row {
+  direction: ltr;
+}
+form.chackout_form input,
+form.chackout_form select {
+  text-align: left;
+}
 
+.d-flex.align-items-center.add {
+  direction: rtl;
 }
