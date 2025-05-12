@@ -52,7 +52,7 @@ let header_ar = `
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="/index.html">
                         <img src="../images/logo.png" alt="Logo">
                     </a>
                     <div class="d-flex align-items-center order-lg-last">
