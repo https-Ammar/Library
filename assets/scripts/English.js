@@ -71,7 +71,7 @@ let header_en = `
                 <div class="d-flex align-items-center order-lg-last">
                     <div class="icon-container" id="cart-icon">
 
-                        <a href="../pages/Cart_en.html">
+                        <a href="../pages/cart_en.html">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -84,7 +84,7 @@ let header_en = `
                     </div>
 
                     <div class="icon-container" id="fav-icon">
-                        <a href="../pages/Favorite_en.html">
+                        <a href="../pages/favorite_en.html">
                             <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -96,7 +96,7 @@ let header_en = `
                         <div class="badge" id="fav-count">5</div>
                     </div>
 
-                    <button class="login"><a href="../pages/Login_en.html">Login</a></button>
+                    <button class="login"><a href="../pages/login_en.html">Login</a></button>
 
                     <div class="dropdown">
                         <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
@@ -114,7 +114,7 @@ let header_en = `
                         <a class="navbar-brand" href="#">
                             <img src="../images/logo.png" alt="Logo">
                         </a>
-                        <button class="login"><a href="../pages/Login_en.html">Login</a></button>
+                        <button class="login"><a href="../pages/login_en.html">Login</a></button>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -147,10 +147,10 @@ let header_en = `
                                     <li><a class="dropdown-item" href="#">Smart Devices</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/Blogs_en.html">Blog </a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/About_en.html">About Us</a>
+                            <li class="nav-item"><a class="nav-link" href="../pages/blogs_en.html">Blog </a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/about_en.html">About Us</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/Contact_en.html">Contact
+                            <li class="nav-item"><a class="nav-link" href="../pages/contact_en.html">Contact
                                     Us</a></li>
                         </ul>
                     </div>
@@ -198,9 +198,9 @@ let footer_en = `
         </div>
         <div class="column">
             <h3>Other Links</h3>
-            <a href="../pages/Condition_en.html">Terms and Conditions</a>
-            <a href="../pages/Condition_en.html">Privacy Policy</a>
-            <a href="../pages/Condition_en.html">Return and Exchange Policy</a>
+            <a href="../pages/condition_en.html">Terms and Conditions</a>
+            <a href="../pages/condition_en.html">Privacy Policy</a>
+            <a href="../pages/condition_en.html">Return and Exchange Policy</a>
         </div>
         <div class="column contact">
             <h3>Contact Us</h3>
