@@ -415,17 +415,6 @@ a.active_link {
   padding: 25px;
 }
 
-section.Library ul,
-section.Favorite.Books ul,
-section.Publishing.House ul,
-section.quotes ul,
-.py-5 ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 25px 0;
-}
-
 .card_chil {
   border: 1.5px solid var(--card-border-color);
   border-radius: 14px;
@@ -2235,7 +2224,7 @@ tbody.tbody_cart td {
   padding: 5px;
 }
 
-button.btn.btn-outline-secondary {
+button.btn_plus {
   width: 25px;
   height: 25px;
   border: 1px solid #ccc;
@@ -2245,8 +2234,7 @@ button.btn.btn-outline-secondary {
   align-items: center;
   justify-content: center;
 }
-
-button.btn.btn-outline-secondary:hover {
+button.btn_plus:hover {
   color: black;
 }
 

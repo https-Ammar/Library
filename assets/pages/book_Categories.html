@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>كتبي المفضلة</title>
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<style>
+    button.pay_now.ptn.edit_free {
+        background: #F4E6EF;
+        color: #851d65;
+
+
+    }
+
+    .search_book {
+        background: #851C65 !important;
+        color: white !important;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<style>
+    .dropdown-menu {
+        min-width: 100%;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    /* ✅ هذا هو التعديل الأساسي */
+    .dropdown-menu.show {
+        position: static !important;
+        transform: none !important;
+    }
+
+    .filter-button {
+        background-color: #741e5e;
+        color: white;
+    }
+
+    .filter-button:hover {
+        background-color: #5c174b;
+    }
+
+    @media (min-width: 768px) {
+        .dropdown-mobile {
+            display: none;
+        }
+
+        .filter-box-desktop {
+            display: block;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .dropdown-mobile {
+            display: block;
+        }
+
+        .filter-box-desktop {
+            display: none;
+        }
+    }
+
+    .dropdown-toggle::after {
+        margin-right: 0.5rem;
+    }
+</style>
+
+<body>
+    <section id="nav_ar"></section>
+
+
+
+
+
+
+
+
+    <section>
+        <!-- نافذة المودال -->
+        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header border-0 justify-content-between">
+                        <h5 class="modal-title" id="editModalLabel">تحرير سريع</h5>
+                        <button type="button" class="btn-close ms-0" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <label for="bookTitleArabic" class="form-label">اسم الكتاب بالعربي</label>
+                                    <input type="text" class="form-control" id="bookTitleArabic"
+                                        placeholder="اسم الكتاب بالعربي">
+                                </div>
+                                <div class="col-6">
+                                    <label for="bookTitleEnglish" class="form-label">اسم الكتاب بالإنكليزي</label>
+                                    <input type="text" class="form-control" id="bookTitleEnglish"
+                                        placeholder="اسم الكتاب بالإنكليزي">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <label for="authorName" class="form-label">اسم المؤلف</label>
+                                    <input type="text" class="form-control" id="authorName" placeholder="اسم المؤلف">
+                                </div>
+                                <div class="col-6">
+                                    <label for="publisher" class="form-label">دار النشر</label>
+                                    <select class="form-select" id="publisher">
+                                        <option selected disabled>اختر دار النشر</option>
+                                        <option>دار الشروق</option>
+                                        <option>العبيكان</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="bookDescription" class="form-label">الوصف</label>
+                                <textarea class="form-control" id="bookDescription" rows="3"
+                                    placeholder="الوصف"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="bookImage" class="form-label d-block">صورة الكتاب</label>
+                                <div class="upload-area" onclick="document.getElementById('bookImage').click();">
+                                    <i class="bi bi-upload" style="font-size: 2rem;"></i><br>
+                                    قم برفع صورة الكتاب
+                                </div>
+                                <input type="file" id="bookImage" class="d-none">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-save">حفظ</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .modal-header,
+            .modal-footer {
+                justify-content: center;
+            }
+
+            .modal-title {
+                color: #80005e;
+                font-weight: bold;
+            }
+
+            .upload-area {
+                border: 2px dashed #ccc;
+                text-align: center;
+                padding: 40px 20px;
+                color: #888;
+                cursor: pointer;
+            }
+
+            .upload-area:hover {
+                background-color: #f8f8f8;
+                color: black !important;
+            }
+
+            .btn-save {
+                background-color: #80005e;
+                color: white;
+                width: 100%;
+                padding: 10px;
+                width: 50%;
+                margin-bottom: 3vh;
+            }
+
+            .modal-content form input,
+            .modal-content form select {
+                padding: 15px;
+                margin-top: 2vh;
+            }
+
+            div#editModal {
+                z-index: 999999999999999999;
+                position: fixed;
+                top: 0;
+                background: #0000004a;
+
+            }
+
+            .modal-content {
+                border-radius: 10px;
+            }
+
+            button.btn.btn-outline-secondary.dropdown-toggle.w-100 {
+                background: white;
+            }
+
+            button.btn.btn-outline-secondary.dropdown-toggle.w-100:hover {
+                color: black !important;
+            }
+        </style>
+        <style>
+            .dropdown-menu {
+                min-width: 100%;
+                padding: 10px;
+                border-radius: 12px;
+            }
+
+            /* ✅ لجعل القائمة الفرعية تظهر تحت العنصر وتدفعه لأسفل */
+            .dropdown-menu.show {
+                position: static !important;
+                transform: none !important;
+            }
+
+            .filter-button {
+                background-color: #741e5e;
+                color: white;
+            }
+
+            .filter-button:hover {
+                background-color: #5c174b;
+            }
+
+            @media (min-width: 768px) {
+                .dropdown-mobile {
+                    display: none;
+                }
+
+                .filter-box-desktop {
+                    display: block;
+                }
+            }
+
+            @media (max-width: 767.98px) {
+                .dropdown-mobile {
+                    display: block;
+                }
+
+                .filter-box-desktop {
+                    display: none;
+                }
+            }
+
+            .dropdown-toggle::after {
+                margin-right: 0.5rem;
+            }
+
+            /* ✅ منع التداخل بين القوائم الفرعية */
+            .sub-dropdown {
+                position: relative;
+            }
+
+            .sub-dropdown .dropdown-menu {
+                position: static !important;
+                transform: none !important;
+                box-shadow: none;
+                margin-top: 0.25rem;
+            }
+
+            button.btn.filter-button.w-100 {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: white !important;
+                background: #741e5f !important;
+                padding: 10px;
+                justify-content: center;
+
+            }
+
+
+            .nav_filter.d-flex.align-items-center.justify-content-between {
+                background: #851c652e;
+            }
+
+            .nav_filter.d-flex.align-items-center.justify-content-between button.btn.filter-button.w-100 svg {
+                color: #741e5f;
+                fill: #741e5f;
+            }
+
+
+
+            button.btn.filter-button.w-100 {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                background: none;
+                padding: 10px
+            }
+        </style>
+
+    </section>
+
+
+
+
+
+    <main class="container_">
+        <section class="terms and condition">
+            <div class="text_condition">
+                <h2>اقسام الكتب </h2>
+                <div class="path_link">
+                    <a href="#" class="active">الرئيسية</a>
+                    <span>/</span>
+                    <a href="#">اقسام الكتب</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="Library mt-5">
+            <div class="row">
+
+                <div class="col-12 col-md-3">
+                    <div class="dropdown dropdown-mobile mb-3 d-md-none">
+                        <button class="btn filter-button w-100 d-flex align-items-center justify-content-center gap-2"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.9999 2.75L11.9999 15.105M11.9999 19.466V21.25..." stroke="#222222"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                            <p class="m-0">فلتر</p>
+                        </button>
+
+                        <div class="dropdown-menu w-100 p-3 shadow rounded-3">
+                            <div class="mb-3">
+                                <label class="form-label">ترتيب حسب</label>
+                                <div class="dropdown sub-dropdown">
+                                    <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        الأحدث
+                                    </button>
+                                    <ul class="dropdown-menu w-100">
+                                        <li><a class="dropdown-item" href="#">الأحدث</a></li>
+                                        <li><a class="dropdown-item" href="#">الأقدم</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">دار النشر</label>
+                                <div class="dropdown sub-dropdown">
+                                    <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        اختر دار النشر
+                                    </button>
+                                    <ul class="dropdown-menu w-100">
+                                        <li><a class="dropdown-item" href="#">دار الشروق</a></li>
+                                        <li><a class="dropdown-item" href="#">الكتب خان</a></li>
+                                        <li><a class="dropdown-item" href="#">العين للنشر</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <button class="btn filter-button w-100 search_book">بحث</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-box-desktop d-none d-md-block">
+                        <div class="p-4 mb-3 bg-light rounded-3">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M11.9999 2.75L11.9999 15.105M11.9999 19.466V21.25..." stroke="#222222"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <p class="mb-0 fw-bold">فلتر</p>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">ترتيب حسب</label>
+                                <div class="dropdown sub-dropdown">
+                                    <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        الأحدث
+                                    </button>
+                                    <ul class="dropdown-menu w-100">
+                                        <li><a class="dropdown-item" href="#">الأحدث</a></li>
+                                        <li><a class="dropdown-item" href="#">الأقدم</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">دار النشر</label>
+                                <div class="dropdown sub-dropdown">
+                                    <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        اختر دار النشر
+                                    </button>
+                                    <ul class="dropdown-menu w-100">
+                                        <li><a class="dropdown-item" href="#">دار الشروق</a></li>
+                                        <li><a class="dropdown-item" href="#">الكتب خان</a></li>
+                                        <li><a class="dropdown-item" href="#">العين للنشر</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <button class="btn filter-button w-100 search_book">بحث</button>
+                        </div>
+                    </div>
+
+                    <script>
+                        document.querySelectorAll('.dropdown-menu .dropdown-item').forEach(item => {
+                            item.addEventListener('click', function (e) {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                const button = this.closest('.dropdown').querySelector('.dropdown-toggle');
+                                button.textContent = this.textContent.trim();
+                                button.style.backgroundColor = "#e0e0e0";
+                                button.classList.add('selected');
+                            });
+                        });
+
+                        document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                            menu.addEventListener('click', function (e) {
+                                e.stopPropagation();
+                            });
+                        });
+                    </script>
+                </div>
+
+
+
+
+                <div class="col-12 col-md-9">
+                    <div class="row">
+
+
+
+
+                        <div class="col-lg-4 col-md-6 col-6  mb-4">
+                            <div class="card_chil">
+                                <div class="postar" style="background-image: url(../images/poster4.png);"></div>
+                                <div class="titel flex">
+                                    <p class="text">أبي رسام خرائط</p>
+                                    <a href="#">
+                                        <p class="Vector">
+                                            <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.08268 7.70833V12.4583M5.91602 7.70833V12.4583M2.74935 4.54167V14.0417C2.74935 14.4616 2.91616 14.8643 3.2131 15.1613C3.51003 15.4582 3.91276 15.625 4.33268 15.625H10.666C11.0859 15.625 11.4887 15.4582 11.7856 15.1613C12.0825 14.8643 12.2493 14.4616 12.2493 14.0417V4.54167M1.16602 4.54167H13.8327M3.54102 4.54167L5.12435 1.375H9.87435L11.4577 4.54167"
+                                                    stroke="#717171" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="titel flex text">
+                                    <p class="text">أبي رسام خرائط</p>
+                                    <p class="price">٤٫٥ د.ك</p>
+                                </div>
+
+
+
+                                <div class="d-flex flex-column flex-md-row gap-3">
+                                    <a href="./chackout.html" class="flex-fill">
+                                        <button class="pay_now ptn w-100">شراء الان</button>
+                                    </a>
+                                    <a href="#" class="flex-fill">
+                                        <button class="pay_now ptn edit_free w-100" data-bs-toggle="modal"
+                                            data-bs-target="#editModal">
+                                            تحرير سريع
+                                        </button>
+                                    </a>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <nav class="mt-5 d-flex justify-content-center">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#" data-page="4">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#" data-page="3">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
+                            <li class="page-item"><a class="page-link active" href="#" data-page="1">1</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- جانب آخر -->
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <script>
+        document.querySelectorAll('.page-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelectorAll('.page-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                const page = this.getAttribute('data-page');
+                console.log("تم اختيار الصفحة رقم: " + page);
+            });
+        });
+    </script>
+
+    <script>
+        const editModal = document.getElementById('editModal');
+        editModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const bookTitle = button.getAttribute('data-book-title');
+            const bookTitleInput = document.getElementById('bookTitleArabic');
+            bookTitleInput.value = bookTitle || '';
+        });
+    </script>
+
+    <section id="foot_ar"></section>
+
+    <script src="../scripts/Arabic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
