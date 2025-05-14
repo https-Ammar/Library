@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Book Categories</title>
+
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../styles/LTR.css">
+</head>
+
+<body>
+    <section id="nav_en"></section>
+
+    <main class="container_">
+
+        <section>
+            <!-- Modal Window -->
+            <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content menu_filter">
+                        <div class="modal-header border-0 justify-content-between">
+                            <h5 class="modal-title" id="editModalLabel">Quick Edit</h5>
+                            <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form class="container form_Categories_book">
+                                <div class="row mb-3">
+                                    <div class="col-12 col-lg-6">
+                                        <label for="bookTitleArabic" class="form-label mt-3">Book Title in
+                                            Arabic</label>
+                                        <input type="text" class="form-control" id="bookTitleArabic"
+                                            placeholder="Book Title in Arabic" />
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <label for="bookTitleEnglish" class="form-label mt-3">Book Title in
+                                            English</label>
+                                        <input type="text" class="form-control" id="bookTitleEnglish"
+                                            placeholder="Book Title in English" />
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-12 col-lg-6">
+                                        <label for="authorName" class="form-label mt-3">Author Name</label>
+                                        <input type="text" class="form-control" id="authorName"
+                                            placeholder="Author Name" />
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <label for="publisher" class="form-label mt-3">Publisher</label>
+                                        <select class="form-select" id="publisher">
+                                            <option selected disabled>Select Publisher</option>
+                                            <option>Dar Al Shorouk</option>
+                                            <option>Obeikan</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="bookDescription" class="form-label mt-3">Description</label>
+                                    <textarea class="form-control" id="bookDescription" rows="3"
+                                        placeholder="Description"></textarea>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="bookImage" class="form-label d-block">Book Image</label>
+                                    <div class="upload-area" onclick="document.getElementById('bookImage').click();">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem"
+                                            fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                            <path
+                                                d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                        </svg>
+
+                                        <br />
+                                        Upload Book Image
+                                    </div>
+                                    <input type="file" id="bookImage" class="d-none" />
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer border-0 d-flex align-items-center justify-content-center">
+                            <button type="button" class="btn btn-save mb-3">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="terms and condition">
+            <div class="text_condition">
+                <h2>Book Categories</h2>
+                <div class="path_link">
+                    <a href="#" class="active">Home</a>
+                    <span>/</span>
+                    <a href="#">Book Categories</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="Library mt-5">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="dropdown dropdown-mobile mb-3 d-md-none">
+                        <button
+                            class="btn filter-button d-flex align-items-center justify-content-center gap-2 ptn_filter"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.9999 2.75L11.9999 15.105M11.9999 19.466V21.25M11.9999 19.466C11.4217 19.466 10.8672 19.2363 10.4584 18.8275C10.0496 18.4187 9.81989 17.8642 9.81989 17.286C9.81989 16.7078 10.0496 16.1533 10.4584 15.7445C10.8672 15.3357 11.4217 15.106 11.9999 15.106C12.5781 15.106 13.1326 15.3357 13.5414 15.7445C13.9502 16.1533 14.1799 16.7078 14.1799 17.286C14.1799 17.8642 13.9502 18.4187 13.5414 18.8275C13.1326 19.2363 12.5781 19.466 11.9999 19.466ZM18.6069 2.75L18.6069 8.498M18.6069 8.498C19.1852 8.498 19.7403 8.72823 20.1492 9.13715C20.5582 9.54608 20.7879 10.1007 20.7879 10.679C20.7879 11.2572 20.5572 11.8117 20.1484 12.2205C19.7396 12.6293 19.1851 12.859 18.6069 12.859M18.6069 8.498C18.0286 8.498 17.4745 8.72823 17.0655 9.13715C16.6566 9.54608 16.4269 10.1007 16.4269 10.679C16.4269 11.2572 16.6566 11.8117 17.0654 12.2205C17.4742 12.6293 18.0287 12.859 18.6069 12.859M18.6069 12.859V21.25M5.39289 2.75L5.39289 5.855M5.39289 10.216L5.39289 21.25M5.39289 10.216C4.81472 10.216 4.26023 9.98632 3.8514 9.57749C3.44257 9.16866 3.21289 8.61417 3.21289 8.036C3.21289 7.74972 3.26928 7.46624 3.37883 7.20175C3.48839 6.93726 3.64897 6.69694 3.8514 6.49451C4.05383 6.29208 4.29415 6.1315 4.55864 6.02194C4.82313 5.91239 5.10661 5.856 5.39289 5.856C5.67917 5.856 5.96265 5.91239 6.22714 6.02194C6.49163 6.1315 6.73195 6.29208 6.93438 6.49451C7.13681 6.69694 7.29739 6.93726 7.40695 7.20175C7.5165 7.46624 7.57289 7.74972 7.57289 8.036C7.57289 8.61417 7.34321 9.16866 6.93438 9.57749C6.52555 9.98632 5.97106 10.216 5.39289 10.216Z"
+                                    stroke="#222222" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            </svg>
+
+                            <p class="m-0">Filter</p>
+                        </button>
+
+                        <div class="dropdown-menu w-100 p-3 shadow rounded-3 ul_filter" id="Close_filter">
+                            <div class="d-flex align-items-center justify-content-between bg-filter border-x px-3 py-0">
+                                <div class="d-flex align-items-center gap-2 mb-3 border-0 bg-none">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9999 2.75L11.9999 15.105M11.9999 19.466V21.25M11.9999 19.466C11.4217 19.466 10.8672 19.2363 10.4584 18.8275C10.0496 18.4187 9.81989 17.8642 9.81989 17.286C9.81989 16.7078 10.0496 16.1533 10.4584 15.7445C10.8672 15.3357 11.4217 15.106 11.9999 15.106C12.5781 15.106 13.1326 15.3357 13.5414 15.7445C13.9502 16.1533 14.1799 16.7078 14.1799 17.286C14.1799 17.8642 13.9502 18.4187 13.5414 18.8275C13.1326 19.2363 12.5781 19.466 11.9999 19.466ZM18.6069 2.75L18.6069 8.498M18.6069 8.498C19.1852 8.498 19.7403 8.72823 20.1492 9.13715C20.5582 9.54608 20.7879 10.1007 20.7879 10.679C20.7879 11.2572 20.5572 11.8117 20.1484 12.2205C19.7396 12.6293 19.1851 12.859 18.6069 12.859M18.6069 8.498C18.0286 8.498 17.4745 8.72823 17.0655 9.13715C16.6566 9.54608 16.4269 10.1007 16.4269 10.679C16.4269 11.2572 16.6566 11.8117 17.0654 12.2205C17.4742 12.6293 18.0287 12.859 18.6069 12.859M18.6069 12.859V21.25M5.39289 2.75L5.39289 5.855M5.39289 10.216L5.39289 21.25M5.39289 10.216C4.81472 10.216 4.26023 9.98632 3.8514 9.57749C3.44257 9.16866 3.21289 8.61417 3.21289 8.036C3.21289 7.74972 3.26928 7.46624 3.37883 7.20175C3.48839 6.93726 3.64897 6.69694 3.8514 6.49451C4.05383 6.29208 4.29415 6.1315 4.55864 6.02194C4.82313 5.91239 5.10661 5.856 5.39289 5.856C5.67917 5.856 5.96265 5.91239 6.22714 6.02194C6.49163 6.1315 6.73195 6.29208 6.93438 6.49451C7.13681 6.69694 7.29739 6.93726 7.40695 7.20175C7.5165 7.46624 7.57289 7.74972 7.57289 8.036C7.57289 8.61417 7.34321 9.16866 6.93438 9.57749C6.52555 9.98632 5.97106 10.216 5.39289 10.216Z"
+                                            stroke="#222222" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round"></path>
+                                    </svg>
+
+                                    <p class="mb-0 fw-bold">Filter</p>
+                                </div>
+
+                                <div class="close-filter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="bi bi-x-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                        <path
+                                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="row p-3">
+                                <div class="mb-3">
+                                    <div class="dropdown sub-dropdown">
+                                        <button
+                                            class="p-3 d-flex align-items-center justify-content-between dropdown-toggle btn btn-outline-secondary w-100"
+                                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Newest
+
+                                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L9 10L17 1" stroke="#222222" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <ul class="dropdown-menu w-100 ul_filter">
+                                            <li><a class="dropdown-item" href="#">Newest</a></li>
+                                            <li><a class="dropdown-item" href="#">Oldest</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="dropdown sub-dropdown">
+                                        <button
+                                            class="p-3 d-flex align-items-center justify-content-between dropdown-toggle btn btn-outline-secondary w-100"
+                                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            اختر دار النشر
+
+                                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L9 10L17 1" stroke="#222222" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <ul class="dropdown-menu w-100 ul_filter">
+                                            <li><a class="dropdown-item" href="#">Dar El Shorouk</a></li>
+                                            <li><a class="dropdown-item" href="#">El Kotob Khan</a></li>
+                                            <li><a class="dropdown-item" href="#">Al Ain Publishing</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="btn filter-button w-100 search_book">
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-box-desktop d-none d-md-block">
+                        <div class="p-4 mb-3 bg-light rounded-3">
+                            <div class="d-flex align-items-center gap-2 mb-3 border-0">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9999 2.75L11.9999 15.105M11.9999 19.466V21.25M11.9999 19.466C11.4217 19.466 10.8672 19.2363 10.4584 18.8275C10.0496 18.4187 9.81989 17.8642 9.81989 17.286C9.81989 16.7078 10.0496 16.1533 10.4584 15.7445C10.8672 15.3357 11.4217 15.106 11.9999 15.106C12.5781 15.106 13.1326 15.3357 13.5414 15.7445C13.9502 16.1533 14.1799 16.7078 14.1799 17.286C14.1799 17.8642 13.9502 18.4187 13.5414 18.8275C13.1326 19.2363 12.5781 19.466 11.9999 19.466ZM18.6069 2.75L18.6069 8.498M18.6069 8.498C19.1852 8.498 19.7403 8.72823 20.1492 9.13715C20.5582 9.54608 20.7879 10.1007 20.7879 10.679C20.7879 11.2572 20.5572 11.8117 20.1484 12.2205C19.7396 12.6293 19.1851 12.859 18.6069 12.859M18.6069 8.498C18.0286 8.498 17.4745 8.72823 17.0655 9.13715C16.6566 9.54608 16.4269 10.1007 16.4269 10.679C16.4269 11.2572 16.6566 11.8117 17.0654 12.2205C17.4742 12.6293 18.0287 12.859 18.6069 12.859M18.6069 12.859V21.25M5.39289 2.75L5.39289 5.855M5.39289 10.216L5.39289 21.25M5.39289 10.216C4.81472 10.216 4.26023 9.98632 3.8514 9.57749C3.44257 9.16866 3.21289 8.61417 3.21289 8.036C3.21289 7.74972 3.26928 7.46624 3.37883 7.20175C3.48839 6.93726 3.64897 6.69694 3.8514 6.49451C4.05383 6.29208 4.29415 6.1315 4.55864 6.02194C4.82313 5.91239 5.10661 5.856 5.39289 5.856C5.67917 5.856 5.96265 5.91239 6.22714 6.02194C6.49163 6.1315 6.73195 6.29208 6.93438 6.49451C7.13681 6.69694 7.29739 6.93726 7.40695 7.20175C7.5165 7.46624 7.57289 7.74972 7.57289 8.036C7.57289 8.61417 7.34321 9.16866 6.93438 9.57749C6.52555 9.98632 5.97106 10.216 5.39289 10.216Z"
+                                        stroke="#222222" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                </svg>
+
+                                <p class="mb-0 fw-bold">Filter</p>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="dropdown sub-dropdown">
+                                    <button
+                                        class="d-flex align-items-center justify-content-between dropdown-toggle btn btn-outline-secondary w-100"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Newest
+
+                                        <svg width="18" height="11" viewBox="0 0 18 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L9 10L17 1" stroke="#222222" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <ul class="dropdown-menu w-100 ul_filter">
+                                        <li><a class="dropdown-item" href="#">Newest</a></li>
+                                        <li><a class="dropdown-item" href="#">Oldest</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="dropdown sub-dropdown">
+                                    <button
+                                        class="d-flex align-items-center justify-content-between dropdown-toggle btn btn-outline-secondary w-100"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Select Publisher
+
+                                        <svg width="18" height="11" viewBox="0 0 18 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L9 10L17 1" stroke="#222222" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <ul class="dropdown-menu w-100 ul_filter">
+                                        <li><a class="dropdown-item" href="#">Dar El Shorouk</a></li>
+                                        <li><a class="dropdown-item" href="#">El Kotob Khan</a></li>
+                                        <li><a class="dropdown-item" href="#">Al Ain Publishing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <button class="btn filter-button w-100 search_book">Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-9">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-6 mb-4">
+                            <div class="card_chil">
+                                <div class="postar" style="background-image: url(../images/poster4.png)"></div>
+                                <div class="titel flex">
+                                    <p class="text">My Father is a Cartographer</p>
+                                    <a href="#">
+                                        <p class="Vector">
+                                            <svg width="15" height="17" viewBox="0 0 15 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.08268 7.70833V12.4583M5.91602 7.70833V12.4583M2.74935 4.54167V14.0417C2.74935 14.4616 2.91616 14.8643 3.2131 15.1613C3.51003 15.4582 3.91276 15.625 4.33268 15.625H10.666C11.0859 15.625 11.4887 15.4582 11.7856 15.1613C12.0825 14.8643 12.2493 14.4616 12.2493 14.0417V4.54167M1.16602 4.54167H13.8327M3.54102 4.54167L5.12435 1.375H9.87435L11.4577 4.54167"
+                                                    stroke="#717171" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="titel flex text">
+                                    <p class="text">My Father is a Cartographer</p>
+                                    <p class="price">4.5 KD</p>
+                                </div>
+
+                                <div class="d-flex flex-column flex-md-row gap-3">
+                                    <a href="./chackout.html" class="flex-fill">
+                                        <button class="pay_now ptn w-100">Buy Now</button>
+                                    </a>
+                                    <a href="#" class="flex-fill">
+                                        <button class="pay_now ptn edit_free w-100" data-bs-toggle="modal"
+                                            data-bs-target="#editModal">
+                                            Quick Edit
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="mt-5 d-flex justify-content-center">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" data-page="4">4</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" data-page="3">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" data-page="2">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link active" href="#" data-page="1">1</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- جانب آخر -->
+            </div>
+        </section>
+    </main>
+
+    <section id="foot_en"></section>
+
+    <script>
+        document
+            .querySelectorAll(".dropdown-menu .dropdown-item")
+            .forEach((item) => {
+                item.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const button =
+                        this.closest(".dropdown").querySelector(".dropdown-toggle");
+                    button.textContent = this.textContent.trim();
+                    button.style.backgroundColor = "#e0e0e0";
+                    button.classList.add("selected");
+                });
+            });
+
+        document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+            menu.addEventListener("click", function (e) {
+                e.stopPropagation();
+            });
+        });
+
+        document.querySelectorAll(".close-filter").forEach((btn) => {
+            btn.addEventListener("click", function () {
+                const dropdown = btn.closest(".dropdown");
+                const toggleButton = dropdown.querySelector(
+                    '[data-bs-toggle="dropdown"]'
+                );
+                const dropdownInstance =
+                    bootstrap.Dropdown.getOrCreateInstance(toggleButton);
+                dropdownInstance.hide();
+            });
+        });
+    </script>
+
+    <script>
+        const editModal = document.getElementById("editModal");
+        editModal.addEventListener("show.bs.modal", function (event) {
+            const button = event.relatedTarget;
+            const bookTitle = button.getAttribute("data-book-title");
+            const bookTitleInput = document.getElementById("bookTitleArabic");
+            bookTitleInput.value = bookTitle || "";
+        });
+    </script>
+    <script src="../scripts/English.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
