@@ -119,10 +119,6 @@ ul.dropdown-menu.trans.show {
     border-bottom-left-radius: 10px;
     border-width: 1px;
   }
-
-  ul.dropdown-menu.show {
-    padding: 0;
-  }
 }
 
 /*  */
@@ -1104,10 +1100,7 @@ li.icon {
   .d-flex.align-items-center.order-lg-last .login {
     display: none;
   }
-  ul.dropdown-menu.show {
-    background: no-repeat;
-    border: navajowhite;
-  }
+
   .categories-section {
     max-width: 100%;
   }
@@ -2473,3 +2466,191 @@ button.pay_now.ptn.p-3.Chackout {
   }
 }
 /* Chackout */
+/* book_Categories */
+/* === Buttons === */
+button.pay_now.ptn.edit_free {
+  background: #f4e6ef;
+  color: #851d65;
+}
+
+.filter-button,
+button.btn.filter-button.w-100 {
+  background-color: #741e5e !important;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.filter-button:hover {
+  background-color: #5c174b;
+}
+
+/* === Dropdowns === */
+
+.ul_filter {
+  position: static !important;
+  transform: none !important;
+  box-shadow: none;
+  margin-top: 0.25rem;
+}
+
+button.d-flex.align-items-center.justify-content-between.dropdown-toggle.btn.btn-outline-secondary.w-100::after {
+  display: none !important;
+}
+
+ul.dropdown-menu.w-100.ul_filter.show {
+  margin-top: 1vh !important;
+  border: 1px solid #c1c1c1 !important;
+}
+/* === Responsive Dropdown for Mobile === */
+@media screen and (max-width: 992px) {
+  .dropdown-menu.w-100.p-3.shadow.rounded-3.show {
+    position: fixed !important;
+    z-index: 999999999;
+    width: 100%;
+    left: 0;
+    height: 100vh;
+    top: 0;
+    background: white;
+    overflow: hidden;
+    border-radius: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+/* === Responsive Filter Visibility === */
+@media (min-width: 768px) {
+  .dropdown-mobile {
+    display: none;
+  }
+
+  .filter-box-desktop {
+    display: block;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .dropdown-mobile {
+    display: block;
+  }
+
+  .filter-box-desktop {
+    display: none;
+  }
+}
+
+/* === Modal === */
+.modal-header,
+.modal-footer {
+  justify-content: center;
+}
+
+.modal-title {
+  color: #80005e;
+  font-weight: bold;
+}
+
+.upload-area {
+  border: 2px dashed #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  color: #888;
+  cursor: pointer;
+}
+
+.upload-area:hover {
+  background-color: #f8f8f8;
+  color: black !important;
+}
+
+.btn-save {
+  background-color: #80005e !important;
+  color: white !important;
+  width: 50%;
+}
+
+.modal-content form input,
+.modal-content form select {
+  padding: 15px;
+  margin-top: 2vh;
+}
+
+div#editModal {
+  z-index: 999999999999999999;
+  position: fixed;
+  top: 0;
+  background: #0000004a;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+/* === Search Button === */
+.search_book {
+  background: #851c65 !important;
+  color: white !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Others === */
+.bg-filter {
+  background: #741e5f33;
+}
+
+.d-flex.align-items-center.gap-2.mb-3.border-0.bg-none {
+  background: none;
+  color: #741e5f !important;
+}
+
+.d-flex.align-items-center.gap-2.mb-3.border-0.bg-none svg {
+  fill: #741e5f !important;
+}
+
+.nav_filter.d-flex.align-items-center.justify-content-between {
+  background: #851c652e;
+  padding: 0 15px;
+}
+
+.nav_filter.d-flex.align-items-center.justify-content-between
+  button.btn.filter-button.w-100
+  svg {
+  color: #741e5f;
+  fill: #741e5f;
+}
+
+h5#editModalLabel {
+  font-size: large;
+}
+button.btn.btn-outline-secondary.dropdown-toggle.w-100:hover {
+  color: black !important;
+}
+@media screen and (max-width: 767px) {
+  .modal-dialog.modal-dialog-centered.modal-lg {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .menu_filter {
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .modal-header.border-0.justify-content-between {
+    background: #741e5f33;
+    border-radius: 0;
+  }
+}
+
+button.btn.filter-button.d-flex.align-items-center.justify-content-center.gap-2.ptn_filter {
+  background: none !important;
+  border: 2px solid #741e5e;
+  color: #741e5e !important;
+}
+/* book_Categories */
