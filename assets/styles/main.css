@@ -425,7 +425,7 @@ a.active_link {
 }
 
 .postar {
-  height: 343px;
+  height: 35vh;
   border-radius: 9px;
   background: white no-repeat top center / cover;
   margin: auto;
@@ -2071,16 +2071,6 @@ section.paner {
     height: 6vh;
   }
 
-  .Publishing_card img {
-    width: 65.29px !important;
-    height: 65.29px !important;
-  }
-
-  .Publishing_card {
-    width: 100px;
-    height: 84px;
-    padding: 10px;
-  }
   .Ads_Sec {
     background-size: contain !important;
   }
@@ -2461,7 +2451,6 @@ button.pay_now.ptn.p-3.Chackout {
   }
 
   section.terms.and.condition {
-    border-radius: 0;
     height: 20vh;
   }
 }
