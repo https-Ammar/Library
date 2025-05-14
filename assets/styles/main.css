@@ -284,6 +284,10 @@ div#loding {
   z-index: 1;
 }
 
+.font-size-larger {
+  font-size: larger !important;
+}
+
 .content {
   position: absolute;
 
@@ -464,7 +468,7 @@ p.price {
 =============================*/
 button.pay_now.ptn {
   width: 100%;
-  height: 36px;
+
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -2650,3 +2654,41 @@ button.btn.filter-button.d-flex.align-items-center.justify-content-center.gap-2.
   }
 }
 /* book_Categories */
+
+/*  */
+button.custom-outline-btn.btn.btn.pay_now.ptn.d-flex.align-items-center.gap-3.p-3 {
+  background: no-repeat;
+  color: #851d65;
+}
+
+h4.text-dark {
+  font-size: larger;
+  color: #851d65 !important;
+}
+
+span.text-muted.fs-6 {
+  color: #a6a6a6;
+  font-weight: 300;
+}
+.book-image.me-2 {
+  height: 45vh;
+  background-position: center center;
+  border-radius: 10px;
+}
+p.Vector.Vectorـdetails {
+  position: revert-layer;
+}
+
+main.container_.mt-5 {
+  margin-top: 12vh !important;
+}
+
+@media screen and (max-width: 767px) {
+  .book-image.me-2 {
+    height: 28vh;
+  }
+  h4.text-dark.mb-2 {
+    font-size: small;
+  }
+}
+/*  */
