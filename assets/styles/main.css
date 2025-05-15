@@ -2819,7 +2819,7 @@ section.Favorite ul li:first-child {
 */
 @media screen and (max-width: 992px) {
   .book-image.me-2 {
-    height: 35vh;
+    height: 30vh;
   }
 
   .col-lg-3.col-md-4.col-sm-6.col-6.d-block.d-sm-none.book-image {
