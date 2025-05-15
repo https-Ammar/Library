@@ -503,6 +503,11 @@ button.pay_now.ptn a {
   height: 256px;
   margin: 25px 0;
   background: no-repeat center center / cover;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 /*=============================
@@ -2847,3 +2852,8 @@ section.Favorite ul li:first-child {
 }
 /* 
  */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
