@@ -2785,6 +2785,11 @@ main.container_.mt-5 {
   p.text-muted.mb-2.d-none.d-sm-block {
     display: none !important;
   }
+  section.paner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+  }
 }
 /*  */
 
@@ -2795,4 +2800,11 @@ main.container_.mt-5 {
 
 .card_book_ui.author-col {
   padding: 5px;
+}
+
+section.Library ul li:first-child,
+section.quotes ul li:first-child,
+section.Publishing.House ul li:first-child,
+section.Favorite ul li:first-child {
+  font-size: larger;
 }
