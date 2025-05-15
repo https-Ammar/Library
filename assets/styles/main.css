@@ -1005,6 +1005,13 @@ p.Vector {
   .Publishing_card {
     width: auto;
   }
+
+  .Publishing_card {
+    padding: 10px !important;
+  }
+  .category-item.col-6.col-md-3.col-lg-2.mb-3 {
+    padding: 5px;
+  }
   .Publishing_House {
     gap: 10px;
   }
@@ -2810,5 +2817,33 @@ section.Favorite ul li:first-child {
 }
 /*  
 */
+@media screen and (max-width: 992px) {
+  .book-image.me-2 {
+    height: 35vh;
+  }
+
+  .col-lg-3.col-md-4.col-sm-6.col-6.d-block.d-sm-none.book-image {
+    display: none !important;
+  }
+
+  .d-flex.align-items-center.justify-content-between.d-none.d-sm-block.position-reltev,
+  .col-12.col-md-2.d-none.d-sm-block,
+  p.text-muted.mb-2.d-none.d-sm-block {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .d-flex.align-items-center.justify-content-between.d-none.d-sm-block.position-reltev,
+  .col-12.col-md-2.d-none.d-sm-block,
+  p.text-muted.mb-2.d-none.d-sm-block {
+    display: none !important;
+  }
+
+  .col-lg-3.col-md-4.col-sm-6.col-6.d-block.d-sm-none.book-image {
+    display: grid !important;
+    padding: 20px !important;
+  }
+}
 /* 
  */
