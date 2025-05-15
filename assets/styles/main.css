@@ -1977,7 +1977,7 @@ section.paner {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .paner_img {
@@ -2074,6 +2074,22 @@ section.paner {
     width: 138px;
     height: 90px;
     border-radius: 5px;
+  }
+
+  .paner_img.three {
+    background-image: url(../images/tree.png) !important;
+  }
+
+  .paner_img.tow {
+    background-image: url(../images/tow.png) !important;
+  }
+
+  .paner_img.one {
+    background-image: url(../images/1one.png) !important;
+  }
+
+  section.paner {
+    gap: 0;
   }
 
   section.paner {
