@@ -99,8 +99,8 @@ ul.dropdown-menu.trans.show {
 
 .flex.bar ul li svg,
 .nav_right ul li svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   color: white;
 }
 .nav_bar_ {
@@ -407,6 +407,26 @@ button.login a {
 
 button.login:hover a {
   color: white;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper .password_login {
+  width: 100%;
+  padding-right: 40px;
+  /* مساحة للأيقونة */
+}
+
+.password-wrapper .toggle-eye {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
 }
 
 /*=============================
@@ -1745,6 +1765,12 @@ span.card-date {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .card-img-top.cover {
+    height: 15vh;
+  }
+}
+
 .author-col {
   flex: 0 0 50%;
   /* 2 أعمدة في الفون */
@@ -1800,10 +1826,11 @@ edit Home Page
 /* === Carousel Wrapper === */
 .carousel-wrapper {
   position: relative;
-  padding: 0 60px;
+  padding: 0 !important;
   max-width: 1200px;
   margin: 0 auto;
   direction: ltr !important;
+  overflow: hidden;
 }
 
 .owl-carousel {
@@ -1812,15 +1839,41 @@ edit Home Page
 
 .owl-nav {
   position: absolute;
-  top: 20%;
-  left: -60px;
-  width: calc(100% + 120px);
+  top: 30%;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
   pointer-events: none;
 }
 
+.owl-theme .owl-nav [class*="owl-"] {
+  color: #fff;
+  font-size: 14px;
+  z-index: 99999999999 !important;
+  margin: -15px !important;
+  padding: 4px 7px;
+  background: #d6d6d6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  background: white !important;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xxx-large !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+}
 .owl-nav button.owl-prev,
 .owl-nav button.owl-next {
   background: rgba(0, 0, 0, 0.6);
@@ -1840,7 +1893,7 @@ edit Home Page
 
 .owl-nav button.owl-prev:hover,
 .owl-nav button.owl-next:hover {
-  background: rgba(0, 0, 0, 0.9);
+  color: black !important;
 }
 
 .item {
@@ -1965,9 +2018,9 @@ section.categories {
 
 @media screen and (max-width: 767px) {
   .owl-carousel .owl-item .category_img {
-    width: 70px;
+    width: 60px;
 
-    height: 70px;
+    height: 60px;
   }
 }
 
@@ -2856,4 +2909,5 @@ section.Favorite ul li:first-child {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
 }

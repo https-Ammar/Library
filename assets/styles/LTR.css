@@ -116,3 +116,7 @@ form.chackout_form select {
 h5.card-title {
   text-align: left !important;
 }
+
+.password-wrapper .toggle-eye {
+  right: -90% !important;
+}
