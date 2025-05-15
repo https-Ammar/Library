@@ -563,14 +563,14 @@ a button.btn.btn-read.w-100 {
 h5.card-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 100%;
+
   color: #851c65;
 }
 
 p.card-text {
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
+
   letter-spacing: 0%;
 }
 
@@ -2758,8 +2758,9 @@ span.text-muted.fs-6 {
   background-position: center center;
   border-radius: 10px;
 }
+
 p.Vector.Vectorـdetails {
-  position: revert-layer;
+  position: absolute;
 }
 
 main.container_.mt-5 {
@@ -2772,6 +2773,17 @@ main.container_.mt-5 {
   }
   h4.text-dark.mb-2 {
     font-size: small;
+  }
+  p.Vector.Vectorـdetails {
+    position: revert-layer;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .d-flex.align-items-center.justify-content-between.d-none.d-sm-block.position-reltev,
+  .col-12.col-md-2.d-none.d-sm-block,
+  p.text-muted.mb-2.d-none.d-sm-block {
+    display: none !important;
   }
 }
 /*  */
