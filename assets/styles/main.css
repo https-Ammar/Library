@@ -70,6 +70,25 @@ a.dropdown-item.en_ar {
   color: white;
   margin-top: -6px;
 }
+
+ul.dropdown-menu.show {
+  padding: 0 !important;
+}
+
+a.dropdown-item.en_ar:hover {
+  color: white !important;
+  background: #b11981 !important;
+  border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  -ms-border-radius: 5px !important;
+  -o-border-radius: 5px !important;
+}
+
+ul.dropdown-menu.Translate_lang.show {
+  background: none;
+}
+
 ul.dropdown-menu.show {
   border: navajowhite !important;
 }
@@ -92,9 +111,7 @@ ul.dropdown-menu.trans.show {
 @media screen and (min-width: 992px) {
   ul.dropdown-menu.show {
     width: 146px;
-    height: 243;
-    /* top: 164px; */
-    /* left: 1222px; */
+
     border-radius: 10px;
     border-width: 1px;
     border: 1px solid #d9d9d9;
@@ -102,12 +119,9 @@ ul.dropdown-menu.trans.show {
   }
 
   a.dropdown-item {
-    /* font-family: Almarai; */
     font-weight: 400;
     font-size: 16px;
-    /* line-height: 100%; */
     letter-spacing: 0%;
-    /* text-align: right; */
     border-bottom: 1px solid #d9d9d9;
   }
 
@@ -578,9 +592,9 @@ p.card-text {
   border-radius: 14px;
 }
 
-.card-body h5.card-title {
+/* .card-body h5.card-title {
   text-align: right !important;
-}
+} */
 
 @media screen and (max-width: 992px) {
   h5.card-title {
@@ -1576,7 +1590,6 @@ h5.card-title {
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 0%;
-  text-align: center !important;
   color: #851c65;
 }
 
@@ -2460,6 +2473,7 @@ button.pay_now.ptn.p-3.Chackout {
 }
 /* Chackout */
 /* book_Categories */
+
 /* === Buttons === */
 button.pay_now.ptn.edit_free {
   background: #f4e6ef;
@@ -2624,6 +2638,28 @@ h5#editModalLabel {
 button.btn.btn-outline-secondary.dropdown-toggle.w-100:hover {
   color: black !important;
 }
+
+ul.dropdown-menu.w-100.ul_filter.show {
+  padding: 0;
+}
+
+a.dropdown-item.hover_items_ptn:hover,
+a.dropdown-item.hover_items_ptn:hover {
+  color: #741e5e !important;
+  border-bottom: 8px solid #741e5e !important;
+
+  border: 1px solid #851c65;
+  background: #851c652e;
+
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-width: 1px;
+}
+
+button.d-flex.align-items-center.justify-content-between.dropdown-toggle.btn.btn-outline-secondary.w-100.selected {
+  background-color: #ff000000 !important;
+}
+
 @media screen and (max-width: 767px) {
   .modal-dialog.modal-dialog-centered.modal-lg {
     padding: 0 !important;
@@ -2653,8 +2689,39 @@ button.btn.filter-button.d-flex.align-items-center.justify-content-center.gap-2.
     margin-top: 2vh;
   }
 }
+
 /* book_Categories */
 
+/* boook */
+p.Vector.Vectorـdetails {
+  position: absolute;
+  left: 0;
+  top: 0vh;
+}
+
+.d-flex.align-items-center.justify-content-between.d-none.d-sm-block.position-reltev {
+  position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  p.Vector.Vectorـdetails {
+    position: static;
+    left: 0;
+    top: 0vh;
+  }
+
+  .col-lg-3.col-md-4.col-sm-6.col-6.d-block.d-sm-none.book-image {
+    display: grid !important;
+    grid-template-rows: 7fr 1fr !important;
+    margin: 0;
+  }
+}
+/* bookkkkk */
+
+ul.dropdown-menu.trans.Translate_lang.show {
+  display: flex;
+  background: no-repeat;
+}
 /*  */
 button.custom-outline-btn.btn.btn.pay_now.ptn.d-flex.align-items-center.gap-3.p-3 {
   background: no-repeat;

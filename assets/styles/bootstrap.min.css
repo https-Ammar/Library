@@ -2643,22 +2643,7 @@ textarea.form-control.is-invalid {
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn,
-.btn.active,
-.btn.show,
-.btn:first-child:active,
-:not(.btn-check) + .btn:active {
-  color: var(--bs-btn-active-color);
-  background-color: var(--bs-btn-active-bg);
-  border-color: var(--bs-btn-active-border-color);
-}
-.btn-check:checked + .btn:focus-visible,
-.btn.active:focus-visible,
-.btn.show:focus-visible,
-.btn:first-child:active:focus-visible,
-:not(.btn-check) + .btn:active:focus-visible {
-  box-shadow: var(--bs-btn-focus-box-shadow);
-}
+
 .btn-check:checked:focus-visible + .btn {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
@@ -2818,12 +2803,9 @@ fieldset:disabled .btn {
 .btn-outline-secondary {
   --bs-btn-color: #6c757d;
   --bs-btn-border-color: #6c757d;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #6c757d;
   --bs-btn-hover-border-color: #6c757d;
   --bs-btn-focus-shadow-rgb: 108, 117, 125;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #6c757d;
   --bs-btn-active-border-color: #6c757d;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #6c757d;

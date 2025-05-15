@@ -112,3 +112,7 @@ form.chackout_form select {
 .mb-4.d-flex.w-75.align-items-center {
   direction: rtl;
 }
+
+h5.card-title {
+  text-align: left !important;
+}
