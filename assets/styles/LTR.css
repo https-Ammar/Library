@@ -120,3 +120,7 @@ h5.card-title {
 .password-wrapper .toggle-eye {
   right: -90% !important;
 }
+
+ul.dropdown-menu.trans.show {
+  left: 0 !important;
+}

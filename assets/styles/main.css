@@ -2067,6 +2067,71 @@ section.paner {
   border-radius: 6px;
 }
 
+.sections-containt-library {
+  cursor: pointer;
+  background-image: url(../images/paner_img2.png);
+  height: 158px;
+  width: 100%;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sections-containt-shopping {
+  cursor: pointer;
+  background-image: url(../images/paner_img3.png);
+  height: 158px;
+  width: 100%;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sections-containt-calendar {
+  cursor: pointer;
+  background-image: url(../images/paner_img1.png);
+  height: 158px;
+  width: 100%;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .sections-containt-calendar {
+    background-image: url(../images/1one.png) !important;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+  }
+
+  .sections-containt-shopping {
+    background-image: url(../images/tow.png) !important;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+  }
+
+  .sections-containt-library {
+    background-image: url(../images/tree.png) !important;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+  }
+
+  .sections-containt-membership,
+  .sections-containt-saudishopping {
+    height: 80px;
+    background: blue;
+  }
+}
+
 /* === Author Columns === */
 .author-col {
   flex: 0 0 50%;
