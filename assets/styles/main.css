@@ -464,9 +464,14 @@ a.active_link {
 
 .postar {
   height: 310px;
-  border-radius: 9px;
+  border-radius: 2px;
   background: white no-repeat top center / cover;
   margin: auto;
+  box-shadow: 0px 2px 2px 0px #00000033;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }
 
 .titel.flex {
@@ -486,7 +491,8 @@ a.active_link {
   overflow: hidden;
 }
 
-.titel.flex.text p {
+.titel.flex.text p,
+p.text.text_price {
   font-size: 14px;
   color: var(--secondary-text-color);
 }
@@ -1010,13 +1016,13 @@ p.Vector {
     position: relative;
   }
 
-  p.Vector {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    border: 1px solid var(--primary-color);
-    background: var(--primary-color);
-  }
+  /*p.Vector {*/
+  /*  position: absolute;*/
+  /*  top: 25px;*/
+  /*  left: 25px;*/
+  /*  border: 1px solid var(--primary-color);*/
+  /*  background: var(--primary-color);*/
+  /*}*/
 
   .Library_card {
     gap: 5px;
@@ -1527,8 +1533,8 @@ h4.mb-4.fw-bold {
 
 .d-flex .d-flex,
 .d-flex.gap {
-  gap: 14px;
-  margin: 10px 0;
+  gap: 5px;
+
   display: flex;
   align-items: center;
 }
@@ -2110,7 +2116,7 @@ section.paner {
   }
 
   .sections-containt-shopping {
-    background-image: url(../images/tow.png) !important;
+    background-image: url(../images/tree.png) !important;
     height: 80px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -2118,7 +2124,7 @@ section.paner {
   }
 
   .sections-containt-library {
-    background-image: url(../images/tree.png) !important;
+    background-image: url(../images/tow.png) !important;
     height: 80px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -2216,6 +2222,19 @@ section.paner {
 
   .paner_img.one {
     background-image: url(../images/1one.png) !important;
+  }
+  /* en */
+
+  .paner_img.three {
+    background-image: url(../img_en/tree.png) !important;
+  }
+
+  .paner_img.tow {
+    background-image: url(../img_en/tow.png) !important;
+  }
+
+  .paner_img.one {
+    background-image: url(../img_en/1one.png) !important;
   }
 
   section.paner {
@@ -2967,6 +2986,19 @@ section.Favorite ul li:first-child {
     display: grid !important;
     padding: 20px !important;
   }
+
+  .postar,
+  .Author_book {
+    height: 241px;
+  }
+
+  .titel.flex.text p {
+    font-size: 12px !important;
+  }
+
+  .titel.flex.text .price {
+    font-size: 18px !important;
+  }
 }
 /* 
  */
@@ -2975,4 +3007,83 @@ section.Favorite ul li:first-child {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 10px;
+}
+
+@media (max-width: 576px) {
+  .card_book_ui:nth-child(5) {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .postar,
+  .Author_book {
+    height: 242px;
+    height: 255px !important;
+    object-fit: contain;
+    border-radius: 3px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .postar,
+  .Author_book {
+    height: 242px;
+    height: 255px !important;
+    object-fit: contain;
+    border-radius: 3px;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .postar,
+  .Author_book {
+    height: 242px;
+    height: 255px !important;
+
+    object-fit: contain;
+    border-radius: 3px;
+  }
+
+  .d-flex.align-items-center.flex_phone {
+    flex-direction: column-reverse;
+    gap: 0;
+    margin: 0;
+  }
+}
+
+p.text.text_price {
+  text-decoration: line-through;
+}
+
+.titel.flex.text {
+  margin: 0;
+}
+
+.row.mt-3.align-items-center.mb-3 {
+  align-items: start !important;
+}
+
+.col-6.col-md-6.d-flex.justify-content-between.phone_RE {
+  gap: 0;
+}
+
+.col-6.col-md-6.d-flex.justify-content-between.phone_RE p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media screen and (max-width: 992px) {
+  .col-6.col-md-6.d-flex.justify-content-between.phone_RE {
+    flex-direction: column-reverse;
+  }
+
+  .col-6.col-md-6.d-flex.justify-content-between.phone_RE {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+  }
+  p.price.mb-1 {
+    font-size: 18px;
+  }
 }

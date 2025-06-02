@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/main.css">
 
+    <link rel="stylesheet" href="../styles/LTR.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,181 +29,130 @@
 
     <!-- Boxicons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    
-    <!-- Owl Carousel CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Owl Carousel JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 </head>
 
 <body>
 
-    <section id="nav_ar"></section>
+    <section id="nav_en"></section>
 
     <main class="container  mt-5" style="margin-top: 20vh !important;">
 
 
-        <div class="modal fade  mt-5" id="bookInquiryModal" tabindex="-1" aria-labelledby="bookInquiryLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content p-3 rounded-4">
+<div class="modal fade mt-5" id="bookInquiryModal" tabindex="-1" aria-labelledby="bookInquiryLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-3 rounded-4">
 
-                    <div class=" d-flex align-items-center justify-content-between">
-
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
-
-                        <h5 class="modal-title" id="bookInquiryLabel">استعلام عن الكتاب</h5>
-                        <span></span>
-
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">البريد الالكتروني</label>
-                                <input type="email" class="form-control mt-3 p-3  text-start" id="email"
-                                    placeholder="البريد الالكتروني">
-                            </div>
-                            <div class="text-center d-flex align-items-center justify-content-center">
-                                <button type="submit  " class="btn-purple pay_now ptn w-75  p-3">ارسال</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="bookInquiryLabel">Book Inquiry</h5>
+                <span></span>
             </div>
+
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control mt-3 p-3 text-start" id="email"
+                            placeholder="Email Address">
+                    </div>
+                    <div class="text-center d-flex align-items-center justify-content-center">
+                        <button type="submit" class="btn-purple pay_now ptn w-75 p-3">Send</button>
+                    </div>
+                </form>
+            </div>
+
         </div>
-
-        <!-- Book Details Section -->
-        <div class=" py-0">
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center book-image">
-                    
-                    <div class="owl-carousel owl-theme">
-
-
-
-  <div class="item book-image me-2" style="background-image: url(../images/poster1.png);"> </div>
-  <div class="item book-image me-2" style="background-image: url(../images/poster1.png);"> </div>
-  <div class="item book-image me-2" style="background-image: url(../images/poster1.png);"> </div>
-  <div class="item book-image me-2" style="background-image: url(../images/poster1.png);"> </div>
-
-
+    </div>
 </div>
 
 
+        <!-- Book Details Section -->
+<div class="py-0">
+    <div class="row g-4 align-items-center">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center book-image">
+            <div class="book-image me-2" style="background-image: url(../images/poster1.png);"></div>
+        </div>
 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 d-block d-sm-none book-image">
+            <div class="block_box">
+                <h4 class="text-dark mb-2">Yoga with Cats <span class="text-muted fs-6"> (Available)</span></h4>
+                <p class="text-muted mb-2">Maria Van Bruggen</p>
+            </div>
 
-
-
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6   d-block d-sm-none book-image ">
-
-
-
-                    <div class="block_box">
-                        <h4 class="text-dark mb-2">اليوجا مع القطط <span class="text-muted fs-6"> ( متوفر )</span>
-                        </h4>
-
-                        <p class="text-muted mb-2">ماريا فان بروجن</p>
-                    </div>
-
-
-                    <div class="block_box">
-
-                        <div class="d-flex align-items-center justify-content-between ">
-                            <div class="price font-size-larger">4.5 د.ك</div>
-                            <p class="Vector Vectorـdetails">
-                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.5634 1.6934C12.977 0.550137 11.288 -0.385259 9.32337 0.159349C8.38456 0.416994 7.56546 0.969521 6.9999 1.72666C6.43434 0.969521 5.61525 0.416994 4.67644 0.159349C2.7074 -0.376945 1.02277 0.550137 0.436438 1.6934C-0.386183 3.29397 -0.0448828 5.09408 1.45159 7.04387C2.62426 8.5696 4.30013 10.1161 6.73299 11.9121C6.80987 11.9691 6.90459 12 7.00209 12C7.0996 12 7.19431 11.9691 7.27119 11.9121C9.69968 10.1203 11.3799 8.58623 12.5526 7.04387C14.0447 5.09408 14.386 3.29397 13.5634 1.6934Z"
-                                        fill="white"></path>
-                                </svg>
-                            </p>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-9 col-md-8 col-sm-12">
-                    <div class="book-card">
-
-                        <div
-                            class="d-flex align-items-center justify-content-between d-none d-sm-block position-reltev">
-
-                            <h4 class="text-dark mb-2">اليوجا مع القطط <span class="text-muted fs-6"> ( متوفر )</span>
-                            </h4>
-
-                            <p class="Vector Vectorـdetails">
-                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.5634 1.6934C12.977 0.550137 11.288 -0.385259 9.32337 0.159349C8.38456 0.416994 7.56546 0.969521 6.9999 1.72666C6.43434 0.969521 5.61525 0.416994 4.67644 0.159349C2.7074 -0.376945 1.02277 0.550137 0.436438 1.6934C-0.386183 3.29397 -0.0448828 5.09408 1.45159 7.04387C2.62426 8.5696 4.30013 10.1161 6.73299 11.9121C6.80987 11.9691 6.90459 12 7.00209 12C7.0996 12 7.19431 11.9691 7.27119 11.9121C9.69968 10.1203 11.3799 8.58623 12.5526 7.04387C14.0447 5.09408 14.386 3.29397 13.5634 1.6934Z"
-                                        fill="white"></path>
-                                </svg>
-                            </p>
-
-                        </div>
-                        <p class="text-muted mb-2 d-none d-sm-block">ماريا فان بروجن</p>
-                        <p>
-                            توجد أيام نتمنى فيها قراءة كتاب مميز، كتاب لا يخبرنا فقط عن الاتجاهات التي ينبغي أن نسلكها،
-                            بل يجعلنا أيضًا راضين أكثر عن مظهر أجسامنا، وفي الوقت ذاته يرسم ضحكة على وجوهنا. كتاب اليوجا
-                            مع
-                            القطط هو ذلك النوع من الكتب. يساعدك هذا الكتاب بالحصول على مصدر إلهام للتمارين اليومية من
-                            خلال رسائل سريعة وقصيرة في نهاية كل تمرين. يحتوي هذا الكتاب على 32 تمرينًا، يظهر كل تمرين
-                            وضعية من وضعيات اليوجا مع مشاركة غير مألوفة لقططك لمساعدتك على أداء التمارين بأفضل طريقة
-                            ممكنة.
-                        </p>
-
-
-
-
-
-
-                        <div class="row align-items-center mt-5">
-                            <div class="col-12 col-md-5 mb-3">
-                                <button class="custom-filled-btn btn pay_now ptn d-flex align-items-center gap-3 p-3">
-                                    <i class="bi bi-bag-plus custom-icon"></i>
-                                    أضف الى السلة
-                                </button>
-                            </div>
-
-                            <div class="col-12 col-md-5 mb-3">
-                                <button class="custom-outline-btn btn pay_now ptn d-flex align-items-center gap-3 p-3"
-                                    data-bs-toggle="modal" data-bs-target="#bookInquiryModal">
-                                    استعلام عن الكتاب
-                                </button>
-                            </div>
-
-                            <div class="col-12 col-md-2 d-none d-sm-block">
-                                <div class="price font-size-larger text-end">4.5 د.ك</div>
-
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
+            <div class="block_box">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="price font-size-larger">4.5 KD</div>
+                    <p class="Vector Vectorـdetails">
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.5634 1.6934C12.977 0.550137 11.288 -0.385259 9.32337 0.159349C8.38456 0.416994 7.56546 0.969521 6.9999 1.72666C6.43434 0.969521 5.61525 0.416994 4.67644 0.159349C2.7074 -0.376945 1.02277 0.550137 0.436438 1.6934C-0.386183 3.29397 -0.0448828 5.09408 1.45159 7.04387C2.62426 8.5696 4.30013 10.1161 6.73299 11.9121C6.80987 11.9691 6.90459 12 7.00209 12C7.0996 12 7.19431 11.9691 7.27119 11.9121C9.69968 10.1203 11.3799 8.58623 12.5526 7.04387C14.0447 5.09408 14.386 3.29397 13.5634 1.6934Z"
+                                fill="white"></path>
+                        </svg>
+                    </p>
                 </div>
             </div>
         </div>
 
+        <div class="col-lg-9 col-md-8 col-sm-12">
+            <div class="book-card">
+                <div class="d-flex align-items-center justify-content-between d-none d-sm-block position-reltev">
+                    <h4 class="text-dark mb-2">Yoga with Cats <span class="text-muted fs-6"> (Available)</span></h4>
+                    <p class="Vector Vectorـdetails">
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.5634 1.6934C12.977 0.550137 11.288 -0.385259 9.32337 0.159349C8.38456 0.416994 7.56546 0.969521 6.9999 1.72666C6.43434 0.969521 5.61525 0.416994 4.67644 0.159349C2.7074 -0.376945 1.02277 0.550137 0.436438 1.6934C-0.386183 3.29397 -0.0448828 5.09408 1.45159 7.04387C2.62426 8.5696 4.30013 10.1161 6.73299 11.9121C6.80987 11.9691 6.90459 12 7.00209 12C7.0996 12 7.19431 11.9691 7.27119 11.9121C9.69968 10.1203 11.3799 8.58623 12.5526 7.04387C14.0447 5.09408 14.386 3.29397 13.5634 1.6934Z"
+                                fill="white"></path>
+                        </svg>
+                    </p>
+                </div>
+                <p class="text-muted mb-2 d-none d-sm-block">Maria Van Bruggen</p>
+                <p>
+                    There are days when we wish to read a special book — a book that not only tells us which paths to take,
+                    but also makes us feel better about our bodies, and even brings a smile to our faces. "Yoga with Cats" is
+                    that kind of book. It helps inspire your daily workouts through short, quick messages at the end of each
+                    session. This book includes 32 exercises, each showing a yoga pose with the unique involvement of your
+                    cat to help you perform the exercises in the best way possible.
+                </p>
+
+                <div class="row align-items-center mt-5">
+                    <div class="col-12 col-md-5 mb-3">
+                        <button class="custom-filled-btn btn pay_now ptn d-flex align-items-center gap-3 p-3">
+                            <i class="bi bi-bag-plus custom-icon"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <div class="col-12 col-md-5 mb-3">
+                        <button class="custom-outline-btn btn pay_now ptn d-flex align-items-center gap-3 p-3"
+                            data-bs-toggle="modal" data-bs-target="#bookInquiryModal">
+                            Inquire About the Book
+                        </button>
+                    </div>
+
+                    <div class="col-12 col-md-2 d-none d-sm-block">
+                        <div class="price font-size-larger text-end">4.5 KD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
         <!-- Suggested Books Section -->
         <section class="Library  ">
-            <ul class="d-flex align-items-center justify-content-between py-5 px-0 bg-gray-100">
-                <li class="font-size-larger">كتب قد تهمك</li>
-                <li>
-                    <button class="Library_ptn ptn">المزيد</button>
-                </li>
-            </ul>
+   <ul class="d-flex align-items-center justify-content-between py-5 px-0 bg-gray-100">
+    <li class="font-size-larger">Books You May Like</li>
+    <li>
+        <button class="Library_ptn ptn">More</button>
+    </li>
+</ul>
+
 
 
 
@@ -352,29 +302,15 @@
     <!-- Optional Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-    <section id="foot_ar"></section>
+    <section id="foot_en"></section>
 
     <!-- Arabic Script -->
-    <script src="../scripts/Arabic.js"></script>
+    <script src="../scripts/English.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<script>
-  $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-      items: 1,
-      nav: true,
-      dots: false,
-      loop: true,
-      rtl: true,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true
-    });
-  });
-</script>
 
 
 
