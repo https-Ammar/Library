@@ -2076,7 +2076,7 @@ section.paner {
 .sections-containt-library {
   cursor: pointer;
   background-image: url(../images/paner_img2.png);
-  height: 158px;
+  height: 200px;
   width: 100%;
   border-radius: 5px;
   background-repeat: no-repeat;
@@ -2087,7 +2087,7 @@ section.paner {
 .sections-containt-shopping {
   cursor: pointer;
   background-image: url(../images/paner_img3.png);
-  height: 158px;
+  height: 200px;
   width: 100%;
   border-radius: 5px;
   background-repeat: no-repeat;
@@ -2098,7 +2098,7 @@ section.paner {
 .sections-containt-calendar {
   cursor: pointer;
   background-image: url(../images/paner_img1.png);
-  height: 158px;
+  height: 200px;
   width: 100%;
   border-radius: 5px;
   background-repeat: no-repeat;
