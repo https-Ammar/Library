@@ -3087,3 +3087,29 @@ p.text.text_price {
     font-size: 18px;
   }
 }
+
+.card_book_ui.author-col {
+  position: relative;
+}
+
+.svg_sall {
+  position: absolute;
+  color: white;
+  transform: rotate(42deg);
+  font-weight: 700;
+  /* text-align: center; */
+  width: max-content;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+.img_svg {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+}
