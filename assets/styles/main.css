@@ -2106,6 +2106,33 @@ section.paner {
   background-position: center;
 }
 
+.sections-containt.sections-containt-library.p-3.text-right.en_tree {
+  background-image: url(../img_en/paner_img2.png) !important;
+}
+
+.sections-containt.sections-containt-shopping.p-3.text-right.en_tow {
+  background-image: url(../img_en/paner_img3.png) !important;
+}
+
+.sections-containt.sections-containt-calendar.p-3.text-right.en_one {
+  background-image: url(../img_en/paner_img1.png) !important;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .sections-containt.sections-containt-library.p-3.text-right.en_tree {
+    background-image: url(../img_en/one.png) !important;
+  }
+
+  .sections-containt.sections-containt-calendar.p-3.text-right.en_one {
+    background-image: url(../img_en/toww.png) !important;
+  }
+
+  .sections-containt.sections-containt-shopping.p-3.text-right.en_tow {
+    background-image: url(../img_en/tre.png) !important;
+  }
+}
+
+/*  */
 @media (min-width: 320px) and (max-width: 991px) {
   .sections-containt-calendar {
     background-image: url(../images/1one.png) !important;
